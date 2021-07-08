@@ -1,0 +1,63 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: $base-font-weight;
+}
+
+body {
+  color: $base-color;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: $header-font-weight;
+  line-height: 1.2;
+  margin: 0 0 $spacing;
+}
+
+h1 {
+  font-size: $base-font-size * 2;
+}
+
+h2 {
+  font-size: $base-font-size * 1.5;
+}
+
+h3 {
+  font-size: $base-font-size * 1.25;
+}
+
+h4 {
+  font-size: $base-font-size * 1.15;
+}
+
+a {
+  border-bottom: 1px solid transparent;
+  color: $blue;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    border-bottom: 1px solid $blue;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

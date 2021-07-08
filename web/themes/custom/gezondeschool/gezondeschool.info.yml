@@ -1,0 +1,17 @@
+name: Gezonde school
+type: theme
+base theme: classy
+Description: Gezonde school theme
+package: custom
+core: 8.x
+libraries:
+  - gezondeschool/global-styles
+  - gezondeschool/global-scripts
+
+regions:
+  header: Header
+  above: Featured
+  content: Content
+  sidebar: Sidebar
+  below: Below
+  footer: Footer

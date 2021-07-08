@@ -1,0 +1,15 @@
+global-styles:
+  css:
+    theme:
+      //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css: { external: true }
+      styles/styles.css: {}
+      styles/cobi.css: {}
+
+global-scripts:
+  js:
+    //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js: { external: true }
+    scripts/main.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once

@@ -1,0 +1,35 @@
+.node--type-story.node--view-mode-teaser {
+  background-color: $color-secondary;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    padding: 0 $spacing $spacing;
+
+    a {
+      color: $base-color;
+
+      &:hover {
+        border-bottom-color: $base-color;
+      }
+    }
+  }
+
+  img {
+    margin-bottom: $spacing / 2;
+  }
+
+  .field--name-field-doelgroep {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 0 $spacing;
+
+    a {
+      color: $color-primary;
+    }
+  }
+}

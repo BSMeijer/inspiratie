@@ -1,0 +1,35 @@
+.navigation-buttons {
+  align-items: center;
+  background: $color-primary;
+  color: $white;
+  display: flex;
+  padding: 0 $spacing / 4;
+
+  a:last-child {
+    margin-left: auto;
+  }
+
+  @media (min-width: $bp-tablet) {
+    display: none;
+  }
+}
+
+.menu-toggler,
+.search-toggler {
+  display: block;
+  height: 2.5rem;
+  z-index: 3;
+  border: none;
+  background-image: url(../img/search.svg);
+  background-size: 1rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 0 $spacing;
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 2rem;
+}
+
+.menu-toggler {
+  background-image: url(../img/bars.svg);
+}

@@ -1,0 +1,37 @@
+.region-footer {
+  a {
+    color: $white;
+
+    &:hover {
+      border-bottom-color: $white;
+    }
+  }
+
+  .menu--footer {
+
+    ul.menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      @media (min-width: $bp-tablet) {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+
+        li {
+          padding: 0 $spacing / 2;
+        }
+      }
+    }
+  }
+}
+
+.disclaimer {
+  font-size: 16px;
+
+  a {
+    font-weight: bold;
+    color: $white;
+  }
+}

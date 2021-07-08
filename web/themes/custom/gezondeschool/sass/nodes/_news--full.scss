@@ -1,0 +1,26 @@
+.node--type-news.node--view-mode-full {
+
+  .field--name-field-doelgroep,
+  .field--name-node-title {
+    max-width: $bp-tablet;
+    margin: 0 auto;
+  }
+
+  .field--name-field-header-image {
+    margin-bottom: $spacing * 2;
+  }
+
+  .field--name-field-doelgroep {
+    font-weight: bold;
+    text-transform: uppercase;
+
+    a {
+
+      color: $color-primary;
+
+      &:hover {
+        border-bottom-color: $color-primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.node--type-story.node--view-mode-compact {
+  background-color: $color-primary;
+
+  .field--name-node-title {
+    padding: $spacing;
+
+    h3 {
+      margin: 0;
+    }
+
+    a {
+      color: $white;
+
+      &:hover {
+        border-bottom-color: $white;
+      }
+    }
+  }
+}

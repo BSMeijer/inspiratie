@@ -1,0 +1,32 @@
+.region-content,
+.region-footer {
+  margin: 0 auto;
+  max-width: $bp-jumbo;
+  padding: $spacing;
+
+  @media (min-width: $bp-desktop) {
+    padding: $spacing * 2;
+  }
+}
+
+body.page-node-type-story .region-content {
+  padding-top: 0;
+}
+
+body.path-zoeken .region-content {
+  max-width: $bp-tablet;
+}
+
+.block-system-main-block {
+  margin-bottom: $spacing * 2;
+}
+
+.page-footer {
+  background-color: $color-primary;
+  color: $white;
+}
+
+.disclaimer {
+  text-align: center;
+  padding: $spacing $spacing * 2;
+}

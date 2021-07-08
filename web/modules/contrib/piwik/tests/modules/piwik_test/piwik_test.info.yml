@@ -1,0 +1,11 @@
+name: 'Piwik test'
+type: module
+description: 'Support module for Piwik testing.'
+package: Testing
+# core: 8.x
+
+# Information added by Drupal.org packaging script on 2018-06-08
+version: '8.x-1.4'
+core: '8.x'
+project: 'piwik'
+datestamp: 1528483684

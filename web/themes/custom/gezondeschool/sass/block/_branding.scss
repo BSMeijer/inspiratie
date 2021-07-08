@@ -1,0 +1,19 @@
+.block-system-branding-block {
+  margin: 0 auto;
+  padding: $spacing 0;
+  text-align: center;
+
+  a {
+    border: 0;
+    display: block;
+
+    img {
+      margin: 0 auto;
+      width: $spacing * 3;
+
+      @media (min-width: $bp-tablet) {
+        width: $spacing * 5;
+      }
+    }
+  }
+}

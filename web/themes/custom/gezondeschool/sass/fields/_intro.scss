@@ -1,0 +1,11 @@
+.node--view-mode-full {
+  .field--name-field-intro {
+    font-size: $base-font-size * 1.125;
+    max-width: $bp-tablet;
+    margin: 0 auto;
+
+    p {
+      margin-bottom: $spacing;
+    }
+  }
+}

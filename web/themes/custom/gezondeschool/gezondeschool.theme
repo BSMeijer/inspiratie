@@ -1,0 +1,10 @@
+<?php
+
+function gezondeschool_preprocess_html(&$vars) {
+  if (isset($vars['page']['aside'])) {
+    $vars['has_aside'] = TRUE;
+  }
+  else {
+    $vars['has_aside'] = FALSE;
+  }
+}

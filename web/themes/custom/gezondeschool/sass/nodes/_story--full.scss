@@ -1,0 +1,74 @@
+.node--type-story.node--view-mode-full {
+  .header-image {
+    margin: 0 (-$spacing) $spacing * 6;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+
+    @media (min-width: $bp-tablet) {
+      @include break-out;
+      margin-bottom: $spacing * 4;
+    }
+  }
+
+  .header-shadow {
+    background: linear-gradient(45deg, black, transparent);
+    height: 100%;
+  }
+
+  .header-information {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: $bp-tablet;
+    margin: 0 auto;
+    padding: $spacing;
+
+    @media (min-width: $bp-tablet) {
+      padding: $spacing * 2 0 $spacing * 4;
+    }
+
+    .field--name-field-doelgroep {
+      margin-top: auto;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      a {
+        font-size: 1rem;
+        color: $blue;
+      }
+    }
+
+    h1 {
+      color: $white;
+      text-shadow: 0 0 10px $base-color;
+      margin-top: 0;
+
+      @media (min-width: $bp-tablet) {
+        max-width: 75%;
+      }
+    }
+  }
+
+  .header-meta {
+    background-color: $color-primary;
+    color: $white;
+    display: flex;
+    text-align: center;
+    padding: $spacing;
+    text-transform: uppercase;
+
+    .field--name-field-from {
+      margin-left: auto;
+    }
+
+    @media (min-width: $bp-tablet) {
+      position: absolute;
+      min-width: $bp-tablet;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 50%);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+type: module
+name: 'Hotjar'
+description: 'Allows your site to be tracked by Hotjar by adding a Javascript tracking code to every page.'
+core_version_requirement: ^8.8 || ^9
+package: 'Statistics'
+configure: hotjar.admin_settings_form
+dependencies:
+ - drupal:path_alias
+
+# Information added by Drupal.org packaging script on 2021-07-01
+version: '8.x-2.2'
+project: 'hotjar'
+datestamp: 1625130595

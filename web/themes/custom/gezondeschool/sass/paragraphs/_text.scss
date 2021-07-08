@@ -1,0 +1,15 @@
+.paragraph--type--text {
+  max-width: $bp-tablet;
+  margin: 0 auto $spacing;
+
+  p,
+  ul,
+  ol {
+
+    &+p,
+    &+ul,
+    &+ol {
+      margin-top: $spacing;
+    }
+  }
+}

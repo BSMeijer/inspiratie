@@ -1,0 +1,44 @@
+.node--type-news.node--view-mode-teaser {
+
+  @media (min-width: $bp-tablet) {
+    display: flex;
+  }
+
+  .field--name-field-doelgroep a {
+    color: $color-primary;
+
+    &:hover {
+      border-bottom-color: $color-primary;
+    }
+  }
+
+  h3 {
+    margin: 0;
+
+    a {
+      color: $base-color;
+      font-size: 1.25rem;
+
+      &:hover {
+        border-bottom-color: $base-color;
+      }
+    }
+  }
+
+  .group-left {
+    padding-bottom: $spacing / 2;
+
+
+    @media (min-width: $bp-tablet) {
+      width: 40%;
+      padding-bottom: 0;
+      padding-right: $spacing;
+    }
+  }
+
+  .group-right {
+    @media (min-width: $bp-tablet) {
+      width: 60%;
+    }
+  }
+}

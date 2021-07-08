@@ -1,0 +1,16 @@
+.paragraph--type--video {
+  max-width: $bp-tablet;
+  margin: 0 auto;
+
+  p {
+    margin-bottom: $spacing;
+  }
+
+  .youtube-container--responsive {
+    margin: 0 (-$spacing) $spacing;
+
+    @media (min-width: $bp-desktop) {
+      margin: 0 (-$spacing * 3) $spacing * 2;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.block-system-breadcrumb-block {
+  background-color: $color-secondary;
+  display: none;
+
+  @media (min-width: $bp-tablet) {
+    display: block;
+  }
+
+  .breadcrumb {
+    max-width: $bp-jumbo;
+    margin: 0 auto;
+    padding: $spacing / 2 $spacing * 2;
+  }
+
+  a {
+    color: $base-color;
+
+    &:hover {
+      border-bottom-color: $base-color;
+    }
+  }
+}

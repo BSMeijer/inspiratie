@@ -1,0 +1,36 @@
+.node--type-news.node--view-mode-list {
+  display: flex;
+
+  .group-left {
+    width: 33%;
+    padding-right: $spacing;
+
+    @media (min-width: $bp-tablet) {
+      width: 25%;
+    }
+  }
+
+  .group-right {
+    width: 67%;
+
+    @media (min-width: $bp-tablet) {
+      width: 75%;
+    }
+
+    .field--name-field-intro {
+      display: none;
+
+      @media (min-width: $bp-tablet) {
+        display: block;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 1.25rem;
+
+    a {
+      color: $base-color;
+    }
+  }
+}

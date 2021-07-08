@@ -1,0 +1,7 @@
+.paragraph--type--image {
+  margin: 0 (-$spacing) $spacing;
+
+  @media (min-width: $bp-desktop) {
+    margin: 0 (-$spacing * 3) $spacing * 2;
+  }
+}

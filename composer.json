@@ -1,0 +1,112 @@
+{
+  "name": "drupal/recommended-project",
+  "description": "Project template for Drupal 8 projects with a relocated document root",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://www.drupal.org/project/drupal",
+  "support": {
+    "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+    "chat": "https://www.drupal.org/node/314178"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
+  "require": {
+    "composer/installers": "^1.2",
+    "cweagans/composer-patches": "^1.7",
+    "drupal/better_exposed_filters": "^5.0@beta",
+    "drupal/better_formats": "1.x-dev",
+    "drupal/better_social_sharing_buttons": "^3.2",
+    "drupal/core-composer-scaffold": "^8.8",
+    "drupal/core-project-message": "^8.8",
+    "drupal/core-recommended": "^8.8",
+    "drupal/ds": "^3.12",
+    "drupal/entityqueue": "^1.2",
+    "drupal/facets": "^1.8",
+    "drupal/field_group": "^3.1",
+    "drupal/field_group_background_image": "^1.4",
+    "drupal/hotjar": "^2.2",
+    "drupal/image_widget_crop": "^2.3",
+    "drupal/media_entity_soundcloud": "^3.0",
+    "drupal/paragraphs": "^1.12",
+    "drupal/pathauto": "^1.8",
+    "drupal/piwik": "^1.4",
+    "drupal/rate": "^2.0@alpha",
+    "drupal/search_api": "^1.19",
+    "drupal/search_api_autocomplete": "^1.4",
+    "drupal/twig_tweak": "^2.9",
+    "drupal/youtube": "^1.2",
+    "drush/drush": "^10.5"
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "patches": {
+      "drupal/core": {
+        "Nested modals don't work": "https://www.drupal.org/files/issues/2020-04-20/2741877-48.patch",
+        "Claro Draghandles": "https://www.drupal.org/files/issues/2020-12-08/3092181-142-8X_0.patch"
+      }
+    },
+    "drupal-scaffold": {
+      "locations": {
+        "web-root": "web/"
+      }
+    },
+    "installer-paths": {
+      "web/core": [
+        "type:drupal-core"
+      ],
+      "web/libraries/{$name}": [
+        "type:drupal-library"
+      ],
+      "web/modules/contrib/{$name}": [
+        "type:drupal-module"
+      ],
+      "web/profiles/contrib/{$name}": [
+        "type:drupal-profile"
+      ],
+      "web/themes/contrib/{$name}": [
+        "type:drupal-theme"
+      ],
+      "drush/Commands/contrib/{$name}": [
+        "type:drupal-drush"
+      ],
+      "web/modules/custom/{$name}": [
+        "type:drupal-custom-module"
+      ],
+      "web/themes/custom/{$name}": [
+        "type:drupal-custom-theme"
+      ]
+    },
+    "drupal-core-project-message": {
+      "include-keys": [
+        "homepage",
+        "support"
+      ],
+      "post-create-project-cmd-message": [
+        "<bg=blue;fg=white>                                                         </>",
+        "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
+        "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
+        "<bg=blue;fg=white>                                                         </>",
+        "",
+        "<bg=yellow;fg=black>Next steps</>:",
+        "  * Install the site: https://www.drupal.org/docs/8/install",
+        "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+        "  * Get support: https://www.drupal.org/support",
+        "  * Get involved with the Drupal community:",
+        "      https://www.drupal.org/getting-involved",
+        "  * Remove the plugin that prints this message:",
+        "      composer remove drupal/core-project-message"
+      ]
+    }
+  }
+}

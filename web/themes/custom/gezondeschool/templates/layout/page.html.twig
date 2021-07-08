@@ -1,0 +1,24 @@
+<header role="banner" class="page-header">
+  {{ page.header }}
+</header>
+<div class="mobile-menu-target-wrapper"></div>
+<div class="mobile-search-target-wrapper"></div>
+<main role="main" class="page-content">
+  <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+  {{ page.above }}
+  <div class="page-container">
+    <div class="main-content">
+      {{ page.content }}
+    </div>
+    {% if page.aside %}
+    <aside class="aside">
+      {{ page.aside }}
+    </aside>
+    {% endif %}
+  </div>  
+  {{ page.below }}
+</main>
+<footer role="contentinfo" class="page-footer">
+  {{ page.footer }}
+  <div class="disclaimer">&copy; 2021 <a href="#">Gezonde school</a></div>
+</footer>

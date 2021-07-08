@@ -1,0 +1,54 @@
+.node--type-story.node--view-mode-highlighted {
+  .group-right {
+    padding: $spacing;
+  }
+
+  a {
+    color: $color-primary;
+  }
+
+  .field--name-field-intro {
+    font-size: 1rem;
+  }
+
+  .field--name-field-doelgroep {
+    font-weight: bold;
+  }
+
+  @media (min-width: $bp-tablet) {
+    display: flex;
+
+    .group-left {
+      width: 50%;
+    }
+
+    .group-right {
+      width: 50%;
+    }
+
+    .field--name-field-header-image {
+      display: flex;
+      height: 100%;
+
+      a {
+        display: flex;
+        height: 100%;
+      }
+
+      img {
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+
+  @media (min-width: $bp-desktop) {
+    .group-left {
+      width: 40%;
+    }
+
+    .group-right {
+      width: 60%;
+    }
+  }
+}
