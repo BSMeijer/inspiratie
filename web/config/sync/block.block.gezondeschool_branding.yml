@@ -1,0 +1,25 @@
+uuid: 16ac05bb-944c-4ea4-a824-139ae5858a97
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gezondeschool
+_core:
+  default_config_hash: fRKXNB91UxDvEMkzCR8ZBsawfC6Fqbme2gtobei3gu4
+id: gezondeschool_branding
+theme: gezondeschool
+region: header
+weight: -4
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Branding van de website'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

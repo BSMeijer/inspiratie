@@ -1,0 +1,22 @@
+uuid: 8b393c18-2f76-4e8b-b53c-2bc29d28f55b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.interview
+id: node.interview.promote
+field_name: promote
+entity_type: node
+bundle: interview
+label: 'Aangeraden op de voorpagina'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

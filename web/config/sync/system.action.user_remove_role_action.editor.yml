@@ -1,0 +1,14 @@
+uuid: f1b65b1a-ab17-4653-a1cc-ed48a4652b1a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - user.role.editor
+  module:
+    - user
+id: user_remove_role_action.editor
+label: 'De rol Content beheerder verwijderen van de geselecteerde gebruikers(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: editor

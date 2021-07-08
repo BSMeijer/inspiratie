@@ -1,0 +1,10 @@
+uuid: 9ffb1986-9ed1-4a6d-b579-7e858f59bbda
+langcode: nl
+status: true
+dependencies: {  }
+id: editor
+label: 'Content beheerder'
+weight: 2
+is_admin: null
+permissions:
+  - 'use text format html'

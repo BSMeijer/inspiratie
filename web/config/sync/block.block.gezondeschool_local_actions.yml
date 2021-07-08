@@ -1,0 +1,20 @@
+uuid: 6c277dc4-66f0-4ed0-aedd-03cbab6597fa
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - gezondeschool
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: gezondeschool_local_actions
+theme: gezondeschool
+region: content
+weight: 0
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primaire beheeracties'
+  provider: core
+  label_display: '0'
+visibility: {  }

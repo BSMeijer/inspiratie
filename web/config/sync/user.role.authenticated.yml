@@ -1,0 +1,15 @@
+uuid: d19d1b76-d12f-42dd-90f1-e84e151225f4
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Geverifieerde gebruiker'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'opt-in or out of matomo tracking'
+  - 'use text format html'
+  - 'view media'

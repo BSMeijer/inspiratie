@@ -1,0 +1,10 @@
+uuid: 4051fff5-f371-4a6c-9b7d-490fcc7970f8
+langcode: nl
+status: true
+dependencies: {  }
+id: image
+label: Afbeelding
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

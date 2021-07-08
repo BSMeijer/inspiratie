@@ -1,0 +1,24 @@
+uuid: 34328e59-38d9-43f9-8761-34659f7bb6aa
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.interview.field_body
+    - node.type.interview
+  module:
+    - user
+id: node.interview.teaser
+targetEntityType: node
+bundle: interview
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_body: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,9 @@
+uuid: dbfac213-0a2d-44e7-82a3-3d02981418a3
+langcode: nl
+status: true
+dependencies: {  }
+id: nl
+label: Dutch
+direction: ltr
+weight: 0
+locked: false

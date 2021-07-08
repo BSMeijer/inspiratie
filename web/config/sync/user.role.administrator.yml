@@ -1,0 +1,10 @@
+uuid: f1a965e2-5512-46dd-b8e4-0c265768ea71
+langcode: nl
+status: true
+dependencies: {  }
+id: administrator
+label: Administrator
+weight: 3
+is_admin: null
+permissions:
+  - 'use text format html'

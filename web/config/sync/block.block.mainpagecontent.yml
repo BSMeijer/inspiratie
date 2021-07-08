@@ -1,0 +1,20 @@
+uuid: f64abd36-aea7-48a8-a6f8-d95a0e2f24f2
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gezondeschool
+id: mainpagecontent
+theme: gezondeschool
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

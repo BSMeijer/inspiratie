@@ -1,0 +1,24 @@
+uuid: e73f9b12-76c3-48ab-a372-e76acbf03883
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.soundcloud.field_soundcloud
+    - paragraphs.paragraphs_type.soundcloud
+  module:
+    - media_library
+id: paragraph.soundcloud.default
+targetEntityType: paragraph
+bundle: soundcloud
+mode: default
+content:
+  field_soundcloud:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

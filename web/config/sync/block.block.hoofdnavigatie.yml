@@ -1,0 +1,25 @@
+uuid: b4e26cb7-7d49-4f16-b79c-0b9236b76281
+langcode: nl
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - gezondeschool
+id: hoofdnavigatie
+theme: gezondeschool
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: Hoofdnavigatie
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

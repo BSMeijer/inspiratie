@@ -1,0 +1,22 @@
+uuid: 5c596a4c-2865-48b6-a292-5b43b8a7f9dc
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gezondeschool
+_core:
+  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+id: gezondeschool_messages
+theme: gezondeschool
+region: content
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Statusberichten
+  provider: system
+  label_display: '0'
+visibility: {  }

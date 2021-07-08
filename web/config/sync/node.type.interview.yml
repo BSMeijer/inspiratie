@@ -1,0 +1,17 @@
+uuid: 90efd780-bb9c-4d92-9117-ad46d8b0099d
+langcode: nl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Interview / Story'
+type: interview
+description: 'Een <em>Interview</em> zijn de ''rijke'' pagina''s binnen het systeem.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

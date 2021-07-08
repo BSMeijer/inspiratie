@@ -1,0 +1,41 @@
+uuid: 4393a611-f6ca-4bad-b9a3-f1063af71a58
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.page
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.soundcloud
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: node.page.field_body
+field_name: field_body
+entity_type: node
+bundle: page
+label: Inhoud
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image: image
+      text: text
+      soundcloud: soundcloud
+    target_bundles_drag_drop:
+      image:
+        enabled: true
+        weight: 3
+      soundcloud:
+        enabled: true
+        weight: 5
+      text:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

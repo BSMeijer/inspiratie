@@ -1,0 +1,9 @@
+uuid: ce3a58e7-5c85-4da4-b8a3-2348d24b4795
+langcode: nl
+status: true
+dependencies: {  }
+id: text_image
+label: 'Tekst afbeelding'
+image_style_mappings: {  }
+breakpoint_group: responsive_image
+fallback_image_style: '_original image_'

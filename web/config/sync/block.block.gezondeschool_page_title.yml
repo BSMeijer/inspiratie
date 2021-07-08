@@ -1,0 +1,27 @@
+uuid: d6220f98-35e3-4a43-9b01-7ecdea18c3ce
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gezondeschool
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: gezondeschool_page_title
+theme: gezondeschool
+region: content
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Paginatitel
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /dummypagina
+    negate: false
+    context_mapping: {  }

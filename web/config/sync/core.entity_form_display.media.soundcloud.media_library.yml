@@ -1,0 +1,28 @@
+uuid: 0a298573-0219-422b-a28b-7454755abec0
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.soundcloud.field_media_soundcloud
+    - media.type.soundcloud
+id: media.soundcloud.media_library
+targetEntityType: media
+bundle: soundcloud
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_soundcloud: true
+  langcode: true
+  path: true
+  status: true
+  uid: true

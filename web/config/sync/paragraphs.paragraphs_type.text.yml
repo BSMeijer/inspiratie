@@ -1,0 +1,10 @@
+uuid: a37b577c-f12e-4783-9118-acc9c1802d07
+langcode: nl
+status: true
+dependencies: {  }
+id: text
+label: Tekst
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
