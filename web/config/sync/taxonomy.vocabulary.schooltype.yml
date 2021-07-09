@@ -1,0 +1,8 @@
+uuid: 30a7e403-4bd1-43e5-b777-66772b5eb5d9
+langcode: nl
+status: true
+dependencies: {  }
+name: Schooltype
+vid: schooltype
+description: ''
+weight: 0

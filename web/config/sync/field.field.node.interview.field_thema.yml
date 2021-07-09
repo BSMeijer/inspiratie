@@ -1,0 +1,29 @@
+uuid: 28e9d4fb-754b-4532-bc8d-280b03c644e3
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thema
+    - node.type.interview
+    - taxonomy.vocabulary.thema
+id: node.interview.field_thema
+field_name: field_thema
+entity_type: node
+bundle: interview
+label: Thema
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      thema: thema
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -5,11 +5,34 @@ dependencies:
   config:
     - field.field.node.page.field_body
     - field.field.node.page.field_intro
+    - field.field.node.page.field_schooltype
+    - field.field.node.page.field_thema
+    - field.field.node.page.field_topic
     - node.type.page
   module:
+    - field_group
     - paragraphs
     - path
     - text
+third_party_settings:
+  field_group:
+    group_taxonomy:
+      children:
+        - field_schooltype
+        - field_thema
+        - field_topic
+      parent_name: ''
+      weight: 3
+      format_type: details_sidebar
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: true
+        required_fields: true
+        weight: 0
+      label: Taxonomy
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -17,13 +40,13 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   field_body:
     type: paragraphs
-    weight: 9
+    weight: 2
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -41,45 +64,49 @@ content:
     third_party_settings: {  }
     region: content
   field_intro:
-    weight: 8
+    weight: 1
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
     region: content
+  field_schooltype:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_thema:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_topic:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   langcode:
     type: language_select
-    weight: 1
+    weight: 4
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 4
-    region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 5
+    weight: 8
     region: content
     third_party_settings: {  }
   title:
@@ -92,7 +119,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
@@ -100,4 +127,6 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  promote: true
+  sticky: true

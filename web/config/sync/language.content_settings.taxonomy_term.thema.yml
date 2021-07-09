@@ -1,0 +1,11 @@
+uuid: 1a49df36-fcfb-44c9-b6de-af84f6962946
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.thema
+id: taxonomy_term.thema
+target_entity_type_id: taxonomy_term
+target_bundle: thema
+default_langcode: site_default
+language_alterable: false
