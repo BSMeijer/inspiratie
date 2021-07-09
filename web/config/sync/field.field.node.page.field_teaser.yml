@@ -1,0 +1,32 @@
+uuid: a7ed04af-8c26-4710-8337-2fef25a4ba18
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.page
+  module:
+    - better_formats
+    - text
+third_party_settings:
+  better_formats:
+    allowed_formats_toggle: 0
+    allowed_formats:
+      html: html
+    default_order_toggle: 0
+    default_order_wrapper:
+      formats:
+        html:
+          weight: '0'
+id: node.page.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: page
+label: Teaser
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

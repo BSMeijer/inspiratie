@@ -37,13 +37,14 @@ third_party_settings:
     regions:
       ds_content:
         - field_image
+        - field_schooltype
         - node_title
         - field_teaser
         - node_link
     fields:
       node_link:
         plugin_id: node_link
-        weight: 3
+        weight: 4
         label: hidden
         formatter: default
         settings:
@@ -53,7 +54,7 @@ third_party_settings:
           class: ''
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 2
         label: hidden
         formatter: default
         settings:
@@ -75,9 +76,17 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
+  field_schooltype:
+    type: entity_reference_label
+    weight: 1
+    region: ds_content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
   field_teaser:
     type: text_trimmed
-    weight: 2
+    weight: 3
     region: ds_content
     label: hidden
     settings:
@@ -86,7 +95,6 @@ content:
 hidden:
   field_body: true
   field_intro: true
-  field_schooltype: true
   field_thema: true
   field_topic: true
   langcode: true
