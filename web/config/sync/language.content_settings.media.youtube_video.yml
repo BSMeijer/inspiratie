@@ -1,0 +1,11 @@
+uuid: f63fe91a-9228-49e2-b6e6-2872adedef9b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - media.type.youtube_video
+id: media.youtube_video
+target_entity_type_id: media
+target_bundle: youtube_video
+default_langcode: site_default
+language_alterable: false

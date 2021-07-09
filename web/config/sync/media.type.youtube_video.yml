@@ -1,0 +1,15 @@
+uuid: 5fd4e900-82f5-401e-a47c-800f6fc86492
+langcode: nl
+status: true
+dependencies: {  }
+id: youtube_video
+label: 'Youtube video'
+description: ''
+source: 'oembed:video'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  thumbnails_directory: 'public://oembed_thumbnails'
+  providers: {  }
+  source_field: field_media_oembed_video
+field_map: {  }
