@@ -852,10 +852,9 @@ body.menu-open .mobile-menu-target-wrapper {
 /* line 2, ../sass/fields/_intro.scss */
 .node--view-mode-full .field--name-field-intro {
   font-size: 1.33594rem;
-  max-width: 768px;
   margin: 0 auto;
 }
-/* line 7, ../sass/fields/_intro.scss */
+/* line 6, ../sass/fields/_intro.scss */
 .node--view-mode-full .field--name-field-intro p {
   margin-bottom: 1rem;
 }
@@ -920,10 +919,9 @@ body.menu-open .mobile-menu-target-wrapper {
 
 /* line 1, ../sass/paragraphs/_text.scss */
 .paragraph--type--text {
-  max-width: 768px;
   margin: 0 auto 1rem;
 }
-/* line 9, ../sass/paragraphs/_text.scss */
+/* line 8, ../sass/paragraphs/_text.scss */
 .paragraph--type--text p + p, .paragraph--type--text p + ul, .paragraph--type--text p + ol,
 .paragraph--type--text ul + p,
 .paragraph--type--text ul + ul,
