@@ -34,6 +34,7 @@
     "drupal/paragraphs": "^1.12",
     "drupal/pathauto": "^1.8",
     "drupal/piwik": "^1.4",
+    "drupal/quick_node_clone": "^1.14",
     "drupal/rate": "^2.0@alpha",
     "drupal/search_api": "^1.19",
     "drupal/search_api_autocomplete": "^1.4",
