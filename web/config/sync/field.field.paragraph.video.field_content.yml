@@ -1,0 +1,32 @@
+uuid: 84fe4730-e55f-490b-b998-ad7574db2035
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.video
+  module:
+    - better_formats
+    - text
+third_party_settings:
+  better_formats:
+    allowed_formats_toggle: 1
+    allowed_formats:
+      html: html
+    default_order_toggle: 0
+    default_order_wrapper:
+      formats:
+        html:
+          weight: '0'
+id: paragraph.video.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: video
+label: Onderschrift
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

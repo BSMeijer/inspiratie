@@ -1,0 +1,28 @@
+uuid: 5560c0a4-7e60-4b3c-bae9-82ebe607152d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image
+    - media.type.image
+    - paragraphs.paragraphs_type.cta_item
+id: paragraph.cta_item.field_image
+field_name: field_image
+entity_type: paragraph
+bundle: cta_item
+label: Afbeelding
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: 8d6e0e07-69a7-4ff8-9771-7c80d35eeb2f
+langcode: nl
+status: true
+dependencies: {  }
+id: cta_item
+label: 'CtA Item'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

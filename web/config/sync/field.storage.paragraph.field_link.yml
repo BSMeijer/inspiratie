@@ -1,17 +1,16 @@
-uuid: 24e6093b-6387-4ade-bc40-a4ded29fddde
+uuid: 5d4bc1d9-a1b7-4853-8b3c-5502221f27da
 langcode: nl
 status: true
 dependencies:
   module:
-    - media
+    - link
     - paragraphs
-id: paragraph.field_video
-field_name: field_video
+id: paragraph.field_link
+field_name: field_link
 entity_type: paragraph
-type: entity_reference
-settings:
-  target_type: media
-module: core
+type: link
+settings: {  }
+module: link
 locked: false
 cardinality: 1
 translatable: true

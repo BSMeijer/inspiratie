@@ -1,8 +1,9 @@
-uuid: 00728e38-8f0d-42d3-b7ee-4dc5d16997ca
+uuid: ce35661d-a148-4af1-9c04-fbf0e116104b
 langcode: nl
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.interview.field_body
     - field.field.node.interview.field_image
     - field.field.node.interview.field_intro
@@ -30,15 +31,17 @@ third_party_settings:
         link_custom: ''
         classes:
           layout_class: {  }
+          ds_content: {  }
     regions:
       ds_content:
-        - node_title
-        - field_body
         - field_image
+        - node_title
+        - field_intro
+        - field_body
     fields:
       node_title:
         plugin_id: node_title
-        weight: 0
+        weight: 1
         label: hidden
         formatter: default
         settings:
@@ -46,13 +49,13 @@ third_party_settings:
           wrapper: h1
           class: ''
           link: false
-id: node.interview.default
+id: node.interview.full
 targetEntityType: node
 bundle: interview
-mode: default
+mode: full
 content:
   field_body:
-    weight: 1
+    weight: 3
     label: hidden
     settings:
       view_mode: default
@@ -62,28 +65,23 @@ content:
     region: ds_content
   field_image:
     type: entity_reference_entity_view
-    weight: 2
-    label: above
+    weight: 0
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: ds_content
   field_intro:
-    weight: 4
+    type: text_trimmed
+    weight: 2
+    region: ds_content
     label: above
-    settings: {  }
+    settings:
+      trim_length: 600
     third_party_settings: {  }
-    type: text_default
-    region: content
-  field_teaser:
-    weight: 3
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
 hidden:
+  field_teaser: true
   langcode: true
   links: true
   search_api_excerpt: true

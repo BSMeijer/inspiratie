@@ -1,0 +1,10 @@
+.field--name-field-call-to-action {
+  @media (min-width: $bp-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+
+    >.field__item {
+      width: 33.333%;
+    }
+  }
+}

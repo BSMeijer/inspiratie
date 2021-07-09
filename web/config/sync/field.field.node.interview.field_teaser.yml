@@ -1,0 +1,32 @@
+uuid: a779581b-8363-44a9-95c0-e4309b60d905
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.interview
+  module:
+    - better_formats
+    - text
+third_party_settings:
+  better_formats:
+    allowed_formats_toggle: 1
+    allowed_formats:
+      html: html
+    default_order_toggle: 0
+    default_order_wrapper:
+      formats:
+        html:
+          weight: '0'
+id: node.interview.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: interview
+label: Teaser
+description: 'De teasertekst wordt op overzichten getoond.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

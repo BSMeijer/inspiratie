@@ -1,0 +1,19 @@
+uuid: 2bf6632e-324d-4564-ae0d-6e08622659f8
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.call_to_action
+id: paragraph.call_to_action.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: call_to_action
+label: Titel
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -4,7 +4,8 @@ ft-default: default
 ft-show-colon: false
 ft-layout-builder: false
 classes:
-  region: {  }
+  region:
+    - biglink
   field: {  }
 use_field_names: true
 _core:

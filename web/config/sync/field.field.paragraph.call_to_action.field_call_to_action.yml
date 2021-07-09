@@ -1,0 +1,46 @@
+uuid: 48d33137-22cf-4e10-bd11-8377810f9d29
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_call_to_action
+    - paragraphs.paragraphs_type.call_to_action
+    - paragraphs.paragraphs_type.cta_item
+  module:
+    - entity_reference_revisions
+id: paragraph.call_to_action.field_call_to_action
+field_name: field_call_to_action
+entity_type: paragraph
+bundle: call_to_action
+label: 'Call to Action'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      cta_item: cta_item
+    target_bundles_drag_drop:
+      call_to_action:
+        weight: 8
+        enabled: false
+      cta_item:
+        enabled: true
+        weight: 7
+      image:
+        weight: 9
+        enabled: false
+      soundcloud:
+        weight: 10
+        enabled: false
+      text:
+        weight: 11
+        enabled: false
+      video:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

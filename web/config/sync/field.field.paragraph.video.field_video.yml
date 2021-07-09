@@ -1,39 +1,28 @@
-uuid: 5f8f1533-ac53-44a5-81a1-2260afcc86ea
+uuid: 9de98cd9-2129-40e7-96c8-32898e228fc8
 langcode: nl
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_video
+    - media.type.youtube_video
     - paragraphs.paragraphs_type.video
-  module:
-    - entity_reference_revisions
 id: paragraph.video.field_video
 field_name: field_video
 entity_type: paragraph
 bundle: video
 label: Video
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:paragraph'
+  handler: 'default:media'
   handler_settings:
-    negate: 0
     target_bundles:
-      video: video
-    target_bundles_drag_drop:
-      image:
-        weight: 6
-        enabled: false
-      soundcloud:
-        weight: 7
-        enabled: false
-      text:
-        weight: 8
-        enabled: false
-      video:
-        enabled: true
-        weight: 5
-field_type: entity_reference_revisions
+      youtube_video: youtube_video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

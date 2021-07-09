@@ -1,16 +1,16 @@
 .paragraph--type--video {
-  max-width: $bp-tablet;
   margin: 0 auto;
 
-  p {
-    margin-bottom: $spacing;
-  }
+  .field--name-field-media-oembed-video {
+    padding-top: 56.25%;
+    position: relative;
 
-  .youtube-container--responsive {
-    margin: 0 (-$spacing) $spacing;
-
-    @media (min-width: $bp-desktop) {
-      margin: 0 (-$spacing * 3) $spacing * 2;
+    iframe {
+      left: 0;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 100%;
     }
   }
 }

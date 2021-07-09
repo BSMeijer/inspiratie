@@ -1,0 +1,23 @@
+uuid: db39fec2-aa41-4a7b-89fa-c334230c9c48
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.cta_item
+  module:
+    - link
+id: paragraph.cta_item.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: cta_item
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

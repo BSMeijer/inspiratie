@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.storage.node.field_body
     - node.type.interview
+    - paragraphs.paragraphs_type.call_to_action
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.soundcloud
     - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
 id: node.interview.field_body
@@ -28,7 +30,15 @@ settings:
       image: image
       text: text
       soundcloud: soundcloud
+      call_to_action: call_to_action
+      video: video
     target_bundles_drag_drop:
+      call_to_action:
+        enabled: true
+        weight: 8
+      cta_item:
+        weight: 7
+        enabled: false
       image:
         enabled: true
         weight: 3
@@ -38,4 +48,7 @@ settings:
       text:
         enabled: true
         weight: 4
+      video:
+        enabled: true
+        weight: 12
 field_type: entity_reference_revisions

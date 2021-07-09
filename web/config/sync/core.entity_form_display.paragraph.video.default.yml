@@ -3,25 +3,30 @@ langcode: nl
 status: true
 dependencies:
   config:
+    - field.field.paragraph.video.field_content
     - field.field.paragraph.video.field_video
     - paragraphs.paragraphs_type.video
   module:
-    - paragraphs
+    - media_library
+    - text
 id: paragraph.video.default
 targetEntityType: paragraph
 bundle: video
 mode: default
 content:
+  field_content:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   field_video:
-    type: entity_reference_paragraphs
+    type: media_library_widget
     weight: 0
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
+      media_types: {  }
     third_party_settings: {  }
     region: content
 hidden:

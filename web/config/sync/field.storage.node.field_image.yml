@@ -1,13 +1,13 @@
-uuid: 24e6093b-6387-4ade-bc40-a4ded29fddde
+uuid: 87feef18-20f2-4c0a-a1be-3a3b3e05d9e0
 langcode: nl
 status: true
 dependencies:
   module:
     - media
-    - paragraphs
-id: paragraph.field_video
-field_name: field_video
-entity_type: paragraph
+    - node
+id: node.field_image
+field_name: field_image
+entity_type: node
 type: entity_reference
 settings:
   target_type: media
