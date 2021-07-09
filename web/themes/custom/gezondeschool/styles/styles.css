@@ -880,6 +880,11 @@ body.menu-open .mobile-menu-target-wrapper {
   background-color: #f2d9e7;
 }
 
+/* line 2, ../sass/fields/_body.scss */
+.field--name-field-body > .field__item {
+  margin-bottom: 2rem;
+}
+
 /* line 2, ../sass/facets/_facets.scss */
 .facet-item a {
   display: block;
@@ -952,13 +957,7 @@ body.menu-open .mobile-menu-target-wrapper {
 
 /* line 1, ../sass/paragraphs/_image.scss */
 .paragraph--type--image {
-  margin: 0 -1rem 1rem;
-}
-@media (min-width: 1024px) {
-  /* line 1, ../sass/paragraphs/_image.scss */
-  .paragraph--type--image {
-    margin: 0 -3rem 2rem;
-  }
+  margin: 0 -1rem;
 }
 
 @media (min-width: 768px) {
