@@ -888,6 +888,8 @@ body.menu-open .mobile-menu-target-wrapper {
 
 /* line 1, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame {
+  font-family: 'Bariol Regular Italic';
+  font-size: 1.24688rem;
   width: 100%;
   padding: 1rem;
 }
@@ -899,50 +901,50 @@ body.menu-open .mobile-menu-target-wrapper {
     width: 50%;
   }
 }
-/* line 11, ../sass/paragraphs/_frame.scss */
+/* line 13, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame.bg-blue {
   background-color: #216c9c;
   color: #fff;
 }
-/* line 15, ../sass/paragraphs/_frame.scss */
+/* line 17, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame.bg-blue a {
   color: #f9cb74;
 }
-/* line 19, ../sass/paragraphs/_frame.scss */
+/* line 21, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame.bg-blue h2 {
   color: #f9cb74;
   font-family: 'Bariol Regular Italic';
   margin-bottom: 1rem;
 }
-/* line 26, ../sass/paragraphs/_frame.scss */
+/* line 28, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame.bg-gold {
   background-color: #f9cb74;
   color: #216c9c;
 }
-/* line 30, ../sass/paragraphs/_frame.scss */
+/* line 32, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame.bg-gold a {
   color: #216c9c;
   text-decoration: underline;
 }
-/* line 34, ../sass/paragraphs/_frame.scss */
+/* line 36, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame.bg-gold a:hover {
   text-decoration: none;
 }
-/* line 39, ../sass/paragraphs/_frame.scss */
+/* line 41, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame.bg-gold h2 {
   color: #216c9c;
   font-family: 'Bariol Regular Italic';
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
-  /* line 46, ../sass/paragraphs/_frame.scss */
+  /* line 48, ../sass/paragraphs/_frame.scss */
   .paragraph--type--frame.frame-align-left {
     float: left;
     margin-right: 2rem;
   }
 }
 @media (min-width: 768px) {
-  /* line 53, ../sass/paragraphs/_frame.scss */
+  /* line 55, ../sass/paragraphs/_frame.scss */
   .paragraph--type--frame.frame-align-right {
     float: right;
     margin-left: 2rem;
