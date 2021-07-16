@@ -17,7 +17,8 @@
 # custom module, theme, etc., are not ignored unless you purposely do so.
 /vendor
 
-/web/themes/custom/*/.sass-cache
+# Ignore sass-cache files.
+*.sass-cache*
 
 # Ignore configuration files that may contain sensitive information.
 /web/sites/*/settings*.php
