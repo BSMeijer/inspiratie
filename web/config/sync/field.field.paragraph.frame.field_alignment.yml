@@ -1,0 +1,23 @@
+uuid: f1a4ed05-de0c-4a47-b8ad-9ff795e912f4
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_alignment
+    - paragraphs.paragraphs_type.frame
+id: paragraph.frame.field_alignment
+field_name: field_alignment
+entity_type: paragraph
+bundle: frame
+label: Stijl
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:classy_paragraphs_style'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

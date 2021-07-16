@@ -1,7 +1,16 @@
 .node--view-mode-full {
   .field--name-field-intro {
-    font-size: $base-font-size * 1.125;
-    margin: 0 auto;
+    background-color: $aqua-haze;
+    color: $matisse;
+    font-size: $base-font-size * 1.05;
+    margin: 0 auto $spacing * 2;
+    max-width: $content-width;
+    padding: $spacing * 2 $spacing $spacing * 1;
+
+    @media (min-width: $bp-tablet) {
+      padding: $spacing * 3 $spacing * 2 $spacing * 2;
+      margin: 0 auto $spacing * 3;
+    }
 
     p {
       margin-bottom: $spacing;

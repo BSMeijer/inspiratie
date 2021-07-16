@@ -1,7 +1,10 @@
 $base-font-family: "ROSans";
+$header-font-family: "Bariol Regular";
 
 $base-font-size: 1.1875rem;
 $base-line-height: 1.5;
+
+$content-width: 850px;
 
 $base-font-weight: 400;
 $header-font-weight: 400;
@@ -10,13 +13,19 @@ $spacing: 1rem;
 
 $bp-tablet: 768px;
 $bp-desktop: 1024px;
-$bp-jumbo: 1400px;
+$bp-jumbo: 1200px;
 
 $base-color: #212529;
-$color-primary: #a90061;
-$color-secondary: #f2d9e7;
+$color-primary: #931058;
+$color-secondary: #f7eff2;
 
 $color-alto: #aaa;
 
 $white: #fff;
 $blue: #65bbe9;
+
+$aqua-haze: #e0edef;
+$matisse: #216c9c;
+$porcelain: #f0f1f2;
+
+$goldenrod: #f9cb74;

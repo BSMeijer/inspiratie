@@ -1,0 +1,59 @@
+.paragraph--type--frame {
+  width: 100%;
+  padding: $spacing;
+
+  @media (min-width: $bp-tablet) {
+    margin-bottom: $spacing;
+    padding: $spacing * 2;
+    width: 50%;
+  }
+
+  &.bg-blue {
+    background-color: $matisse;
+    color: $white;
+
+    a {
+      color: $goldenrod;
+    }
+
+    h2 {
+      color: $goldenrod;
+      font-family: 'Bariol Regular Italic';
+      margin-bottom: $spacing;
+    }
+  }
+
+  &.bg-gold {
+    background-color: $goldenrod;
+    color: $matisse;
+
+    a {
+      color: $matisse;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    h2 {
+      color: $matisse;
+      font-family: 'Bariol Regular Italic';
+      margin-bottom: $spacing;
+    }
+  }
+
+  &.frame-align-left {
+    @media (min-width: $bp-tablet) {
+      float: left;
+      margin-right: $spacing * 2;
+    }
+  }
+
+  &.frame-align-right {
+    @media (min-width: $bp-tablet) {
+      float: right;
+      margin-left: $spacing * 2;
+    }
+  }
+}

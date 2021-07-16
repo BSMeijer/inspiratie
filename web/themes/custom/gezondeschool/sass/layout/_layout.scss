@@ -2,10 +2,14 @@
 .region-footer {
   margin: 0 auto;
   max-width: $bp-jumbo;
-  padding: $spacing;
+  padding: 0;
+
+  @media (min-width: $bp-tablet) {
+    padding: 0 $spacing
+  }
 
   @media (min-width: $bp-desktop) {
-    padding: $spacing * 2;
+    padding: 0 $spacing * 2;
   }
 }
 

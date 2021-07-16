@@ -1,5 +1,17 @@
 .paragraph--type--text {
-  margin: 0 auto $spacing;
+  margin: 0 auto $spacing * 2;
+  max-width: $content-width;
+  padding: 0 $spacing;
+
+  @media (min-width: $bp-tablet) {
+    padding: 0 $spacing * 2;
+  }
+
+  h2,
+  h3,
+  h4 {
+    color: $matisse;
+  }
 
   p,
   ul,

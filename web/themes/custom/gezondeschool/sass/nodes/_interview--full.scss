@@ -1,0 +1,111 @@
+.node--type-interview.node--view-mode-full {
+  background: $white;
+
+  .interview-header {
+    background-position: center;
+    background-size: cover;
+    padding: $spacing;
+    position: relative;
+
+    @media (min-width: $bp-tablet) {
+      @include break-out;
+      min-height: 700px;
+    }
+
+    .wrapper {
+      padding: $spacing * 3 0;
+
+      @media (min-width: $bp-tablet) {
+        left: 50%;
+        max-width: 1200px;
+        position: absolute;
+        top: 40%;
+        padding: 0 $spacing;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+
+      @media (min-width: $bp-tablet) {
+        padding: 0 $spacing * 2;
+      }
+
+      h1 {
+        color: $white;
+        font-family: 'Bariol Regular Italic';
+
+        @media (min-width: $bp-tablet) {
+          width: 66%;
+        }
+
+        @media (min-width: $bp-desktop) {
+          width: 40%;
+        }
+      }
+
+      .field--name-field-schooltype {
+        color: $goldenrod;
+        display: flex;
+        font-family: 'Bariol Regular Italic';
+        font-size: $base-font-size * 1.05;
+
+        a {
+          color: $goldenrod;
+        }
+
+        .field__item:not(:first-child) {
+          &::before {
+            content: ' / ';
+            display: inline-block;
+            padding: 0 $spacing * .25;
+          }
+        }
+      }
+    }
+  }
+
+  .interview-content {
+    background-color: $white;
+    position: relative;
+
+    @media (min-width: $bp-tablet) {
+      margin-top: -7 * $spacing;
+
+      .field--name-field-intro {
+        padding-top: $spacing * 6
+      }
+    }
+  }
+
+  .interview-details {
+    align-items: center;
+    background-color: $goldenrod;
+    color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    padding: $spacing;
+
+    @media (min-width: $bp-tablet) {
+      flex-direction: row;
+      min-height: $spacing * 5;
+      min-width: 66.66%;
+      font-size: $base-font-size * 1.125;
+      padding: 0 $spacing * 2;
+      position: absolute;
+      transform: translateY(-50%);
+    }
+
+    .field__item {
+      @media (min-width: $bp-tablet) {
+        &:not(:last-child) {
+          &::after {
+            display: inline-block;
+            content: ', ';
+            padding-right: $spacing * .25;
+          }
+        }
+      }
+    }
+  }
+}

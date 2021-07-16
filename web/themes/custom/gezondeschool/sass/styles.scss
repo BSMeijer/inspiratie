@@ -22,14 +22,7 @@
 @import "navigation/main";
 @import "navigation/mobile";
 
-@import 'nodes/story--compact';
-@import 'nodes/story--full';
-@import 'nodes/story--highlighted';
-@import 'nodes/story--teaser';
-@import 'nodes/news--full';
-@import 'nodes/news--list';
-@import 'nodes/news--teaser';
-@import 'nodes/landingpage-full';
+@import 'nodes/interview--full';
 
 @import 'fields/intro';
 @import 'fields/read-more';
@@ -41,3 +34,4 @@
 @import 'paragraphs/video';
 @import 'paragraphs/image';
 @import 'paragraphs/cta';
+@import 'paragraphs/frame';

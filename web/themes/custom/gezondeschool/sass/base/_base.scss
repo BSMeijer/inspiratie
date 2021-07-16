@@ -14,6 +14,7 @@ html {
 }
 
 body {
+  background-color: $porcelain;
   color: $base-color;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -24,25 +25,30 @@ h2,
 h3,
 h4,
 h5 {
+  font-family: $header-font-family;
   font-weight: $header-font-weight;
   line-height: 1.2;
-  margin: 0 0 $spacing;
+  margin: 0 0 $spacing * .25;
 }
 
 h1 {
   font-size: $base-font-size * 2;
+
+  @media (min-width: $bp-tablet) {
+    font-size: 3rem;
+  }
 }
 
 h2 {
-  font-size: $base-font-size * 1.5;
-}
-
-h3 {
   font-size: $base-font-size * 1.25;
 }
 
+h3 {
+  font-size: $base-font-size * 1.125;
+}
+
 h4 {
-  font-size: $base-font-size * 1.15;
+  font-size: $base-font-size * 1.05;
 }
 
 a {
@@ -56,8 +62,38 @@ a {
   }
 }
 
+p {
+  margin: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.paragraph--type--text,
+.paragraph--type--frame {
+
+  ul,
+  ol {
+    margin: 0;
+
+    li {
+      &+li {
+        margin-top: $spacing * .5;
+      }
+    }
+  }
+
+  p,
+  ul,
+  ol {
+
+    &+p,
+    &+ul,
+    &+ol {
+      margin-top: $spacing;
+    }
+  }
 }

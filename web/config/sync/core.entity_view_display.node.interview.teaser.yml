@@ -7,6 +7,9 @@ dependencies:
     - field.field.node.interview.field_body
     - field.field.node.interview.field_image
     - field.field.node.interview.field_intro
+    - field.field.node.interview.field_location
+    - field.field.node.interview.field_name
+    - field.field.node.interview.field_school
     - field.field.node.interview.field_schooltype
     - field.field.node.interview.field_teaser
     - field.field.node.interview.field_thema
@@ -95,6 +98,9 @@ content:
 hidden:
   field_body: true
   field_intro: true
+  field_location: true
+  field_name: true
+  field_school: true
   field_thema: true
   field_topic: true
   langcode: true

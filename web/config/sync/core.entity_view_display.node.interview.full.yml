@@ -7,6 +7,9 @@ dependencies:
     - field.field.node.interview.field_body
     - field.field.node.interview.field_image
     - field.field.node.interview.field_intro
+    - field.field.node.interview.field_location
+    - field.field.node.interview.field_name
+    - field.field.node.interview.field_school
     - field.field.node.interview.field_schooltype
     - field.field.node.interview.field_teaser
     - field.field.node.interview.field_thema
@@ -15,6 +18,7 @@ dependencies:
   module:
     - ds
     - entity_reference_revisions
+    - field_group
     - text
     - user
 third_party_settings:
@@ -37,17 +41,21 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
-        - field_image
-        - node_title
+        - group_header
+        - group_content
+        - group_interview_details
+        - group_wrapper
         - field_intro
         - field_body
         - field_schooltype
-        - field_thema
-        - field_topic
+        - node_title
+        - field_name
+        - field_school
+        - field_location
     fields:
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 8
         label: hidden
         formatter: default
         settings:
@@ -55,13 +63,87 @@ third_party_settings:
           wrapper: h1
           class: ''
           link: false
+  field_group:
+    group_header:
+      children:
+        - group_wrapper
+      parent_name: ''
+      weight: 0
+      format_type: background_image
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: interview-header
+        image: field_image
+        image_style: ''
+        hide_if_missing: false
+      label: Header
+    group_wrapper:
+      children:
+        - field_schooltype
+        - node_title
+      parent_name: group_header
+      weight: 6
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Wrapper
+    group_content:
+      children:
+        - group_interview_details
+        - field_intro
+        - field_body
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: interview-content
+      label: Content
+    group_interview_details:
+      children:
+        - field_name
+        - field_school
+        - field_location
+      parent_name: group_content
+      weight: 5
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: interview-details
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Interview details'
 id: node.interview.full
 targetEntityType: node
 bundle: interview
 mode: full
 content:
   field_body:
-    weight: 3
+    weight: 7
     label: hidden
     settings:
       view_mode: default
@@ -69,49 +151,50 @@ content:
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
     region: ds_content
-  field_image:
-    type: entity_reference_entity_view
-    weight: 0
+  field_intro:
+    type: text_default
+    weight: 6
+    region: ds_content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_location:
+    type: string
+    weight: 13
+    region: ds_content
     label: hidden
     settings:
-      view_mode: default
-      link: false
+      link_to_entity: false
     third_party_settings: {  }
+  field_name:
+    type: string
+    weight: 11
     region: ds_content
-  field_intro:
-    type: text_trimmed
-    weight: 2
-    region: ds_content
-    label: above
+    label: hidden
     settings:
-      trim_length: 600
+      link_to_entity: false
+    third_party_settings: {  }
+  field_school:
+    type: string
+    weight: 12
+    region: ds_content
+    label: hidden
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
   field_schooltype:
     type: entity_reference_label
-    weight: 4
+    weight: 7
     region: ds_content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  field_thema:
-    type: entity_reference_label
-    weight: 5
-    region: ds_content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  field_topic:
-    type: entity_reference_label
-    weight: 6
-    region: ds_content
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
 hidden:
+  field_image: true
   field_teaser: true
+  field_thema: true
+  field_topic: true
   langcode: true
   links: true
   search_api_excerpt: true

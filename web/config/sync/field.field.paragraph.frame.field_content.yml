@@ -1,0 +1,32 @@
+uuid: e17566cb-34d2-49ad-aa53-a98ddc01e077
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.frame
+  module:
+    - better_formats
+    - text
+third_party_settings:
+  better_formats:
+    allowed_formats_toggle: 1
+    allowed_formats:
+      html: html
+    default_order_toggle: 0
+    default_order_wrapper:
+      formats:
+        html:
+          weight: '0'
+id: paragraph.frame.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: frame
+label: Inhoud
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

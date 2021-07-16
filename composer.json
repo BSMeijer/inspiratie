@@ -20,6 +20,7 @@
     "drupal/better_exposed_filters": "^5.0@beta",
     "drupal/better_formats": "1.x-dev",
     "drupal/better_social_sharing_buttons": "^3.2",
+    "drupal/classy_paragraphs": "^1.0@beta",
     "drupal/core-composer-scaffold": "^8.8",
     "drupal/core-project-message": "^8.8",
     "drupal/core-recommended": "^8.8",

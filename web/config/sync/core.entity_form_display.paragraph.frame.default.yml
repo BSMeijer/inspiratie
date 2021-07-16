@@ -1,0 +1,41 @@
+uuid: 1202db62-f3ec-4a8f-8062-201b305f7a5d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.frame.field_alignment
+    - field.field.paragraph.frame.field_content
+    - field.field.paragraph.frame.field_title
+    - paragraphs.paragraphs_type.frame
+  module:
+    - text
+id: paragraph.frame.default
+targetEntityType: paragraph
+bundle: frame
+mode: default
+content:
+  field_alignment:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_content:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,19 @@
+uuid: 76cd8e60-3ea3-43c3-8e1b-9665ce3fa1a7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_school
+    - node.type.interview
+id: node.interview.field_school
+field_name: field_school
+entity_type: node
+bundle: interview
+label: School
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

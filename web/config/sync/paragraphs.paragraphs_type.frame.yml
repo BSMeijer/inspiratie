@@ -1,0 +1,10 @@
+uuid: fa7df0e7-8341-4625-8cae-e2c8782acd13
+langcode: nl
+status: true
+dependencies: {  }
+id: frame
+label: Kader
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

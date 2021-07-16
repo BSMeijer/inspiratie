@@ -1,0 +1,19 @@
+uuid: 82ab1293-4776-41d3-a942-d5ba66bec4b8
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.interview
+id: node.interview.field_location
+field_name: field_location
+entity_type: node
+bundle: interview
+label: Locatie
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
