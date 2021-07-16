@@ -8,7 +8,7 @@
   margin: 0 auto;
   padding: 0 $spacing;
   position: relative;
-  max-width: $bp-jumbo;
+  max-width: $wrap-width;
   z-index: 2;
 
   @media (min-width: $bp-tablet) {

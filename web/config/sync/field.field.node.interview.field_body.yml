@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_body
     - node.type.interview
     - paragraphs.paragraphs_type.call_to_action
+    - paragraphs.paragraphs_type.clearfix
     - paragraphs.paragraphs_type.frame
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.soundcloud
@@ -31,13 +32,17 @@ settings:
       image: image
       text: text
       soundcloud: soundcloud
-      frame: frame
       call_to_action: call_to_action
+      frame: frame
+      clearfix: clearfix
       video: video
     target_bundles_drag_drop:
       call_to_action:
         enabled: true
         weight: 8
+      clearfix:
+        enabled: true
+        weight: 9
       cta_item:
         weight: 7
         enabled: false

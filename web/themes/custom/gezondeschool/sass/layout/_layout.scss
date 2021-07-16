@@ -1,7 +1,7 @@
 .region-content,
 .region-footer {
   margin: 0 auto;
-  max-width: $bp-jumbo;
+  max-width: $wrap-width;
   padding: 0;
 
   @media (min-width: $bp-tablet) {

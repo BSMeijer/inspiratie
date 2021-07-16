@@ -5,24 +5,68 @@ dependencies:
   config:
     - field.field.paragraph.frame.field_alignment
     - field.field.paragraph.frame.field_content
+    - field.field.paragraph.frame.field_image
     - field.field.paragraph.frame.field_title
     - paragraphs.paragraphs_type.frame
   module:
+    - field_group
     - text
+third_party_settings:
+  field_group:
+    group_image:
+      children:
+        - field_alignment
+      parent_name: ''
+      weight: 0
+      format_type: background_image
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        image: field_image
+        image_style: ''
+        hide_if_missing: true
+      label: Afbeelding
+    group_content:
+      children:
+        - field_title
+        - field_content
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: frame-content
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Content
 id: paragraph.frame.default
 targetEntityType: paragraph
 bundle: frame
 mode: default
 content:
+  field_alignment:
+    type: entity_reference_entity_id
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_content:
-    weight: 1
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_title:
-    weight: 0
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false
@@ -30,5 +74,5 @@ content:
     type: string
     region: content
 hidden:
-  field_alignment: true
+  field_image: true
   search_api_excerpt: true

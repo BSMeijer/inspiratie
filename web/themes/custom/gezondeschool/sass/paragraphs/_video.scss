@@ -1,7 +1,25 @@
 .paragraph--type--video {
+  background-color: $matisse;
+  font-family: 'Bariol Regular Italic';
+  font-size: $base-font-size * 1.05;
   margin: 0 auto;
 
+  @media (min-width: $bp-tablet) {
+    padding: $spacing;
+  }
+
+  @media (min-width: $bp-desktop) {
+    float: left;
+    margin: 0 $spacing * 2 $spacing * 2 0;
+    width: 66.666%;
+  }
+
+  @media (min-width: $bp-jumbo) {
+    margin-left: -16.66%;
+  }
+
   .field--name-field-media-oembed-video {
+    margin-bottom: $spacing;
     padding-top: 56.25%;
     position: relative;
 
@@ -11,6 +29,16 @@
       position: absolute;
       top: 0;
       width: 100%;
+    }
+  }
+
+  .field--name-field-content {
+    color: $white;
+    text-align: center;
+    padding: 0 $spacing $spacing;
+
+    @media (min-width: $bp-tablet) {
+      padding: 0 $spacing;
     }
   }
 }
