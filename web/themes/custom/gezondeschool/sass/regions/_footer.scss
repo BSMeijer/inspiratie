@@ -4,8 +4,8 @@
   font-family: 'Bariol Regular';
   padding: $spacing * 2 $spacing;
 
-
   @media (min-width: $bp-tablet) {
+    font-size: $base-font-size * 1.025;
     padding: $spacing * 2;
   }
 
@@ -38,8 +38,6 @@
       border-bottom-color: $white;
     }
   }
-
-
 }
 
 .disclaimer {

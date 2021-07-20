@@ -351,6 +351,7 @@ body.path-zoeken .region-content {
 @media (min-width: 768px) {
   /* line 1, ../sass/regions/_footer.scss */
   .region-footer {
+    font-size: 1.21719rem;
     padding: 2rem;
   }
 }
@@ -389,11 +390,11 @@ body.path-zoeken .region-content {
   border-bottom-color: #fff;
 }
 
-/* line 45, ../sass/regions/_footer.scss */
+/* line 43, ../sass/regions/_footer.scss */
 .disclaimer {
   font-family: 'Bariol Regular Italic';
 }
-/* line 48, ../sass/regions/_footer.scss */
+/* line 46, ../sass/regions/_footer.scss */
 .disclaimer a {
   color: #fff;
 }
