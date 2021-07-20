@@ -992,7 +992,28 @@ body.menu-open .mobile-menu-target-wrapper {
 
 /* line 17, ../sass/paragraphs/_cta.scss */
 .paragraph--type--cta-item {
+  padding-bottom: 3rem;
   position: relative;
+}
+/* line 22, ../sass/paragraphs/_cta.scss */
+.paragraph--type--cta-item .field--name-field-link a {
+  background-color: #f9cb74;
+  border: 0;
+  border-radius: 0.5rem;
+  bottom: 0;
+  color: #212529;
+  display: inline-block;
+  font-family: 'Bariol Regular Italic';
+  font-size: 1.21719rem;
+  left: 50%;
+  padding: 0.25rem 1rem;
+  position: absolute;
+  text-decoration: none;
+  transform: translate(-50%, 50%);
+}
+/* line 37, ../sass/paragraphs/_cta.scss */
+.paragraph--type--cta-item .field--name-field-link a:hover {
+  background-color: #f7b943;
 }
 
 /* line 1, ../sass/paragraphs/_frame.scss */
