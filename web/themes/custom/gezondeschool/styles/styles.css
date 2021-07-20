@@ -290,7 +290,7 @@ body.path-zoeken .region-content {
 
 /* line 28, ../sass/layout/_layout.scss */
 .page-footer {
-  background-color: #931058;
+  background-color: #216c9c;
   color: #fff;
 }
 
@@ -341,40 +341,60 @@ body.path-zoeken .region-content {
   background-image: url(../img/bars.svg);
 }
 
-/* line 2, ../sass/regions/_footer.scss */
-.region-footer a {
-  color: #fff;
+/* line 1, ../sass/regions/_footer.scss */
+.region-footer {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Bariol Regular';
+  padding: 2rem 1rem;
 }
-/* line 5, ../sass/regions/_footer.scss */
-.region-footer a:hover {
-  border-bottom-color: #fff;
+@media (min-width: 768px) {
+  /* line 1, ../sass/regions/_footer.scss */
+  .region-footer {
+    padding: 2rem;
+  }
 }
 /* line 12, ../sass/regions/_footer.scss */
-.region-footer .menu--footer ul.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.region-footer nav {
+  margin-bottom: 2rem;
+  padding-right: 1rem;
 }
 @media (min-width: 768px) {
   /* line 12, ../sass/regions/_footer.scss */
-  .region-footer .menu--footer ul.menu {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+  .region-footer nav {
+    width: 50%;
   }
-  /* line 22, ../sass/regions/_footer.scss */
-  .region-footer .menu--footer ul.menu li {
-    padding: 0 0.5rem;
+}
+@media (min-width: 1024px) {
+  /* line 12, ../sass/regions/_footer.scss */
+  .region-footer nav {
+    width: 25%;
   }
+}
+/* line 25, ../sass/regions/_footer.scss */
+.region-footer ul.menu {
+  margin: 0;
+}
+/* line 29, ../sass/regions/_footer.scss */
+.region-footer h2 {
+  color: #f9cb74;
+  font-family: 'Bariol Regular Italic';
+}
+/* line 34, ../sass/regions/_footer.scss */
+.region-footer a {
+  color: #fff;
+}
+/* line 37, ../sass/regions/_footer.scss */
+.region-footer a:hover {
+  border-bottom-color: #fff;
 }
 
-/* line 30, ../sass/regions/_footer.scss */
+/* line 45, ../sass/regions/_footer.scss */
 .disclaimer {
-  font-size: 16px;
+  font-family: 'Bariol Regular Italic';
 }
-/* line 33, ../sass/regions/_footer.scss */
+/* line 48, ../sass/regions/_footer.scss */
 .disclaimer a {
-  font-weight: bold;
   color: #fff;
 }
 
@@ -602,7 +622,7 @@ body.menu-open .mobile-menu-target-wrapper {
   content: '';
   height: 100%;
   width: 100%;
-  background: linear-gradient(45deg, rgba(147, 16, 88, 0.6) 0%, rgba(33, 108, 156, 0.333) 100%);
+  background: linear-gradient(45deg, rgba(33, 108, 156, 0.6) 0%, rgba(147, 16, 88, 0.333) 100%);
   position: absolute;
   left: 0;
   top: 0;

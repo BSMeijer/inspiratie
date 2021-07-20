@@ -1,0 +1,25 @@
+uuid: 9667e4a3-b836-452b-a4c0-7d335e650e11
+langcode: nl
+status: true
+dependencies:
+  config:
+    - system.menu.andere-links
+  module:
+    - system
+  theme:
+    - gezondeschool
+id: anderelinks
+theme: gezondeschool
+region: footer
+weight: -4
+provider: null
+plugin: 'system_menu_block:andere-links'
+settings:
+  id: 'system_menu_block:andere-links'
+  label: 'Andere links'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

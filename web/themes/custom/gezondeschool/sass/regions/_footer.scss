@@ -1,4 +1,36 @@
 .region-footer {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Bariol Regular';
+  padding: $spacing * 2 $spacing;
+
+
+  @media (min-width: $bp-tablet) {
+    padding: $spacing * 2;
+  }
+
+  nav {
+    margin-bottom: $spacing * 2;
+    padding-right: $spacing;
+
+    @media (min-width: $bp-tablet) {
+      width: 50%;
+    }
+
+    @media (min-width: $bp-desktop) {
+      width: 25%;
+    }
+  }
+
+  ul.menu {
+    margin: 0;
+  }
+
+  h2 {
+    color: $goldenrod;
+    font-family: 'Bariol Regular Italic';
+  }
+
   a {
     color: $white;
 
@@ -7,31 +39,13 @@
     }
   }
 
-  .menu--footer {
 
-    ul.menu {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-
-      @media (min-width: $bp-tablet) {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-
-        li {
-          padding: 0 $spacing / 2;
-        }
-      }
-    }
-  }
 }
 
 .disclaimer {
-  font-size: 16px;
+  font-family: 'Bariol Regular Italic';
 
   a {
-    font-weight: bold;
     color: $white;
   }
 }

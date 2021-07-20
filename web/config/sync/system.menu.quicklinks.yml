@@ -1,0 +1,8 @@
+uuid: 89803cf8-b0e3-4a34-9481-f9387f7d86c6
+langcode: nl
+status: true
+dependencies: {  }
+id: quicklinks
+label: 'Snel naar'
+description: ''
+locked: false

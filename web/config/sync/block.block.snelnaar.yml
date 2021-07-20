@@ -1,0 +1,25 @@
+uuid: 8eeb8fb1-c67f-4073-b6f9-6a7eb03bb834
+langcode: nl
+status: true
+dependencies:
+  config:
+    - system.menu.quicklinks
+  module:
+    - system
+  theme:
+    - gezondeschool
+id: snelnaar
+theme: gezondeschool
+region: footer
+weight: -5
+provider: null
+plugin: 'system_menu_block:quicklinks'
+settings:
+  id: 'system_menu_block:quicklinks'
+  label: 'Snel naar'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

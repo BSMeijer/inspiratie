@@ -1,0 +1,25 @@
+uuid: 72a0de4b-cb8f-4b4b-8dd5-133023bd85b4
+langcode: nl
+status: true
+dependencies:
+  config:
+    - system.menu.contact
+  module:
+    - system
+  theme:
+    - gezondeschool
+id: contact
+theme: gezondeschool
+region: footer
+weight: -3
+provider: null
+plugin: 'system_menu_block:contact'
+settings:
+  id: 'system_menu_block:contact'
+  label: Contact
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
