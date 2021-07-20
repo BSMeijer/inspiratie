@@ -215,14 +215,20 @@ img {
 /* line 5, ../sass/base/_carousel.scss */
 .slick-slide {
   height: inherit !important;
-  padding: 0 0.5rem;
+  padding: 0 1.5rem;
 }
-/* line 9, ../sass/base/_carousel.scss */
+@media (min-width: 768px) {
+  /* line 5, ../sass/base/_carousel.scss */
+  .slick-slide {
+    padding: 0 0.5rem;
+  }
+}
+/* line 13, ../sass/base/_carousel.scss */
 .slick-slide > div {
   height: 100%;
 }
 
-/* line 14, ../sass/base/_carousel.scss */
+/* line 18, ../sass/base/_carousel.scss */
 .slick-arrow {
   appearance: none;
   background: transparent;
@@ -234,7 +240,7 @@ img {
   z-index: 10;
 }
 
-/* line 25, ../sass/base/_carousel.scss */
+/* line 29, ../sass/base/_carousel.scss */
 .slick-next {
   right: 0;
 }
@@ -718,20 +724,25 @@ body.menu-open .mobile-menu-target-wrapper {
   background: #fff;
   cursor: pointer;
   position: relative;
+  transition: background-color .3s ease-in-out;
 }
-/* line 6, ../sass/nodes/_interview--teaser.scss */
+/* line 7, ../sass/nodes/_interview--teaser.scss */
+.node--type-interview.node--view-mode-teaser:hover {
+  background-color: #e0edef;
+}
+/* line 11, ../sass/nodes/_interview--teaser.scss */
 .node--type-interview.node--view-mode-teaser .interview-teaser-content {
   padding: 1rem 1rem 3rem;
 }
-/* line 9, ../sass/nodes/_interview--teaser.scss */
+/* line 14, ../sass/nodes/_interview--teaser.scss */
 .node--type-interview.node--view-mode-teaser .interview-teaser-content h3 {
   margin-bottom: 0.5rem;
 }
-/* line 12, ../sass/nodes/_interview--teaser.scss */
+/* line 17, ../sass/nodes/_interview--teaser.scss */
 .node--type-interview.node--view-mode-teaser .interview-teaser-content h3 a {
   color: #216c9c;
 }
-/* line 18, ../sass/nodes/_interview--teaser.scss */
+/* line 23, ../sass/nodes/_interview--teaser.scss */
 .node--type-interview.node--view-mode-teaser .field--name-node-link {
   position: absolute;
   right: 1rem;

@@ -2,6 +2,11 @@
   background: $white;
   cursor: pointer;
   position: relative;
+  transition: background-color .3s ease-in-out;
+
+  &:hover {
+    background-color: $aqua-haze;
+  }
 
   .interview-teaser-content {
     padding: $spacing $spacing $spacing * 3;
