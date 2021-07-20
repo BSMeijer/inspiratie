@@ -31,9 +31,9 @@
       @media (min-width: $bp-tablet) {
         left: 50%;
         max-width: 1200px;
+        padding: 0 $spacing;
         position: absolute;
         top: 40%;
-        padding: 0 $spacing;
         transform: translate(-50%, -50%);
         width: 100%;
       }
@@ -96,14 +96,14 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    text-transform: uppercase;
     padding: $spacing;
+    text-transform: uppercase;
 
     @media (min-width: $bp-tablet) {
       flex-direction: row;
+      font-size: $base-font-size * 1.125;
       min-height: $spacing * 5;
       min-width: 66.66%;
-      font-size: $base-font-size * 1.125;
       padding: 0 $spacing * 2;
       position: absolute;
       transform: translateY(-50%);

@@ -117,77 +117,84 @@ h2,
 h3,
 h4,
 h5 {
+  color: #216c9c;
   font-family: "Bariol Regular";
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 0.25rem;
 }
 
-/* line 34, ../sass/base/_base.scss */
+/* line 35, ../sass/base/_base.scss */
 h1 {
+  font-family: 'Bariol Regular Italic';
   font-size: 2.375rem;
 }
 @media (min-width: 768px) {
-  /* line 34, ../sass/base/_base.scss */
+  /* line 35, ../sass/base/_base.scss */
   h1 {
     font-size: 3rem;
   }
 }
 
-/* line 42, ../sass/base/_base.scss */
+/* line 45, ../sass/base/_base.scss */
+body.path-taxonomy h1 {
+  margin: 1rem 0 2rem;
+}
+
+/* line 50, ../sass/base/_base.scss */
 h2 {
   font-size: 1.48438rem;
 }
 
-/* line 46, ../sass/base/_base.scss */
+/* line 54, ../sass/base/_base.scss */
 h3 {
   font-size: 1.33594rem;
 }
 
-/* line 50, ../sass/base/_base.scss */
+/* line 58, ../sass/base/_base.scss */
 h4 {
   font-size: 1.24688rem;
 }
 
-/* line 54, ../sass/base/_base.scss */
+/* line 62, ../sass/base/_base.scss */
 a {
   border-bottom: 1px solid transparent;
   color: #65bbe9;
   text-decoration: none;
   transition: all .3s ease-in-out;
 }
-/* line 60, ../sass/base/_base.scss */
+/* line 68, ../sass/base/_base.scss */
 a:hover {
   border-bottom: 1px solid #65bbe9;
 }
 
-/* line 65, ../sass/base/_base.scss */
+/* line 73, ../sass/base/_base.scss */
 p {
   margin: 0;
 }
 
-/* line 69, ../sass/base/_base.scss */
+/* line 77, ../sass/base/_base.scss */
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 78, ../sass/base/_base.scss */
+/* line 86, ../sass/base/_base.scss */
 .paragraph--type--text ul,
 .paragraph--type--text ol,
 .paragraph--type--frame ul,
 .paragraph--type--frame ol {
   margin: 0;
 }
-/* line 83, ../sass/base/_base.scss */
+/* line 91, ../sass/base/_base.scss */
 .paragraph--type--text ul li + li,
 .paragraph--type--text ol li + li,
 .paragraph--type--frame ul li + li,
 .paragraph--type--frame ol li + li {
   margin-top: 0.5rem;
 }
-/* line 93, ../sass/base/_base.scss */
+/* line 101, ../sass/base/_base.scss */
 .paragraph--type--text p + p, .paragraph--type--text p + ul, .paragraph--type--text p + ol,
 .paragraph--type--text ul + p,
 .paragraph--type--text ul + ul,
@@ -640,9 +647,9 @@ body.menu-open .mobile-menu-target-wrapper {
   .node--type-interview.node--view-mode-full .interview-header .wrapper {
     left: 50%;
     max-width: 1200px;
+    padding: 0 1rem;
     position: absolute;
     top: 40%;
-    padding: 0 1rem;
     transform: translate(-50%, -50%);
     width: 100%;
   }
@@ -710,16 +717,16 @@ body.menu-open .mobile-menu-target-wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  text-transform: uppercase;
   padding: 1rem;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   /* line 92, ../sass/nodes/_interview--full.scss */
   .node--type-interview.node--view-mode-full .interview-details {
     flex-direction: row;
+    font-size: 1.33594rem;
     min-height: 5rem;
     min-width: 66.66%;
-    font-size: 1.33594rem;
     padding: 0 2rem;
     position: absolute;
     transform: translateY(-50%);
