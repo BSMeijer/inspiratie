@@ -1,11 +1,13 @@
 .node--type-interview.node--view-mode-teaser {
   background: $white;
+  box-shadow: 0;
   cursor: pointer;
   position: relative;
-  transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out, box-shadow .3s ease-in-out;
 
   &:hover {
     background-color: $aqua-haze;
+    box-shadow: 0 0 $spacing rgba($base-color, .05);
   }
 
   .interview-teaser-content {

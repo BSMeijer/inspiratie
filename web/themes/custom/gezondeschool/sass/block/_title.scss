@@ -1,0 +1,11 @@
+.block-page-title-block {
+  padding: 0 $spacing;
+
+  @media (min-width: $bp-tablet) {
+    padding: 0;
+  }
+
+  h1 {
+    margin: $spacing 0 $spacing * 2;
+  }
+}

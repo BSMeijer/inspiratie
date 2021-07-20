@@ -1,17 +1,20 @@
 .view-taxonomy-term {
-  margin: 0 -$spacing * .5;
+  margin-bottom: $spacing * 2;
+  padding: 0 ($spacing * .5);
+
+  @media (min-width: $bp-tablet) {
+    margin: 0 (-$spacing * .5) $spacing * 2;
+    padding: 0;
+  }
 
   .view-content {
     display: flex;
-
-    @media (min-width: $bp-desktop) {
-      flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
 
     .views-row {
       padding: $spacing * .5;
 
-      @media (min-width: $bp-desktop) {
+      @media (min-width: $bp-tablet) {
         width: 50%;
       }
 

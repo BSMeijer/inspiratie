@@ -12,6 +12,7 @@
   nav {
     margin-bottom: $spacing * 2;
     padding-right: $spacing;
+    width: 100%;
 
     @media (min-width: $bp-tablet) {
       width: 50%;
