@@ -1,0 +1,33 @@
+uuid: 386a3d69-1a9a-4a4b-932f-1a3872fd20f2
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.related_stories
+  module:
+    - ctools
+    - views
+  theme:
+    - gezondeschool
+id: views_block__related_stories_block_1
+theme: gezondeschool
+region: content
+weight: 2
+provider: null
+plugin: 'views_block:related_stories-block_1'
+settings:
+  id: 'views_block:related_stories-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      interview: interview
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

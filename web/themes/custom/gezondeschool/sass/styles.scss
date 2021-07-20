@@ -23,6 +23,7 @@
 @import "navigation/mobile";
 
 @import 'nodes/interview--full';
+@import 'nodes/interview--teaser';
 
 @import 'fields/intro';
 @import 'fields/read-more';
@@ -36,3 +37,5 @@
 @import 'paragraphs/image';
 @import 'paragraphs/cta';
 @import 'paragraphs/frame';
+
+@import 'views/related-stories';

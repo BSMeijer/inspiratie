@@ -12,8 +12,21 @@
       min-height: 700px;
     }
 
+    &::after {
+      content: '';
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(45deg, rgba($color-primary, .6) 0%, rgba($matisse, .333) 100%);
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+
     .wrapper {
       padding: $spacing * 3 0;
+      position: relative;
+      z-index: 2;
 
       @media (min-width: $bp-tablet) {
         left: 50%;

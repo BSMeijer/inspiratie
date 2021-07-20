@@ -215,66 +215,28 @@ img {
 /* line 5, ../sass/base/_carousel.scss */
 .slick-slide {
   height: inherit !important;
+  padding: 0 0.5rem;
 }
-/* line 8, ../sass/base/_carousel.scss */
-.slick-slide:not(:first-child) {
-  margin-left: 1rem;
-}
-/* line 12, ../sass/base/_carousel.scss */
+/* line 9, ../sass/base/_carousel.scss */
 .slick-slide > div {
   height: 100%;
 }
 
-/* line 17, ../sass/base/_carousel.scss */
+/* line 14, ../sass/base/_carousel.scss */
 .slick-arrow {
   appearance: none;
+  background: transparent;
   border: 0;
-  display: none !important;
   font-size: 3rem;
   position: absolute;
   top: 0;
   height: 100%;
-  background: rgba(247, 239, 242, 0.8);
   z-index: 10;
 }
-/* line 28, ../sass/base/_carousel.scss */
-.slick-arrow:hover {
-  background: #f7eff2;
-}
 
-/* line 33, ../sass/base/_carousel.scss */
+/* line 25, ../sass/base/_carousel.scss */
 .slick-next {
   right: 0;
-}
-
-/* line 37, ../sass/base/_carousel.scss */
-.slick-dots {
-  display: flex;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
-  padding: 1rem 0 0;
-  list-style: none;
-}
-/* line 46, ../sass/base/_carousel.scss */
-.slick-dots li {
-  margin: 0 0.25rem;
-}
-/* line 49, ../sass/base/_carousel.scss */
-.slick-dots li button {
-  appearance: none;
-  display: block;
-  border: 0;
-  border-radius: 1rem;
-  height: 1rem;
-  width: 1rem;
-  text-indent: -9999px;
-  background: #f7eff2;
-}
-/* line 62, ../sass/base/_carousel.scss */
-.slick-dots li.slick-active button, .slick-dots li:hover button {
-  background: #931058;
 }
 
 /* line 1, ../sass/base/_forms.scss */
@@ -636,11 +598,24 @@ body.menu-open .mobile-menu-target-wrapper {
   }
 }
 /* line 15, ../sass/nodes/_interview--full.scss */
+.node--type-interview.node--view-mode-full .interview-header::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, rgba(147, 16, 88, 0.6) 0%, rgba(33, 108, 156, 0.333) 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+/* line 26, ../sass/nodes/_interview--full.scss */
 .node--type-interview.node--view-mode-full .interview-header .wrapper {
   padding: 3rem 0;
+  position: relative;
+  z-index: 2;
 }
 @media (min-width: 768px) {
-  /* line 15, ../sass/nodes/_interview--full.scss */
+  /* line 26, ../sass/nodes/_interview--full.scss */
   .node--type-interview.node--view-mode-full .interview-header .wrapper {
     left: 50%;
     max-width: 1200px;
@@ -652,61 +627,61 @@ body.menu-open .mobile-menu-target-wrapper {
   }
 }
 @media (min-width: 768px) {
-  /* line 15, ../sass/nodes/_interview--full.scss */
+  /* line 26, ../sass/nodes/_interview--full.scss */
   .node--type-interview.node--view-mode-full .interview-header .wrapper {
     padding: 0 2rem;
   }
 }
-/* line 32, ../sass/nodes/_interview--full.scss */
+/* line 45, ../sass/nodes/_interview--full.scss */
 .node--type-interview.node--view-mode-full .interview-header .wrapper h1 {
   color: #fff;
   font-family: 'Bariol Regular Italic';
 }
 @media (min-width: 768px) {
-  /* line 32, ../sass/nodes/_interview--full.scss */
+  /* line 45, ../sass/nodes/_interview--full.scss */
   .node--type-interview.node--view-mode-full .interview-header .wrapper h1 {
     width: 66%;
   }
 }
 @media (min-width: 1024px) {
-  /* line 32, ../sass/nodes/_interview--full.scss */
+  /* line 45, ../sass/nodes/_interview--full.scss */
   .node--type-interview.node--view-mode-full .interview-header .wrapper h1 {
     width: 40%;
   }
 }
-/* line 45, ../sass/nodes/_interview--full.scss */
+/* line 58, ../sass/nodes/_interview--full.scss */
 .node--type-interview.node--view-mode-full .interview-header .wrapper .field--name-field-schooltype {
   color: #f9cb74;
   display: flex;
   font-family: 'Bariol Regular Italic';
   font-size: 1.24688rem;
 }
-/* line 51, ../sass/nodes/_interview--full.scss */
+/* line 64, ../sass/nodes/_interview--full.scss */
 .node--type-interview.node--view-mode-full .interview-header .wrapper .field--name-field-schooltype a {
   color: #f9cb74;
 }
-/* line 56, ../sass/nodes/_interview--full.scss */
+/* line 69, ../sass/nodes/_interview--full.scss */
 .node--type-interview.node--view-mode-full .interview-header .wrapper .field--name-field-schooltype .field__item:not(:first-child)::before {
   content: ' / ';
   display: inline-block;
   padding: 0 0.25rem;
 }
-/* line 66, ../sass/nodes/_interview--full.scss */
+/* line 79, ../sass/nodes/_interview--full.scss */
 .node--type-interview.node--view-mode-full .interview-content {
   background-color: #fff;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 66, ../sass/nodes/_interview--full.scss */
+  /* line 79, ../sass/nodes/_interview--full.scss */
   .node--type-interview.node--view-mode-full .interview-content {
     margin-top: -7rem;
   }
-  /* line 73, ../sass/nodes/_interview--full.scss */
+  /* line 86, ../sass/nodes/_interview--full.scss */
   .node--type-interview.node--view-mode-full .interview-content .field--name-field-intro {
     padding-top: 6rem;
   }
 }
-/* line 79, ../sass/nodes/_interview--full.scss */
+/* line 92, ../sass/nodes/_interview--full.scss */
 .node--type-interview.node--view-mode-full .interview-details {
   align-items: center;
   background-color: #f9cb74;
@@ -718,7 +693,7 @@ body.menu-open .mobile-menu-target-wrapper {
   padding: 1rem;
 }
 @media (min-width: 768px) {
-  /* line 79, ../sass/nodes/_interview--full.scss */
+  /* line 92, ../sass/nodes/_interview--full.scss */
   .node--type-interview.node--view-mode-full .interview-details {
     flex-direction: row;
     min-height: 5rem;
@@ -730,12 +705,37 @@ body.menu-open .mobile-menu-target-wrapper {
   }
 }
 @media (min-width: 768px) {
-  /* line 102, ../sass/nodes/_interview--full.scss */
+  /* line 115, ../sass/nodes/_interview--full.scss */
   .node--type-interview.node--view-mode-full .interview-details .field__item:not(:last-child)::after {
     display: inline-block;
     content: ', ';
     padding-right: 0.25rem;
   }
+}
+
+/* line 1, ../sass/nodes/_interview--teaser.scss */
+.node--type-interview.node--view-mode-teaser {
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+}
+/* line 6, ../sass/nodes/_interview--teaser.scss */
+.node--type-interview.node--view-mode-teaser .interview-teaser-content {
+  padding: 1rem 1rem 3rem;
+}
+/* line 9, ../sass/nodes/_interview--teaser.scss */
+.node--type-interview.node--view-mode-teaser .interview-teaser-content h3 {
+  margin-bottom: 0.5rem;
+}
+/* line 12, ../sass/nodes/_interview--teaser.scss */
+.node--type-interview.node--view-mode-teaser .interview-teaser-content h3 a {
+  color: #216c9c;
+}
+/* line 18, ../sass/nodes/_interview--teaser.scss */
+.node--type-interview.node--view-mode-teaser .field--name-node-link {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
 }
 
 /* line 2, ../sass/fields/_intro.scss */
@@ -763,21 +763,6 @@ body.menu-open .mobile-menu-target-wrapper {
 .field--name-node-link,
 .view .more-link {
   display: flex;
-}
-/* line 5, ../sass/fields/_read-more.scss */
-.field--name-node-link a,
-.view .more-link a {
-  display: block;
-  border: 1px solid #931058;
-  border-radius: 1rem;
-  margin-left: auto;
-  padding: 0.33333rem 0.8rem;
-  color: #931058;
-}
-/* line 13, ../sass/fields/_read-more.scss */
-.field--name-node-link a:hover,
-.view .more-link a:hover {
-  background-color: #f7eff2;
 }
 
 /* line 2, ../sass/fields/_body.scss */
@@ -1053,4 +1038,9 @@ body.menu-open .mobile-menu-target-wrapper {
   .paragraph--type--frame .field-group-background-image {
     width: 25%;
   }
+}
+
+/* line 1, ../sass/views/_related-stories.scss */
+.view-related-stories {
+  margin: 0 -0.5rem 2rem;
 }

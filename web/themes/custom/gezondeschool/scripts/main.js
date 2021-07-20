@@ -25,14 +25,14 @@
   Drupal.behaviors.storySlick = {
     attach: function (context, settings) {
 
-      $('.paragraph--type--stories .field--name-field-stories', context).slick({
+      $('.view-related-stories .view-content', context).slick({
         infinite: true,
         centerMode: false,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         prevArrow: "<button class='slick-prev slick-arrow' aria-label='Vorige' type='button'>&lsaquo;</button>",
         nextArrow: "<button class='slick-next slick-arrow' aria-label='Volgende' type='button'>&rsaquo;</button>",
-        dots: true,
+        dots: false,
         responsive: [
           {
             breakpoint: 1024,

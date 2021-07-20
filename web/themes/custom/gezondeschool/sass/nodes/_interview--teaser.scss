@@ -1,0 +1,23 @@
+.node--type-interview.node--view-mode-teaser {
+  background: $white;
+  cursor: pointer;
+  position: relative;
+
+  .interview-teaser-content {
+    padding: $spacing $spacing $spacing * 3;
+
+    h3 {
+      margin-bottom: $spacing * .5;
+
+      a {
+        color: $matisse;
+      }
+    }
+  }
+
+  .field--name-node-link {
+    position: absolute;
+    right: $spacing;
+    bottom: $spacing;
+  }
+}

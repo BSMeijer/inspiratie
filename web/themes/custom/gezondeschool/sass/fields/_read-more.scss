@@ -2,16 +2,5 @@
 .view .more-link {
   display: flex;
 
-  a {
-    display: block;
-    border: 1px solid $color-primary;
-    border-radius: $spacing;
-    margin-left: auto;
-    padding: $spacing / 3 $spacing / 1.25;
-    color: $color-primary;
-
-    &:hover {
-      background-color: $color-secondary;
-    }
-  }
+  a {}
 }
