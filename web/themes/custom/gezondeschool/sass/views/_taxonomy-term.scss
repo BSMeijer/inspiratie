@@ -1,0 +1,32 @@
+.view-taxonomy-term {
+  margin: 0 -$spacing * .5;
+
+  .view-content {
+    display: flex;
+
+    @media (min-width: $bp-desktop) {
+      flex-wrap: wrap;
+    }
+
+    .views-row {
+      padding: $spacing * .5;
+
+      @media (min-width: $bp-desktop) {
+        width: 50%;
+      }
+
+      @media (min-width: $bp-xl) {
+        width: 33.333%;
+      }
+
+      .node {
+        height: 100%;
+
+        h2,
+        h3 {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

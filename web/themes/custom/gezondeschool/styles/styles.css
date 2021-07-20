@@ -1078,3 +1078,43 @@ body.menu-open .mobile-menu-target-wrapper {
     padding: 0;
   }
 }
+
+/* line 1, ../sass/views/_taxonomy-term.scss */
+.view-taxonomy-term {
+  margin: -0.5rem;
+}
+/* line 4, ../sass/views/_taxonomy-term.scss */
+.view-taxonomy-term .view-content {
+  display: flex;
+}
+@media (min-width: 1024px) {
+  /* line 4, ../sass/views/_taxonomy-term.scss */
+  .view-taxonomy-term .view-content {
+    flex-wrap: wrap;
+  }
+}
+/* line 11, ../sass/views/_taxonomy-term.scss */
+.view-taxonomy-term .view-content .views-row {
+  padding: 0.5rem;
+}
+@media (min-width: 1024px) {
+  /* line 11, ../sass/views/_taxonomy-term.scss */
+  .view-taxonomy-term .view-content .views-row {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 11, ../sass/views/_taxonomy-term.scss */
+  .view-taxonomy-term .view-content .views-row {
+    width: 33.333%;
+  }
+}
+/* line 22, ../sass/views/_taxonomy-term.scss */
+.view-taxonomy-term .view-content .views-row .node {
+  height: 100%;
+}
+/* line 25, ../sass/views/_taxonomy-term.scss */
+.view-taxonomy-term .view-content .views-row .node h2,
+.view-taxonomy-term .view-content .views-row .node h3 {
+  text-align: left;
+}
