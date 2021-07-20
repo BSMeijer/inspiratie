@@ -1026,10 +1026,11 @@ body.menu-open .mobile-menu-target-wrapper {
   left: 50%;
   padding: 0.25rem 1rem;
   position: absolute;
+  text-align: center;
   text-decoration: none;
   transform: translate(-50%, 50%);
 }
-/* line 37, ../sass/paragraphs/_cta.scss */
+/* line 38, ../sass/paragraphs/_cta.scss */
 .paragraph--type--cta-item .field--name-field-link a:hover {
   background-color: #f7b943;
 }
