@@ -1,4 +1,9 @@
 .field--name-field-call-to-action {
+  h2 {
+    text-align: center;
+    margin-bottom: $spacing * 2;
+  }
+
   @media (min-width: $bp-tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -7,4 +12,8 @@
       width: 33.333%;
     }
   }
+}
+
+.paragraph--type--cta-item {
+  position: relative;
 }

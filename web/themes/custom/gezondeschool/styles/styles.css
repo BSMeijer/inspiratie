@@ -646,7 +646,7 @@ body.menu-open .mobile-menu-target-wrapper {
   content: '';
   height: 100%;
   width: 100%;
-  background: linear-gradient(45deg, rgba(33, 108, 156, 0.6) 0%, rgba(147, 16, 88, 0.333) 100%);
+  background: linear-gradient(45deg, rgba(33, 108, 156, 0.666) 0%, rgba(147, 16, 88, 0.333) 100%);
   position: absolute;
   left: 0;
   top: 0;
@@ -822,6 +822,26 @@ body.menu-open .mobile-menu-target-wrapper {
   margin-bottom: 2rem;
 }
 
+/* line 1, ../sass/fields/_cta.scss */
+.paragraph--type--call-to-action {
+  background-color: #f0f1f2;
+  margin-bottom: -2rem;
+  padding: 2rem 0 3rem;
+}
+/* line 6, ../sass/fields/_cta.scss */
+.paragraph--type--call-to-action h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  /* line 1, ../sass/fields/_cta.scss */
+  .paragraph--type--call-to-action {
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 /* line 2, ../sass/facets/_facets.scss */
 .facet-item a {
   display: block;
@@ -953,16 +973,26 @@ body.menu-open .mobile-menu-target-wrapper {
   }
 }
 
+/* line 2, ../sass/paragraphs/_cta.scss */
+.field--name-field-call-to-action h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 @media (min-width: 768px) {
   /* line 1, ../sass/paragraphs/_cta.scss */
   .field--name-field-call-to-action {
     display: flex;
     flex-wrap: wrap;
   }
-  /* line 6, ../sass/paragraphs/_cta.scss */
+  /* line 11, ../sass/paragraphs/_cta.scss */
   .field--name-field-call-to-action > .field__item {
     width: 33.333%;
   }
+}
+
+/* line 17, ../sass/paragraphs/_cta.scss */
+.paragraph--type--cta-item {
+  position: relative;
 }
 
 /* line 1, ../sass/paragraphs/_frame.scss */

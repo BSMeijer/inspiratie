@@ -1,0 +1,14 @@
+.paragraph--type--call-to-action {
+  background-color: $porcelain;
+  margin-bottom: -2 * $spacing;
+  padding: $spacing * 2 0 $spacing * 3;
+
+  h2 {
+    margin-bottom: $spacing;
+    text-align: center;
+  }
+
+  @media (min-width: $bp-desktop) {
+    @include break-out();
+  }
+}
