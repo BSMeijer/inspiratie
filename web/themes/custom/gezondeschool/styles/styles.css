@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -788,6 +789,23 @@ body.menu-open .mobile-menu-target-wrapper {
   position: absolute;
   right: 1rem;
   bottom: 1rem;
+}
+/* line 31, ../sass/nodes/_interview--teaser.scss */
+.node--type-interview.node--view-mode-teaser .field--name-node-link a {
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+/* line 37, ../sass/nodes/_interview--teaser.scss */
+.node--type-interview.node--view-mode-teaser .field--name-node-link a::before {
+  color: #216c9c;
+  content: '►►';
+  font-size: 0.75rem;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 /* line 2, ../sass/fields/_intro.scss */

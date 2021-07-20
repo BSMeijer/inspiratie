@@ -27,5 +27,22 @@
     position: absolute;
     right: $spacing;
     bottom: $spacing;
+
+    a {
+      height: 0px;
+      width: 0px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+
+      &::before {
+        color: $matisse;
+        content: '►►';
+        font-size: $tiny;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
   }
 }
