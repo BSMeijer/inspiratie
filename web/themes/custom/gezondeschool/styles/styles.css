@@ -1080,7 +1080,7 @@ div.fivestar-rating-wrapper > div > label::before {
 .field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-link a {
   background-color: #f9cb74;
   border: 1px solid #fff;
-  border-radius: 1rem;
+  border-radius: 3rem;
   box-shadow: 0 0 1rem rgba(33, 37, 41, 0.2);
   bottom: 0;
   color: #931058;
@@ -1088,7 +1088,7 @@ div.fivestar-rating-wrapper > div > label::before {
   font-family: 'Bariol Regular Italic';
   font-size: 1.21719rem;
   left: 50%;
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 1rem 0.5rem;
   position: absolute;
   text-align: center;
   text-decoration: none;
