@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.interview.field_body
+    - field.field.node.interview.field_call_to_action
     - field.field.node.interview.field_image
     - field.field.node.interview.field_intro
     - field.field.node.interview.field_location
@@ -107,8 +108,14 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+  rate_helpfull:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   field_body: true
+  field_call_to_action: true
   field_intro: true
   field_location: true
   field_name: true

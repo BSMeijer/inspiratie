@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_body
     - node.type.page
-    - paragraphs.paragraphs_type.call_to_action
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.soundcloud
     - paragraphs.paragraphs_type.text
@@ -30,7 +29,6 @@ settings:
       image: image
       text: text
       soundcloud: soundcloud
-      call_to_action: call_to_action
       video: video
     target_bundles_drag_drop:
       call_to_action:

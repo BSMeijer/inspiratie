@@ -1,9 +1,9 @@
-uuid: 758d2614-d218-47f5-a2e4-c931faa83cfd
+uuid: 54ba6d07-2410-459f-a169-6089060c7198
 langcode: nl
 status: true
 dependencies: {  }
-id: call_to_action
-label: 'Call to Action'
+id: call_to_action_bar
+label: 'Call To Action Bar'
 icon_uuid: null
 icon_default: null
 description: ''

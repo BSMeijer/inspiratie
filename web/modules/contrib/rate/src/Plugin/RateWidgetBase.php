@@ -144,9 +144,9 @@ class RateWidgetBase extends PluginBase {
    * @return \Drupal\Core\Form\FormInterface
    *   configured vote form
    */
-  public function getForm($entity_type, $entity_bundle, $entity_id, $vote_type, $value_type, $rate_widget, $settings) {
+  public function getForm($entity_type, $entity_bundle, $entity_id, $vote_type, $value_type, $rate_widget, $settings, $user_id = NULL) {
     $options = $settings->get('options');
-    $vote = $this->getEntityForVoting($entity_type, $entity_bundle, $entity_id, $vote_type, $value_type, $rate_widget, $settings);
+    $vote = $this->getEntityForVoting($entity_type, $entity_bundle, $entity_id, $vote_type, $value_type, $rate_widget, $settings, $user_id);
 
     // Give other modules a chance to alter the rate widget options.
     $this->moduleHandler->invokeAll('rate_widget_options_alter',
@@ -156,6 +156,8 @@ class RateWidgetBase extends PluginBase {
         $entity_bundle,
         $entity_id,
         $rate_widget,
+        $settings,
+        $user_id,
       ]
     );
 
@@ -244,30 +246,44 @@ class RateWidgetBase extends PluginBase {
    * instead of adding a new one.
    *
    * @return \Drupal\votingapi\Entity\Vote
-   *   Vote entity
+   *   The vote entity.
    */
-  public function getEntityForVoting($entity_type, $entity_bundle, $entity_id, $vote_type, $value_type, $rate_widget, $settings) {
+  public function getEntityForVoting($entity_type, $entity_bundle, $entity_id, $vote_type, $value_type, $rate_widget, $settings, $user_id) {
     $storage = $this->entityTypeManager->getStorage('vote');
-    $voteData = [
+    $vote_data = [
       'entity_type' => $entity_type,
       'entity_id' => $entity_id,
       'type'  => $vote_type,
       'value_type' => $value_type,
-      'user_id' => $this->account->id(),
       'rate_widget' => $rate_widget,
     ];
-    $vote = $storage->create($voteData);
+    $vote_data['user_id'] = (!is_null($user_id)) ? $user_id : $this->account->id();
+
+    // Give other modules a chance to alter the data for vote creation.
+    $this->moduleHandler->invokeAll('rate_vote_data_alter',
+      [
+        &$vote_data,
+        $entity_type,
+        $entity_bundle,
+        $entity_id,
+        $rate_widget,
+        $settings,
+        $user_id,
+      ]
+    );
+
+    $vote = $storage->create($vote_data);
     $voting_settings = $settings->get('voting');
     $timestamp_offset = $this->getWindow('user_window', $entity_type, $entity_bundle, $rate_widget, $voting_settings);
 
     if ($this->account->isAnonymous()) {
-      $voteData['vote_source'] = hash('sha256', serialize($this->requestStack->getCurrentRequest()->getClientIp()));
+      $vote_data['vote_source'] = hash('sha256', serialize($this->requestStack->getCurrentRequest()->getClientIp()));
       $timestamp_offset = $this->getWindow('anonymous_window', $entity_type, $entity_bundle, $rate_widget, $voting_settings);
     }
 
     $query = $this->entityTypeManager->getStorage('vote')->getQuery();
 
-    foreach ($voteData as $key => $value) {
+    foreach ($vote_data as $key => $value) {
       $query->condition($key, $value);
     }
 

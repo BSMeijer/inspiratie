@@ -1,17 +1,17 @@
-uuid: 48d33137-22cf-4e10-bd11-8377810f9d29
+uuid: 80c6494b-8929-472f-b369-bf495b4372a5
 langcode: nl
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_call_to_action
-    - paragraphs.paragraphs_type.call_to_action
+    - field.storage.node.field_call_to_action
+    - node.type.interview
     - paragraphs.paragraphs_type.cta_item
   module:
     - entity_reference_revisions
-id: paragraph.call_to_action.field_call_to_action
+id: node.interview.field_call_to_action
 field_name: field_call_to_action
-entity_type: paragraph
-bundle: call_to_action
+entity_type: node
+bundle: interview
 label: 'Call to Action'
 description: ''
 required: false
@@ -26,21 +26,27 @@ settings:
       cta_item: cta_item
     target_bundles_drag_drop:
       call_to_action:
-        weight: 8
+        weight: 9
+        enabled: false
+      clearfix:
+        weight: 10
         enabled: false
       cta_item:
         enabled: true
-        weight: 7
+        weight: 11
+      frame:
+        weight: 12
+        enabled: false
       image:
-        weight: 9
+        weight: 13
         enabled: false
       soundcloud:
-        weight: 10
+        weight: 14
         enabled: false
       text:
-        weight: 11
+        weight: 15
         enabled: false
       video:
-        weight: 12
+        weight: 16
         enabled: false
 field_type: entity_reference_revisions

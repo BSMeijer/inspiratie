@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_body
     - node.type.interview
-    - paragraphs.paragraphs_type.call_to_action
+    - paragraphs.paragraphs_type.call_to_action_bar
     - paragraphs.paragraphs_type.clearfix
     - paragraphs.paragraphs_type.frame
     - paragraphs.paragraphs_type.image
@@ -32,14 +32,14 @@ settings:
       image: image
       text: text
       soundcloud: soundcloud
-      call_to_action: call_to_action
       frame: frame
+      call_to_action_bar: call_to_action_bar
       clearfix: clearfix
       video: video
     target_bundles_drag_drop:
-      call_to_action:
+      call_to_action_bar:
         enabled: true
-        weight: 8
+        weight: 9
       clearfix:
         enabled: true
         weight: 9

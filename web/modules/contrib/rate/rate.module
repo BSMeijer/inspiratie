@@ -161,7 +161,12 @@ function rate_entity_view(array &$build, EntityInterface $entity, EntityViewDisp
             ],
           ],
         ];
-        $build[$component] = $form_container;
+        if (isset($build[$component])) {
+          array_unshift($build[$component], $form_container);
+        }
+        else {
+          $build[$component][] = $form_container;
+        }
 
         $build['#cache']['tags'][] = 'vote:' . $entity->bundle() . ':' . $entity->id();
 

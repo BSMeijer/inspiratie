@@ -36,9 +36,10 @@
     "drupal/pathauto": "^1.8",
     "drupal/piwik": "^1.4",
     "drupal/quick_node_clone": "^1.14",
-    "drupal/rate": "^2.0@alpha",
+    "drupal/rate": "^2",
     "drupal/search_api": "^1.19",
     "drupal/search_api_autocomplete": "^1.4",
+    "drupal/svg_image_field": "^2.0",
     "drupal/twig_tweak": "^2.9",
     "drupal/youtube": "^1.2",
     "drush/drush": "^10.5"

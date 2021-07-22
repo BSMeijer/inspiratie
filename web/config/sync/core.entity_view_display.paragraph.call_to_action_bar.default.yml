@@ -1,0 +1,52 @@
+uuid: 189dc241-2e4d-42a3-abc3-9a2d07420981
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.call_to_action_bar.field_links
+    - paragraphs.paragraphs_type.call_to_action_bar
+  module:
+    - ds
+    - field_group
+    - link
+third_party_settings:
+  field_group:
+    group_wrapper:
+      children:
+        - field_links
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Wrapper
+id: paragraph.call_to_action_bar.default
+targetEntityType: paragraph
+bundle: call_to_action_bar
+mode: default
+content:
+  field_links:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: null
+      rel: nofollow
+      target: _blank
+      url_only: false
+      url_plain: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: link
+    region: content
+hidden:
+  search_api_excerpt: true

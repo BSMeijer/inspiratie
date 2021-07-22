@@ -1,0 +1,20 @@
+uuid: b5092365-cfcb-45d8-9828-7d94702fa023
+langcode: nl
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_svg
+field_name: field_svg
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

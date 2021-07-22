@@ -1,28 +1,28 @@
-uuid: 5560c0a4-7e60-4b3c-bae9-82ebe607152d
+uuid: 02ae96b7-4784-4af2-9b90-590d46884fe2
 langcode: nl
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_image
-    - media.type.image
+    - field.storage.paragraph.field_svg
+    - media.type.vector_image
     - paragraphs.paragraphs_type.cta_item
-id: paragraph.cta_item.field_image
-field_name: field_image
+id: paragraph.cta_item.field_svg
+field_name: field_svg
 entity_type: paragraph
 bundle: cta_item
-label: Afbeelding
+label: SVG
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      vector_image: vector_image
     sort:
       field: _none
-    auto_create: true
+    auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

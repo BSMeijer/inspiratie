@@ -125,6 +125,7 @@ class RateWidgetBaseForm extends ContentEntityForm {
     $additional_form_id_parts[] = $voted_entity->id();
     $additional_form_id_parts[] = $entity->bundle();
     $additional_form_id_parts[] = $entity->rate_widget->value;
+    $additional_form_id_parts[] = $entity->get('user_id')->target_id;
     $form_id = implode('_', $additional_form_id_parts);
 
     return $form_id;
@@ -191,7 +192,7 @@ class RateWidgetBaseForm extends ContentEntityForm {
     $vote_type = $entity->bundle();
     $votes = [];
 
-    $user_id = $this->account->id();
+    $user_id = $entity->get('user_id')->target_id;
 
     if (isset($results['result_type'])) {
       if ($results['result_type'] == 'user_vote_empty' || $results['result_type'] == 'user_vote_average') {
@@ -348,7 +349,7 @@ class RateWidgetBaseForm extends ContentEntityForm {
         'class' => [$template . '-rating-submit'],
       ],
       '#ajax' => [
-        'callback' => [$this, 'ajaxSubmit'],
+        'callback' => '::ajaxSubmit',
         'event' => 'click',
         'wrapper' => $form_id,
         'progress' => [
@@ -396,6 +397,8 @@ class RateWidgetBaseForm extends ContentEntityForm {
 
     if ($result_function && array_key_exists($result_function, $result) && $result[$result_function]) {
       $result = $result[$result_function];
+    } else {
+      $result = 0;
     }
     return $result;
   }
@@ -418,7 +421,7 @@ class RateWidgetBaseForm extends ContentEntityForm {
     $voted_entity_type = $entity->getVotedEntityType();
     $user_input = $form_state->getUserInput()['value'];
     $value_type = $entity->get('value_type')->value;
-    $user_id = $this->account->id();
+    $user_id = $entity->get('user_id')->target_id;
     $disable_log = $this->config->get('disable_log');
 
     $voted_entity = $this->entityTypeManager->getStorage($voted_entity_type)->load($voted_entity_id);
@@ -443,7 +446,7 @@ class RateWidgetBaseForm extends ContentEntityForm {
         $message = 'Vote ' . $user_input . ' on ' . $voted_entity_id . ' was cancelled. Vote ' . $entity->id() . ' was deleted.';
         $this->logger->notice($message);
       }
-      $entity = $plugin->getEntityForVoting($form_state->get('entity_type'), $form_state->get('entity_bundle'), $form_state->get('entity_id'), $entity->bundle(), $value_type, $rate_widget, $settings);
+      $entity = $plugin->getEntityForVoting($form_state->get('entity_type'), $form_state->get('entity_bundle'), $form_state->get('entity_id'), $entity->bundle(), $value_type, $rate_widget, $settings, $user_id);
     }
     else {
       if ($disable_log == FALSE) {

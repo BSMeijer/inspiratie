@@ -97,14 +97,12 @@ class RateBotDetector {
    *   True if local IP; false otherwise.
    */
   private function isLocal() {
-    if (preg_match('/^([012]?[0-9]{2})\\./', $this->ip, $match)) {
-      switch ($match[1]) {
-        case 10:
-        case 127:
-        case 172:
-        case 192:
-          return TRUE;
-      }
+    $match = explode('.', $this->ip);
+    if ($match[0] == 10
+      || $match[0] == 127
+      || ($match[0] == 192 && $match[1] == 168)
+      || ($match[0] == 172 && $match[1] >= 16 && $match[1] <= 31)) {
+      return TRUE;
     }
     return FALSE;
   }

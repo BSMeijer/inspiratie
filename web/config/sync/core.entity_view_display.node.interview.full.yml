@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.interview.field_body
+    - field.field.node.interview.field_call_to_action
     - field.field.node.interview.field_image
     - field.field.node.interview.field_intro
     - field.field.node.interview.field_location
@@ -48,7 +49,9 @@ third_party_settings:
         - field_intro
         - field_body
         - field_schooltype
+        - rate_helpfull
         - node_title
+        - field_call_to_action
         - field_name
         - field_school
         - field_location
@@ -102,6 +105,8 @@ third_party_settings:
         - group_interview_details
         - field_intro
         - field_body
+        - rate_helpfull
+        - field_call_to_action
       parent_name: ''
       weight: 1
       format_type: html_element
@@ -151,6 +156,15 @@ content:
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
     region: ds_content
+  field_call_to_action:
+    type: entity_reference_revisions_entity_view
+    weight: 9
+    region: ds_content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
   field_intro:
     type: text_default
     weight: 6
@@ -189,6 +203,11 @@ content:
     label: hidden
     settings:
       link: true
+    third_party_settings: {  }
+  rate_helpfull:
+    weight: 8
+    region: ds_content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   field_image: true

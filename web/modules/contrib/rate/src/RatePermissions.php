@@ -5,7 +5,6 @@ namespace Drupal\rate;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
-use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\comment\CommentManagerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -33,13 +32,6 @@ class RatePermissions implements ContainerInjectionInterface {
   protected $entityTypeManager;
 
   /**
-   * The module handler service.
-   *
-   * @var \Drupal\Core\Extension\ModuleHandlerInterface
-   */
-  protected $moduleHandler;
-
-  /**
    * Comment manager service.
    *
    * @var \Drupal\comment\CommentManagerInterface
@@ -53,15 +45,12 @@ class RatePermissions implements ContainerInjectionInterface {
    *   The config factory.
    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
    *   The entity type manager.
-   * @param \Drupal\Core\Extension\ModuleHandlerInterface $module_handler
-   *   The module handler.
    * @param \Drupal\comment\CommentManagerInterface $comment_manager
-   *   The comment manager service.
+   *   The comment manager service, or NULL if not available.
    */
-  public function __construct(ConfigFactoryInterface $config_factory, EntityTypeManagerInterface $entity_type_manager, ModuleHandlerInterface $module_handler, CommentManagerInterface $comment_manager) {
+  public function __construct(ConfigFactoryInterface $config_factory, EntityTypeManagerInterface $entity_type_manager, CommentManagerInterface $comment_manager = NULL) {
     $this->config = $config_factory->get('rate.settings');
     $this->entityTypeManager = $entity_type_manager;
-    $this->moduleHandler = $module_handler;
     $this->commentManager = $comment_manager;
   }
 
@@ -69,11 +58,11 @@ class RatePermissions implements ContainerInjectionInterface {
    * {@inheritdoc}
    */
   public static function create(ContainerInterface $container) {
+    $comment_manager = $container->has('comment.manager') ? $container->get('comment.manager') : NULL;
     return new static(
       $container->get('config.factory'),
       $container->get('entity_type.manager'),
-      $container->get('module_handler'),
-      $container->get('comment.manager')
+      $comment_manager
     );
   }
 
@@ -91,8 +80,6 @@ class RatePermissions implements ContainerInjectionInterface {
     if (empty($widgets)) {
       return $permissions;
     }
-
-    $comment_module_enabled = $this->moduleHandler->moduleExists('comment');
 
     foreach ($widgets as $widget) {
       $entities = $widget->get('entity_types');
@@ -117,7 +104,7 @@ class RatePermissions implements ContainerInjectionInterface {
       }
 
       $comments = $widget->get('comment_types');
-      if ($comment_module_enabled && $comments && count($comments) > 0) {
+      if ($this->commentManager && $comments && count($comments) > 0) {
         foreach ($comments as $comment) {
           $parameter = explode('.', $comment);
           $entity_type_id = $parameter[0];

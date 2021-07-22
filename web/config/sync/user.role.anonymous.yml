@@ -10,4 +10,6 @@ weight: 0
 is_admin: false
 permissions:
   - 'access content'
+  - 'cast rate vote on node of interview'
+  - 'cast rate vote on node of page'
   - 'view media'

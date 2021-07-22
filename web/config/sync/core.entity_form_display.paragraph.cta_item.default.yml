@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.cta_item.field_content
-    - field.field.paragraph.cta_item.field_image
     - field.field.paragraph.cta_item.field_link
+    - field.field.paragraph.cta_item.field_svg
     - field.field.paragraph.cta_item.field_title
     - paragraphs.paragraphs_type.cta_item
   module:
@@ -25,13 +25,6 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_image:
-    weight: 1
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-    type: media_library_widget
-    region: content
   field_link:
     weight: 3
     settings:
@@ -39,6 +32,13 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_svg:
+    type: media_library_widget
+    weight: 4
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
     region: content
   field_title:
     weight: 0
