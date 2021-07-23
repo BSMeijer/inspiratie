@@ -1,0 +1,10 @@
+uuid: 9d1baf79-6814-4bce-a400-329343438964
+langcode: nl
+status: true
+dependencies:
+  module:
+    - media
+id: media.overview
+label: Overzicht
+targetEntityType: media
+cache: true

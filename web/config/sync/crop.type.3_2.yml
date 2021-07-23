@@ -1,0 +1,12 @@
+uuid: c9ab165f-b6bc-4b94-a5e5-eeadf50d61db
+langcode: nl
+status: true
+dependencies: {  }
+id: '3_2'
+label: '3:2'
+description: ''
+aspect_ratio: '3:2'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 600
+hard_limit_height: 400

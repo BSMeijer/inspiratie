@@ -1,0 +1,25 @@
+uuid: 90d2c93e-19b4-4590-a2f9-425d197af0b6
+langcode: nl
+status: true
+dependencies:
+  config:
+    - crop.type.3_2
+  module:
+    - crop
+name: overview
+label: Overzicht
+effects:
+  90991e0a-0d68-4c38-9463-c5e3ba341d9e:
+    uuid: 90991e0a-0d68-4c38-9463-c5e3ba341d9e
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '3_2'
+  acf7d22d-633b-4e08-9afd-26d36691f80e:
+    uuid: acf7d22d-633b-4e08-9afd-26d36691f80e
+    id: image_scale
+    weight: 2
+    data:
+      width: 400
+      height: null
+      upscale: false

@@ -1,0 +1,32 @@
+uuid: 5c6f8d74-68a2-45e8-8f16-9abf36ada014
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.overview
+    - field.field.media.image.field_media_image
+    - image.style.overview
+    - media.type.image
+  module:
+    - image
+id: media.image.overview
+targetEntityType: media
+bundle: image
+mode: overview
+content:
+  field_media_image:
+    label: visually_hidden
+    weight: 0
+    settings:
+      image_style: overview
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

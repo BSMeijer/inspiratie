@@ -7,7 +7,7 @@ dependencies:
     - image.style.thumbnail
     - media.type.image
   module:
-    - image
+    - image_widget_crop
     - path
 id: media.image.default
 targetEntityType: media
@@ -23,10 +23,17 @@ content:
   field_media_image:
     weight: 0
     settings:
-      progress_indicator: throbber
+      show_crop_area: true
+      show_default_crop: true
+      warn_multiple_usages: true
       preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - '3_2'
+      progress_indicator: throbber
+      crop_types_required: {  }
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
     region: content
   langcode:
     type: language_select
