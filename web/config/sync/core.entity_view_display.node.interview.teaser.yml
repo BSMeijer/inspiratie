@@ -43,14 +43,14 @@ third_party_settings:
       ds_content:
         - field_image
         - group_wrapper
+        - node_link
+        - field_schooltype
         - node_title
         - field_teaser
-        - node_link
-        - rate_helpfull
     fields:
       node_link:
         plugin_id: node_link
-        weight: 4
+        weight: 2
         label: hidden
         formatter: default
         settings:
@@ -60,7 +60,7 @@ third_party_settings:
           class: ''
       node_title:
         plugin_id: node_title
-        weight: 2
+        weight: 5
         label: hidden
         formatter: default
         settings:
@@ -71,6 +71,7 @@ third_party_settings:
   field_group:
     group_wrapper:
       children:
+        - field_schooltype
         - node_title
         - field_teaser
       parent_name: ''
@@ -102,16 +103,21 @@ content:
       view_mode: overview
       link: false
     third_party_settings: {  }
-  field_teaser:
-    type: text_default
-    weight: 3
+  field_schooltype:
+    type: entity_reference_label
+    weight: 4
     region: ds_content
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
-  rate_helpfull:
-    weight: 100
+    settings:
+      link: true
+    third_party_settings:
+      ds:
+        ds_limit: ''
+  field_teaser:
+    type: text_default
+    weight: 6
     region: ds_content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
 hidden:
@@ -121,9 +127,9 @@ hidden:
   field_location: true
   field_name: true
   field_school: true
-  field_schooltype: true
   field_thema: true
   field_topic: true
   langcode: true
   links: true
+  rate_helpfull: true
   search_api_excerpt: true

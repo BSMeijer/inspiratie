@@ -772,32 +772,44 @@ body.menu-open .mobile-menu-target-wrapper {
   box-shadow: 0 0 1rem rgba(33, 37, 41, 0.05);
 }
 /* line 13, ../sass/nodes/_interview--teaser.scss */
+.node--type-interview.node--view-mode-teaser .field--name-field-schooltype {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 18, ../sass/nodes/_interview--teaser.scss */
+.node--type-interview.node--view-mode-teaser .field--name-field-schooltype .field__item a {
+  color: #931058;
+}
+/* line 23, ../sass/nodes/_interview--teaser.scss */
+.node--type-interview.node--view-mode-teaser .field--name-field-schooltype .field__item:not(:last-child) a {
+  margin-right: 0.25rem;
+}
+/* line 30, ../sass/nodes/_interview--teaser.scss */
 .node--type-interview.node--view-mode-teaser .interview-teaser-content {
   padding: 1rem 1rem 3rem;
 }
-/* line 16, ../sass/nodes/_interview--teaser.scss */
+/* line 33, ../sass/nodes/_interview--teaser.scss */
 .node--type-interview.node--view-mode-teaser .interview-teaser-content h3 {
   margin-bottom: 1rem;
-  text-align: center;
 }
-/* line 20, ../sass/nodes/_interview--teaser.scss */
+/* line 36, ../sass/nodes/_interview--teaser.scss */
 .node--type-interview.node--view-mode-teaser .interview-teaser-content h3 a {
   color: #216c9c;
 }
-/* line 26, ../sass/nodes/_interview--teaser.scss */
+/* line 42, ../sass/nodes/_interview--teaser.scss */
 .node--type-interview.node--view-mode-teaser .field--name-node-link {
   position: absolute;
   right: 1rem;
   bottom: 1rem;
 }
-/* line 31, ../sass/nodes/_interview--teaser.scss */
+/* line 47, ../sass/nodes/_interview--teaser.scss */
 .node--type-interview.node--view-mode-teaser .field--name-node-link a {
   height: 0px;
   width: 0px;
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
-/* line 37, ../sass/nodes/_interview--teaser.scss */
+/* line 53, ../sass/nodes/_interview--teaser.scss */
 .node--type-interview.node--view-mode-teaser .field--name-node-link a::before {
   color: #216c9c;
   content: '►►';

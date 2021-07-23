@@ -10,12 +10,28 @@
     box-shadow: 0 0 $spacing rgba($base-color, .05);
   }
 
+  .field--name-field-schooltype {
+    display: flex;
+    flex-wrap: wrap;
+
+    .field__item {
+      a {
+        color: $color-primary;
+      }
+
+      &:not(:last-child) {
+        a {
+          margin-right: $spacing * .25;
+        }
+      }
+    }
+  }
+
   .interview-teaser-content {
     padding: $spacing $spacing $spacing * 3;
 
     h3 {
       margin-bottom: $spacing;
-      text-align: center;
 
       a {
         color: $matisse;
