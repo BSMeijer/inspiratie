@@ -1,0 +1,17 @@
+uuid: dc6ccf3d-d0d1-483f-bc08-fb68177b218b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - crop.type.3_2
+  module:
+    - crop
+name: header
+label: Header
+effects:
+  42ea849d-9a10-4eb4-892b-a5cf883f75df:
+    uuid: 42ea849d-9a10-4eb4-892b-a5cf883f75df
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '3_2'

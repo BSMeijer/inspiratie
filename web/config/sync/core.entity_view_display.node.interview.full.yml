@@ -75,10 +75,10 @@ third_party_settings:
       format_type: background_image
       region: ds_content
       format_settings:
+        image: field_image
+        image_style: header
         id: ''
         classes: interview-header
-        image: field_image
-        image_style: ''
         hide_if_missing: false
       label: Header
     group_wrapper:
