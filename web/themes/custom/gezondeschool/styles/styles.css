@@ -223,14 +223,19 @@ img {
 /* line 5, ../sass/base/_carousel.scss */
 .slick-slide {
   height: inherit !important;
-  padding: 0 0.5rem;
 }
-/* line 9, ../sass/base/_carousel.scss */
+@media (min-width: 768px) {
+  /* line 5, ../sass/base/_carousel.scss */
+  .slick-slide {
+    padding: 0 0.5rem;
+  }
+}
+/* line 12, ../sass/base/_carousel.scss */
 .slick-slide > div {
   height: 100%;
 }
 
-/* line 14, ../sass/base/_carousel.scss */
+/* line 17, ../sass/base/_carousel.scss */
 .slick-arrow {
   appearance: none;
   background: transparent;
@@ -242,7 +247,7 @@ img {
   z-index: 10;
 }
 
-/* line 25, ../sass/base/_carousel.scss */
+/* line 28, ../sass/base/_carousel.scss */
 .slick-next {
   right: 0;
 }
@@ -1307,8 +1312,8 @@ div.fivestar-rating-wrapper > div > label::before {
 
 /* line 1, ../sass/views/_related-stories.scss */
 .view-related-stories {
-  margin: 0 -0.5rem 2rem;
-  padding: 0 1rem;
+  margin: 0 0 2rem;
+  padding: 0;
 }
 @media (min-width: 768px) {
   /* line 1, ../sass/views/_related-stories.scss */

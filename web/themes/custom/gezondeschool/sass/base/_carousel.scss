@@ -4,7 +4,10 @@
 
 .slick-slide {
   height: inherit !important;
-  padding: 0 $spacing * .5;
+
+  @media (min-width: $bp-tablet) {
+    padding: 0 $spacing * .5;
+  }
 
   >div {
     height: 100%;

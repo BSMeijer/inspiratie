@@ -6,6 +6,8 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - node.type.interview
     - taxonomy.vocabulary.schooltype
+    - taxonomy.vocabulary.thema
+    - taxonomy.vocabulary.topic
   module:
     - node
     - taxonomy
@@ -52,7 +54,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 8
+          items_per_page: 3
           offset: 0
       style:
         type: default
@@ -134,7 +136,20 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-      sorts: {  }
+      sorts:
+        created:
+          id: created
+          table: taxonomy_index
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          plugin_id: date
       title: 'Gerelateerde artikelen'
       header: {  }
       footer: {  }
@@ -161,6 +176,8 @@ display:
             limit: true
             vids:
               schooltype: schooltype
+              thema: thema
+              topic: topic
             anyall: +
             term_page: '0'
           default_argument_skip_url: false
