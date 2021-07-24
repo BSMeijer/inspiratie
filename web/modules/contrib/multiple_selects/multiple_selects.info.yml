@@ -1,0 +1,13 @@
+name: Multiple Selects
+description: Adding a possibility to use multiple select fields rather than a multiselect field.
+package: Fields
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:field
+
+# Information added by Drupal.org packaging script on 2020-07-31
+version: '8.x-1.0'
+project: 'multiple_selects'
+datestamp: 1596202395

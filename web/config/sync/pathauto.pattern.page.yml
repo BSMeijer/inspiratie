@@ -1,0 +1,22 @@
+uuid: 8b061ee7-2f2d-4709-bc74-58cc26ced328
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: page
+label: Pagina
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  9844ea5e-0c3c-41ad-bbed-fcc13e2a2a32:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9844ea5e-0c3c-41ad-bbed-fcc13e2a2a32
+selection_logic: and
+weight: -5
+relationships: {  }

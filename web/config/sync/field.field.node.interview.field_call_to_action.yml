@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_call_to_action
     - node.type.interview
     - paragraphs.paragraphs_type.cta_item
+    - paragraphs.paragraphs_type.from_library
   module:
     - entity_reference_revisions
 id: node.interview.field_call_to_action
@@ -24,9 +25,10 @@ settings:
     negate: 0
     target_bundles:
       cta_item: cta_item
+      from_library: from_library
     target_bundles_drag_drop:
-      call_to_action:
-        weight: 9
+      call_to_action_bar:
+        weight: 10
         enabled: false
       clearfix:
         weight: 10
@@ -37,6 +39,9 @@ settings:
       frame:
         weight: 12
         enabled: false
+      from_library:
+        enabled: true
+        weight: 14
       image:
         weight: 13
         enabled: false

@@ -1,0 +1,22 @@
+uuid: a68449b7-a02c-4211-92de-570ef367e402
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: interview
+label: Interview
+type: 'canonical_entities:node'
+pattern: '[node:field_schooltype:0]/[node:title]'
+selection_criteria:
+  97081b84-d574-4e57-bab8-583eaeb34dc9:
+    id: node_type
+    bundles:
+      interview: interview
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 97081b84-d574-4e57-bab8-583eaeb34dc9
+selection_logic: and
+weight: -5
+relationships: {  }

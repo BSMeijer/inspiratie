@@ -1809,6 +1809,106 @@
         }
     },
     {
+        "name": "drupal/ckeditor_abbreviation",
+        "version": "2.0.1",
+        "version_normalized": "2.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/ckeditor_abbreviation.git",
+            "reference": "2.0.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/ckeditor_abbreviation-2.0.1.zip",
+            "reference": "2.0.1",
+            "shasum": "e148cb984eed86ad02bcafa050ae058b179a572f"
+        },
+        "require": {
+            "drupal/core": "^8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "2.0.1",
+                "datestamp": "1597938425",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "boromino",
+                "homepage": "https://www.drupal.org/user/859722"
+            }
+        ],
+        "description": "Adds CKEditor abbreviation button.",
+        "homepage": "https://www.drupal.org/project/ckeditor_abbreviation",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/ckeditor_abbreviation",
+            "issues": "http://drupal.org/project/issues/ckeditor_abbreviation"
+        }
+    },
+    {
+        "name": "drupal/ckeditor_entity_link",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/ckeditor_entity_link.git",
+            "reference": "8.x-1.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/ckeditor_entity_link-8.x-1.2.zip",
+            "reference": "8.x-1.2",
+            "shasum": "a3a856ae1ee5b83fef40ad9fe8f3b8473f6ab38c"
+        },
+        "require": {
+            "drupal/core": "^8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-1.2",
+                "datestamp": "1594326642",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "baskaran",
+                "homepage": "https://www.drupal.org/user/2423304"
+            },
+            {
+                "name": "dealancer",
+                "homepage": "https://www.drupal.org/user/243418"
+            }
+        ],
+        "description": "Allows to insert entity links in CKEditor.",
+        "homepage": "https://www.drupal.org/project/ckeditor_entity_link",
+        "support": {
+            "source": "https://git.drupalcode.org/project/ckeditor_entity_link"
+        }
+    },
+    {
         "name": "drupal/classy_paragraphs",
         "version": "1.0.0-beta3",
         "version_normalized": "1.0.0.0-beta3",
@@ -2548,6 +2648,76 @@
         "homepage": "https://www.drupal.org/project/entity_reference_revisions",
         "support": {
             "source": "https://git.drupalcode.org/project/entity_reference_revisions"
+        }
+    },
+    {
+        "name": "drupal/entity_usage",
+        "version": "2.0.0-beta3",
+        "version_normalized": "2.0.0.0-beta3",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/entity_usage.git",
+            "reference": "8.x-2.0-beta3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/entity_usage-8.x-2.0-beta3.zip",
+            "reference": "8.x-2.0-beta3",
+            "shasum": "cc115349eb533013ec672dadbe8cf0cd880bd8c4"
+        },
+        "require": {
+            "drupal/core": "^8.8 || ^9"
+        },
+        "require-dev": {
+            "drupal/block_field": "~1.0",
+            "drupal/dynamic_entity_reference": "~1.0",
+            "drupal/entity_browser": "~2.0",
+            "drupal/entity_browser_block": "~1.0",
+            "drupal/entity_embed": "~1.0",
+            "drupal/entity_reference_revisions": "~1.0",
+            "drupal/inline_entity_form": "^1.0@RC",
+            "drupal/paragraphs": "~1.0",
+            "drupal/webform": "~5.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-2.0-beta3",
+                "datestamp": "1585145909",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            },
+            "drush": {
+                "services": {
+                    "drush.services.yml": "^9"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "marcoscano",
+                "homepage": "https://www.drupal.org/user/1288796"
+            },
+            {
+                "name": "seanB",
+                "homepage": "https://www.drupal.org/user/545912"
+            }
+        ],
+        "description": "Track usage of entities referenced by other entities",
+        "homepage": "https://www.drupal.org/project/entity_usage",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/entity_usage",
+            "issues": "http://drupal.org/project/issues/entity_usage"
         }
     },
     {
@@ -3312,6 +3482,56 @@
         "support": {
             "source": "https://git.drupalcode.org/project/media_entity_soundcloud",
             "issues": "https://drupal.org/project/issues/media_entity_soundcloud"
+        }
+    },
+    {
+        "name": "drupal/multiple_selects",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/multiple_selects.git",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/multiple_selects-8.x-1.0.zip",
+            "reference": "8.x-1.0",
+            "shasum": "8f3978ffcf1369771049a5d0917fd4ce20e2f90a"
+        },
+        "require": {
+            "drupal/core": "^8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1596202393",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "JeroenT",
+                "homepage": "https://www.drupal.org/user/2228934"
+            },
+            {
+                "name": "webadpro",
+                "homepage": "https://www.drupal.org/user/708024"
+            }
+        ],
+        "description": "Adding a possibility to use multiple select fields rather than a multiselect field.",
+        "homepage": "https://www.drupal.org/project/multiple_selects",
+        "support": {
+            "source": "https://git.drupalcode.org/project/multiple_selects"
         }
     },
     {

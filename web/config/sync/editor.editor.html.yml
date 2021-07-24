@@ -18,6 +18,7 @@ settings:
             - Format
             - Bold
             - Italic
+            - Table
         -
           name: Links
           items:
@@ -32,7 +33,7 @@ settings:
           name: Media
           items:
             - Blockquote
-            - DrupalImage
+            - abbr
   plugins:
     stylescombo:
       styles: ''
