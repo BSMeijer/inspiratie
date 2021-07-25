@@ -1,0 +1,43 @@
+entity_types:
+  file: file
+  node: node
+  taxonomy_term: taxonomy_term
+  content_moderation_state: 0
+  crop: 0
+  entity_subqueue: 0
+  media: 0
+  menu_link_content: 0
+  paragraphs_library_item: 0
+  path_alias: 0
+  search_api_task: 0
+  shortcut: 0
+  user: 0
+  vote: 0
+  vote_result: 0
+  paragraph: 0
+node_bundles:
+  interview: interview
+  page: page
+0_bundles: null
+file_bundles:
+  file: file
+comment_bundles:
+  comment: 0
+contact_message_bundles:
+  feedback: 0
+  personal: 0
+block_content_bundles:
+  basic: 0
+menu_link_content_bundles:
+  menu_link_content: 0
+shortcut_bundles:
+  default: 0
+taxonomy_term_bundles:
+  schooltype: 0
+  thema: 0
+  topic: 0
+user_bundles:
+  user: 0
+_core:
+  default_config_hash: H3Vu3xgbyMXr8upGTdVNfvuEr5pb7YhFkhe38BwwvME
+langcode: nl

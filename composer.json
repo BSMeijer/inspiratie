@@ -34,6 +34,7 @@
     "drupal/field_group_background_image": "^1.4",
     "drupal/hotjar": "^2.2",
     "drupal/image_widget_crop": "^2.3",
+    "drupal/linkit": "^4.3",
     "drupal/media_entity_soundcloud": "^3.0",
     "drupal/multiple_selects": "^1.0",
     "drupal/paragraphs": "^1.12",

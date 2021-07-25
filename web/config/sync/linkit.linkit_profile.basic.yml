@@ -1,0 +1,22 @@
+uuid: 2bd6bf13-e0e9-4ab5-9f2b-b36f1bfab6e3
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: basic
+label: Basic
+description: ''
+attributes: {  }
+matchers:
+  7020a674-c79b-4302-9adb-3ba135f06737:
+    uuid: 7020a674-c79b-4302-9adb-3ba135f06737
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles:
+        interview: interview
+        page: page
+      group_by_bundle: true
+      include_unpublished: true
