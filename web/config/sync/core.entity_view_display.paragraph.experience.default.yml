@@ -1,0 +1,114 @@
+uuid: e5fdd287-e64a-43d4-8422-733a89c67530
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.experience.field_content
+    - field.field.paragraph.experience.field_image
+    - field.field.paragraph.experience.field_intro
+    - field.field.paragraph.experience.field_link
+    - field.field.paragraph.experience.field_title
+    - paragraphs.paragraphs_type.experience
+  module:
+    - ds
+    - field_group
+    - link
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_image
+        - field_title
+        - field_intro
+        - group_wrapper
+        - field_content
+        - field_link
+  field_group:
+    group_wrapper:
+      children:
+        - field_title
+        - field_intro
+        - field_content
+        - field_link
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: experience-wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Wrapper
+id: paragraph.experience.default
+targetEntityType: paragraph
+bundle: experience
+mode: default
+content:
+  field_content:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: square
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: ds_content
+  field_intro:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: ds_content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+hidden:
+  search_api_excerpt: true

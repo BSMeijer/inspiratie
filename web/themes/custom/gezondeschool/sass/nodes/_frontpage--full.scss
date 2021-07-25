@@ -1,0 +1,93 @@
+.node--type-frontpage.node--view-mode-full {
+  .background-image {
+    background-position: center;
+    background-size: cover;
+    margin-bottom: $spacing * 2;
+    padding: $spacing;
+    position: relative;
+
+    @media (min-width: $bp-tablet) {
+      @include break-out;
+      margin-bottom: $spacing * 4;
+      min-height: 700px;
+    }
+
+    &::after {
+      content: '';
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(45deg, rgba($matisse, .666) 0%, rgba($color-primary, .333) 100%);
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    .front-header-wrapper {
+      position: relative;
+      z-index: 2;
+
+      h1 {
+        color: $white;
+      }
+
+      @media (min-width: $bp-tablet) {
+        left: 50%;
+        max-width: 600px;
+        padding-right: $spacing * 2;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50%;
+      }
+
+      .field--name-field-intro {
+        background: none;
+        color: $white;
+        font-family: 'Bariol Regular Italic';
+        font-size: $base-font-size * 1.05;
+        margin-bottom: $spacing;
+        padding: 0;
+
+        @media (min-width: $bp-tablet) {
+          font-size: $base-font-size * 1.15;
+          margin-bottom: $spacing * 2;
+        }
+      }
+    }
+  }
+
+  .field--name-field-links {
+    display: flex;
+    flex-wrap: wrap;
+
+    .field__item {
+      &:not(:last-child) {
+        margin-bottom: $spacing;
+        margin-right: $spacing;
+      }
+
+      &:nth-child(2) {
+        page-break-after: always;
+      }
+    }
+
+    a {
+      background-color: $goldenrod;
+      border: 2px solid $color-primary;
+      border-radius: $spacing * 3;
+      box-shadow: 0 0 $spacing rgba($base-color, .2);
+      color: $color-primary;
+      display: inline-block;
+      font-family: 'Bariol Regular Italic';
+      padding: $spacing * .25 $spacing $spacing * .3333;
+      text-align: center;
+      text-decoration: none;
+
+      &:hover {
+        background-color: darken($goldenrod, 10%);
+        box-shadow: 0 0 $spacing rgba($base-color, .4);
+      }
+    }
+  }
+}

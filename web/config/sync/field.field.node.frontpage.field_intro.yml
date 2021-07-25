@@ -1,0 +1,32 @@
+uuid: 2f2b38a7-7268-4b4f-866f-07606deaaf5c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intro
+    - node.type.frontpage
+  module:
+    - better_formats
+    - text
+third_party_settings:
+  better_formats:
+    allowed_formats_toggle: 0
+    allowed_formats:
+      html: html
+    default_order_toggle: 0
+    default_order_wrapper:
+      formats:
+        html:
+          weight: '0'
+id: node.frontpage.field_intro
+field_name: field_intro
+entity_type: node
+bundle: frontpage
+label: Intro
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

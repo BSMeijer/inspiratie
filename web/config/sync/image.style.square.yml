@@ -1,0 +1,17 @@
+uuid: 61f872cd-e10d-4764-98e9-2f682dc01d1a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - crop.type.1_1
+  module:
+    - crop
+name: square
+label: Vierkant
+effects:
+  47745326-5b6a-4f83-8996-2388564b1164:
+    uuid: 47745326-5b6a-4f83-8996-2388564b1164
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '1_1'

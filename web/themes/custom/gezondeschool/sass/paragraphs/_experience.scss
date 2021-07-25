@@ -1,0 +1,63 @@
+.paragraph--type-experience {
+  h2 {
+    background-color: $goldenrod;
+    color: $color-primary;
+    padding: $spacing * .25 $spacing;
+    text-transform: uppercase;
+    margin: 0 (-$spacing) $spacing;
+
+    @media (min-width: $bp-tablet) {
+      display: inline-block;
+      padding: $spacing;
+      margin-left: -2* $spacing;
+      transform: translate(-4*$spacing, -50%);
+    }
+  }
+
+  .experience-wrapper {
+    background: $white;
+    padding: 0 $spacing $spacing;
+
+
+    @media (min-width: $bp-tablet) {
+      padding: 0 $spacing * 3 $spacing * 3;
+    }
+  }
+
+  .field--name-field-intro {
+    color: $matisse;
+    font-size: $base-font-size * 1.05;
+    padding-bottom: $spacing;
+  }
+
+  .field--name-field-link {
+    padding-top: $spacing;
+    text-align: right;
+
+    a {
+      border-bottom: 1px solid $matisse;
+      color: $matisse;
+      font-size: $base-font-size * 1.05;
+
+      &:hover {
+        border-bottom-color: transparent;
+      }
+    }
+  }
+
+  @media (min-width: $bp-tablet) {
+    @include break-out;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    .field--name-field-image {
+      width: 33.333%;
+    }
+
+    .experience-wrapper {
+      margin: auto 0;
+      width: 66.666%;
+    }
+  }
+}

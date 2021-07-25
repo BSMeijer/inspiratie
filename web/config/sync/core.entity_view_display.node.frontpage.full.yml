@@ -1,0 +1,130 @@
+uuid: 09a094d2-e47e-46ba-b36b-10e72bdea7a2
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.frontpage.field_body
+    - field.field.node.frontpage.field_image
+    - field.field.node.frontpage.field_intro
+    - field.field.node.frontpage.field_links
+    - node.type.frontpage
+  module:
+    - ds
+    - entity_reference_revisions
+    - field_group
+    - link
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - group_background_image
+        - node_title
+        - field_body
+        - field_intro
+        - field_links
+        - group_header_wrapper
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          'link class': ''
+          wrapper: h1
+          class: ''
+          link: false
+  field_group:
+    group_background_image:
+      children:
+        - group_header_wrapper
+      parent_name: ''
+      weight: 0
+      format_type: background_image
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: background-image
+        image: field_image
+        image_style: header
+        hide_if_missing: false
+      label: Achtergrond
+    group_header_wrapper:
+      children:
+        - node_title
+        - field_intro
+        - field_links
+      parent_name: group_background_image
+      weight: 4
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: front-header-wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Wrapper
+id: node.frontpage.full
+targetEntityType: node
+bundle: frontpage
+mode: full
+content:
+  field_body:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    region: ds_content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_intro:
+    type: text_default
+    weight: 2
+    region: ds_content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_links:
+    type: link
+    weight: 3
+    region: ds_content
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      ds:
+        ds_limit: ''
+hidden:
+  field_image: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

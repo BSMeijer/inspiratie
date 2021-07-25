@@ -1,0 +1,58 @@
+uuid: 24abdbf3-ae98-4244-bc2d-4b656d002276
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.frontpage
+    - paragraphs.paragraphs_type.experience
+  module:
+    - entity_reference_revisions
+id: node.frontpage.field_body
+field_name: field_body
+entity_type: node
+bundle: frontpage
+label: Inhoud
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      experience: experience
+    target_bundles_drag_drop:
+      call_to_action_bar:
+        weight: 12
+        enabled: false
+      clearfix:
+        weight: 13
+        enabled: false
+      cta_item:
+        weight: 14
+        enabled: false
+      experience:
+        enabled: true
+        weight: 14
+      frame:
+        weight: 15
+        enabled: false
+      from_library:
+        weight: 16
+        enabled: false
+      image:
+        weight: 17
+        enabled: false
+      soundcloud:
+        weight: 18
+        enabled: false
+      text:
+        weight: 19
+        enabled: false
+      video:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

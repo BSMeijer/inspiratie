@@ -1,0 +1,10 @@
+uuid: 847ee3fe-74d1-4aa2-bf7b-b1feea70a403
+langcode: nl
+status: true
+dependencies: {  }
+id: experience
+label: Ervaring
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

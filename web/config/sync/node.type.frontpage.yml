@@ -1,0 +1,18 @@
+uuid: 5422059b-46c4-4222-aa37-7911cce6a408
+langcode: nl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Frontpage
+type: frontpage
+description: 'De frontpage is een node die enkelvoudig in het systeem voorkomt.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

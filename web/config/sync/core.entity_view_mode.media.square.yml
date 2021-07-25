@@ -1,0 +1,10 @@
+uuid: b69c17e9-90d0-46ac-93a7-ad8aa19f6237
+langcode: nl
+status: true
+dependencies:
+  module:
+    - media
+id: media.square
+label: Vierkant
+targetEntityType: media
+cache: true

@@ -51,7 +51,7 @@
       clip: rect(0 0 0 0);
 
       &::before {
-        color: $matisse;
+        color: $color-primary;
         content: '►►';
         font-size: $tiny;
         display: inline-block;

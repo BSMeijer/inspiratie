@@ -1,0 +1,18 @@
+uuid: 67875d75-ef3c-4728-ad70-b807cb9a65b0
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.frontpage
+id: node.frontpage.title
+field_name: title
+entity_type: node
+bundle: frontpage
+label: Titel
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

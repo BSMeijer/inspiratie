@@ -25,12 +25,14 @@
 
 @import 'nodes/interview--full';
 @import 'nodes/interview--teaser';
+@import 'nodes/frontpage--full';
 
 @import 'fields/intro';
 @import 'fields/read-more';
 @import 'fields/body';
 @import 'fields/cta';
 @import 'fields/rate';
+@import 'fields/links';
 
 @import 'facets/facets';
 
@@ -39,6 +41,7 @@
 @import 'paragraphs/video';
 @import 'paragraphs/image';
 @import 'paragraphs/cta';
+@import 'paragraphs/experience';
 @import 'paragraphs/cta-bar';
 @import 'paragraphs/frame';
 

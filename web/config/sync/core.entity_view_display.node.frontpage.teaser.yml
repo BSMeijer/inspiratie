@@ -1,0 +1,30 @@
+uuid: 1f4f5c86-ac66-40ec-bb01-75d835424a6c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.frontpage.field_body
+    - field.field.node.frontpage.field_image
+    - field.field.node.frontpage.field_intro
+    - field.field.node.frontpage.field_links
+    - node.type.frontpage
+  module:
+    - user
+id: node.frontpage.teaser
+targetEntityType: node
+bundle: frontpage
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_body: true
+  field_image: true
+  field_intro: true
+  field_links: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,19 @@
+uuid: a4e10970-97c1-4ffd-819e-9c794a2c7f30
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.experience
+id: paragraph.experience.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: experience
+label: Titel
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
