@@ -1,0 +1,32 @@
+uuid: 9765711d-5faa-46ac-9a2d-0619f4488478
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_editor_note
+    - node.type.interview
+  module:
+    - better_formats
+    - text
+third_party_settings:
+  better_formats:
+    allowed_formats_toggle: 0
+    allowed_formats:
+      html: html
+    default_order_toggle: 0
+    default_order_wrapper:
+      formats:
+        html:
+          weight: '0'
+id: node.interview.field_editor_note
+field_name: field_editor_note
+entity_type: node
+bundle: interview
+label: 'Interne notitie'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

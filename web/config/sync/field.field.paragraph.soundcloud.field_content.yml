@@ -1,0 +1,32 @@
+uuid: 2bb34d01-5baf-4145-85c8-2294f48942f8
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.soundcloud
+  module:
+    - better_formats
+    - text
+third_party_settings:
+  better_formats:
+    allowed_formats_toggle: 0
+    allowed_formats:
+      html: html
+    default_order_toggle: 0
+    default_order_wrapper:
+      formats:
+        html:
+          weight: '0'
+id: paragraph.soundcloud.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: soundcloud
+label: Onderschrift
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

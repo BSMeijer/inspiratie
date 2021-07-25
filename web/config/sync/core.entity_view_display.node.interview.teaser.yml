@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.interview.field_body
     - field.field.node.interview.field_call_to_action
+    - field.field.node.interview.field_editor_note
     - field.field.node.interview.field_image
     - field.field.node.interview.field_intro
     - field.field.node.interview.field_location
@@ -123,6 +124,7 @@ content:
 hidden:
   field_body: true
   field_call_to_action: true
+  field_editor_note: true
   field_intro: true
   field_location: true
   field_name: true

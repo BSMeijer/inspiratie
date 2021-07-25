@@ -1,0 +1,19 @@
+uuid: 975359e1-af38-47e9-bef0-115a5bc2669b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.soundcloud
+id: paragraph.soundcloud.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: soundcloud
+label: Titel
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

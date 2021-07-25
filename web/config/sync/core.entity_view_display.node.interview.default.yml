@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.interview.field_body
     - field.field.node.interview.field_call_to_action
+    - field.field.node.interview.field_editor_note
     - field.field.node.interview.field_image
     - field.field.node.interview.field_intro
     - field.field.node.interview.field_location
@@ -37,11 +38,22 @@ third_party_settings:
         link_custom: ''
         classes:
           layout_class: {  }
+          ds_content: {  }
     regions:
       ds_content:
         - node_title
         - field_body
         - field_image
+        - field_teaser
+        - field_intro
+        - field_schooltype
+        - field_topic
+        - field_thema
+        - field_name
+        - field_school
+        - field_location
+        - rate_helpfull
+        - field_call_to_action
     fields:
       node_title:
         plugin_id: node_title
@@ -69,13 +81,13 @@ content:
     region: ds_content
   field_call_to_action:
     type: entity_reference_revisions_entity_view
-    weight: 101
+    weight: 12
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    region: content
+    region: ds_content
   field_image:
     type: entity_reference_entity_view
     weight: 2
@@ -91,7 +103,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
+    region: ds_content
   field_location:
     weight: 10
     label: above
@@ -99,7 +111,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
+    region: ds_content
   field_name:
     weight: 8
     label: above
@@ -107,7 +119,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
+    region: ds_content
   field_school:
     weight: 9
     label: above
@@ -115,7 +127,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
+    region: ds_content
   field_schooltype:
     weight: 5
     label: above
@@ -123,14 +135,14 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
+    region: ds_content
   field_teaser:
     weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
+    region: ds_content
   field_thema:
     weight: 7
     label: above
@@ -138,7 +150,7 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
+    region: ds_content
   field_topic:
     weight: 6
     label: above
@@ -146,13 +158,14 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
+    region: ds_content
   rate_helpfull:
-    weight: 100
+    weight: 11
+    region: ds_content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
+  field_editor_note: true
   langcode: true
   links: true
   search_api_excerpt: true

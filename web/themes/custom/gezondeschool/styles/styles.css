@@ -987,7 +987,8 @@ div.fivestar-rating-wrapper > div > label::before {
 }
 
 /* line 1, ../sass/paragraphs/_video.scss */
-.paragraph--type--video {
+.paragraph--type--video,
+.paragraph--type--soundcloud {
   background-color: #216c9c;
   font-family: 'Bariol Regular Italic';
   font-size: 1.24688rem;
@@ -995,13 +996,23 @@ div.fivestar-rating-wrapper > div > label::before {
 }
 @media (min-width: 768px) {
   /* line 1, ../sass/paragraphs/_video.scss */
-  .paragraph--type--video {
+  .paragraph--type--video,
+  .paragraph--type--soundcloud {
     padding: 1rem;
   }
 }
+/* line 12, ../sass/paragraphs/_video.scss */
+.paragraph--type--video h2,
+.paragraph--type--video h3,
+.paragraph--type--soundcloud h2,
+.paragraph--type--soundcloud h3 {
+  color: #fff;
+  text-align: center;
+}
 @media (min-width: 1024px) {
   /* line 1, ../sass/paragraphs/_video.scss */
-  .paragraph--type--video {
+  .paragraph--type--video,
+  .paragraph--type--soundcloud {
     float: left;
     margin: 0 2rem 2rem 0;
     width: 50%;
@@ -1009,34 +1020,39 @@ div.fivestar-rating-wrapper > div > label::before {
 }
 @media (min-width: 1500px) {
   /* line 1, ../sass/paragraphs/_video.scss */
-  .paragraph--type--video {
+  .paragraph--type--video,
+  .paragraph--type--soundcloud {
     margin-left: -16.66%;
     width: 66.666%;
   }
 }
-/* line 22, ../sass/paragraphs/_video.scss */
-.paragraph--type--video .field--name-field-media-oembed-video {
+/* line 29, ../sass/paragraphs/_video.scss */
+.paragraph--type--video .field--name-field-media-oembed-video,
+.paragraph--type--soundcloud .field--name-field-media-oembed-video {
   margin-bottom: 1rem;
   padding-top: 56.25%;
   position: relative;
 }
-/* line 27, ../sass/paragraphs/_video.scss */
-.paragraph--type--video .field--name-field-media-oembed-video iframe {
+/* line 34, ../sass/paragraphs/_video.scss */
+.paragraph--type--video .field--name-field-media-oembed-video iframe,
+.paragraph--type--soundcloud .field--name-field-media-oembed-video iframe {
   left: 0;
   height: 100%;
   position: absolute;
   top: 0;
   width: 100%;
 }
-/* line 36, ../sass/paragraphs/_video.scss */
-.paragraph--type--video .field--name-field-content {
+/* line 43, ../sass/paragraphs/_video.scss */
+.paragraph--type--video .field--name-field-content,
+.paragraph--type--soundcloud .field--name-field-content {
   color: #fff;
   text-align: center;
   padding: 0 1rem 1rem;
 }
 @media (min-width: 768px) {
-  /* line 36, ../sass/paragraphs/_video.scss */
-  .paragraph--type--video .field--name-field-content {
+  /* line 43, ../sass/paragraphs/_video.scss */
+  .paragraph--type--video .field--name-field-content,
+  .paragraph--type--soundcloud .field--name-field-content {
     padding: 0 1rem;
   }
 }

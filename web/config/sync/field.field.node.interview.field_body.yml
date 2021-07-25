@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.call_to_action_bar
     - paragraphs.paragraphs_type.clearfix
     - paragraphs.paragraphs_type.frame
+    - paragraphs.paragraphs_type.from_library
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.soundcloud
     - paragraphs.paragraphs_type.text
@@ -36,6 +37,7 @@ settings:
       call_to_action_bar: call_to_action_bar
       clearfix: clearfix
       video: video
+      from_library: from_library
     target_bundles_drag_drop:
       call_to_action_bar:
         enabled: true
@@ -49,6 +51,9 @@ settings:
       frame:
         enabled: true
         weight: 8
+      from_library:
+        enabled: true
+        weight: 14
       image:
         enabled: true
         weight: 3

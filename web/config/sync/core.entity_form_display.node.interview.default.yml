@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.interview.field_body
     - field.field.node.interview.field_call_to_action
+    - field.field.node.interview.field_editor_note
     - field.field.node.interview.field_image
     - field.field.node.interview.field_intro
     - field.field.node.interview.field_location
@@ -103,6 +104,14 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+    region: content
+  field_editor_note:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
   field_image:
     type: media_library_widget
