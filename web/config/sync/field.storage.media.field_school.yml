@@ -1,0 +1,21 @@
+uuid: 3be1203c-2a20-48dc-9b90-dd7646372f9b
+langcode: nl
+status: true
+dependencies:
+  module:
+    - media
+id: media.field_school
+field_name: field_school
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

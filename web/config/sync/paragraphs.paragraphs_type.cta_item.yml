@@ -1,10 +1,15 @@
 uuid: 8d6e0e07-69a7-4ff8-9771-7c80d35eeb2f
 langcode: nl
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
 id: cta_item
-label: 'CtA Item'
+label: 'Call to Action Item'
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'Grote call to action onderaan de pagina. 1 van de 3 tegels.'
 behavior_plugins: {  }

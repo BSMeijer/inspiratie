@@ -1,0 +1,19 @@
+uuid: a1147b38-c1e7-4262-95f2-3b75d89677d3
+langcode: nl
+status: true
+dependencies:
+  module:
+    - media
+    - text
+id: media.field_internal_note
+field_name: field_internal_note
+entity_type: media
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

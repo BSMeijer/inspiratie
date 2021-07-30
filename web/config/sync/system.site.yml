@@ -1,11 +1,11 @@
 uuid: 085f124a-0e1a-42de-a60b-c172981e4de2
-name: 'Inspiratie Gezonde School'
+name: 'Gezonde School Inspiratie'
 mail: sebastiaan@seagrenpierce.nl
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /user/login
+  front: /node/7
 admin_compact_mode: false
 weight_select_max: 100
 langcode: nl

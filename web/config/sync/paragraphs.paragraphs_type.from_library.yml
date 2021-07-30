@@ -5,8 +5,8 @@ dependencies: {  }
 _core:
   default_config_hash: OJUwL6xTTiHbXZy10swc5Fckkr7qhSm4b0nK3326LO8
 id: from_library
-label: 'From library'
+label: 'Herbruikbare paragraaf'
 icon_uuid: null
 icon_default: null
-description: null
+description: ''
 behavior_plugins: {  }

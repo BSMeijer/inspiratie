@@ -16,9 +16,21 @@ settings:
           name: Opmaak
           items:
             - Format
+        -
+          name: Stijlen
+          items:
+            - Styles
+        -
+          name: Tekst
+          items:
             - Bold
             - Italic
-            - Table
+            - Superscript
+            - Subscript
+            - SpecialChar
+            - abbr
+            - Blockquote
+            - HorizontalRule
         -
           name: Links
           items:
@@ -30,14 +42,19 @@ settings:
           items:
             - BulletedList
             - NumberedList
+            - Indent
+            - Outdent
+        -
+          name: Tabel
+          items:
+            - Table
         -
           name: Media
           items:
-            - Blockquote
-            - abbr
+            - DrupalMediaLibrary
   plugins:
     stylescombo:
-      styles: ''
+      styles: 'ul.astable | Tabel van Lijst'
     language:
       language_list: un
     linkit:

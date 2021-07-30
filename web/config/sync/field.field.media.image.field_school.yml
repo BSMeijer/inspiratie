@@ -1,0 +1,19 @@
+uuid: cdd28eb1-8991-4c88-aee0-11db67cbe2e7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_school
+    - media.type.image
+id: media.image.field_school
+field_name: field_school
+entity_type: media
+bundle: image
+label: School
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
