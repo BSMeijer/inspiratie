@@ -2,7 +2,13 @@
   .title-wrapper {
     background-color: $goldenrod;
     display: inline-block;
-    padding: $spacing * .25 $spacing;
+    padding: $spacing;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: $bp-tablet) {
+      transform: translateY(50%);
+    }
 
     h2 {
       display: inline;
@@ -27,6 +33,11 @@
 
   .field--name-bundle-fieldparagraph {
     display: none;
+  }
+
+  .background-image {
+    background-position: center;
+    background-size: cover;
   }
 
   .article-wrapper {
