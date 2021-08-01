@@ -35,7 +35,7 @@
 
   .experience-wrapper {
     background: $white;
-    padding: 0 $spacing $spacing;
+    padding: 0 $spacing $spacing * 3;
     position: relative;
 
 
@@ -53,14 +53,11 @@
   .field--name-field-link {
     padding: $spacing 0 $spacing * 2;
     text-align: right;
-
-    @media (min-width: $bp-tablet) {
-      bottom: 0;
-      position: absolute;
-      padding: 0 0 0 $spacing * 3;
-      right: $spacing * 3;
-      transform: translateY(50%);
-    }
+    bottom: 0;
+    position: absolute;
+    padding: 0 0 0 $spacing * 3;
+    right: $spacing * 3;
+    transform: translateY(50%);
 
     @media (min-width: $bp-desktop) {
       right: $spacing * 4;

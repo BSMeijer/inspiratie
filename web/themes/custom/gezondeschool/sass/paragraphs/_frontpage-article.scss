@@ -1,4 +1,10 @@
 .paragraph--type-frontpage-artikel {
+  margin: $spacing * 3 0;
+
+  @media (min-width: $bp-tablet) {
+    margin: $spacing * 5 0;
+  }
+
   .title-wrapper {
     background-color: $goldenrod;
     display: inline-block;
@@ -62,7 +68,7 @@
 
     .content-wrapper {
       background: $white;
-      padding: $spacing;
+      padding: $spacing $spacing $spacing * 3;
       position: relative;
 
       @media (min-width: $bp-tablet) {
@@ -79,13 +85,12 @@
         padding: $spacing 0 $spacing * 2;
         text-align: right;
 
-        @media (min-width: $bp-tablet) {
-          bottom: 0;
-          position: absolute;
-          padding: 0 0 0 $spacing * 3;
-          right: $spacing * 3;
-          transform: translateY(50%);
-        }
+        bottom: 0;
+        position: absolute;
+        padding: 0 0 0 $spacing * 3;
+        right: $spacing * 3;
+        transform: translateY(50%);
+
 
         @media (min-width: $bp-desktop) {
           right: $spacing * 4;

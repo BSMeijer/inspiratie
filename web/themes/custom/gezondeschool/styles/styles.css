@@ -1272,7 +1272,7 @@ div.fivestar-rating-wrapper > div > label::before {
 /* line 36, ../sass/paragraphs/_experience.scss */
 .paragraph--type-experience .experience-wrapper {
   background: #fff;
-  padding: 0 1rem 1rem;
+  padding: 0 1rem 3rem;
   position: relative;
 }
 @media (min-width: 768px) {
@@ -1291,16 +1291,11 @@ div.fivestar-rating-wrapper > div > label::before {
 .paragraph--type-experience .field--name-field-link {
   padding: 1rem 0 2rem;
   text-align: right;
-}
-@media (min-width: 768px) {
-  /* line 53, ../sass/paragraphs/_experience.scss */
-  .paragraph--type-experience .field--name-field-link {
-    bottom: 0;
-    position: absolute;
-    padding: 0 0 0 3rem;
-    right: 3rem;
-    transform: translateY(50%);
-  }
+  bottom: 0;
+  position: absolute;
+  padding: 0 0 0 3rem;
+  right: 3rem;
+  transform: translateY(50%);
 }
 @media (min-width: 1024px) {
   /* line 53, ../sass/paragraphs/_experience.scss */
@@ -1308,7 +1303,7 @@ div.fivestar-rating-wrapper > div > label::before {
     right: 4rem;
   }
 }
-/* line 69, ../sass/paragraphs/_experience.scss */
+/* line 66, ../sass/paragraphs/_experience.scss */
 .paragraph--type-experience .field--name-field-link a {
   background-color: #fff;
   border: 2px solid #931058;
@@ -1320,7 +1315,7 @@ div.fivestar-rating-wrapper > div > label::before {
   padding: 0.25rem 1.5rem 0.5rem;
   text-align: right;
 }
-/* line 80, ../sass/paragraphs/_experience.scss */
+/* line 77, ../sass/paragraphs/_experience.scss */
 .paragraph--type-experience .field--name-field-link a::after {
   content: '►►';
   display: inline-block;
@@ -1337,11 +1332,11 @@ div.fivestar-rating-wrapper > div > label::before {
     display: flex;
     flex-wrap: nowrap;
   }
-  /* line 96, ../sass/paragraphs/_experience.scss */
+  /* line 93, ../sass/paragraphs/_experience.scss */
   .paragraph--type-experience .field--name-field-image {
     width: 33.333%;
   }
-  /* line 100, ../sass/paragraphs/_experience.scss */
+  /* line 97, ../sass/paragraphs/_experience.scss */
   .paragraph--type-experience .experience-wrapper {
     margin: auto 0;
     width: 66.666%;
@@ -1520,7 +1515,17 @@ div.fivestar-rating-wrapper > div > label::before {
   }
 }
 
-/* line 2, ../sass/paragraphs/_frontpage-article.scss */
+/* line 1, ../sass/paragraphs/_frontpage-article.scss */
+.paragraph--type-frontpage-artikel {
+  margin: 3rem 0;
+}
+@media (min-width: 768px) {
+  /* line 1, ../sass/paragraphs/_frontpage-article.scss */
+  .paragraph--type-frontpage-artikel {
+    margin: 5rem 0;
+  }
+}
+/* line 8, ../sass/paragraphs/_frontpage-article.scss */
 .paragraph--type-frontpage-artikel .title-wrapper {
   background-color: #FFD200;
   display: inline-block;
@@ -1529,55 +1534,55 @@ div.fivestar-rating-wrapper > div > label::before {
   z-index: 2;
 }
 @media (min-width: 768px) {
-  /* line 2, ../sass/paragraphs/_frontpage-article.scss */
+  /* line 8, ../sass/paragraphs/_frontpage-article.scss */
   .paragraph--type-frontpage-artikel .title-wrapper {
     transform: translateY(50%);
   }
 }
-/* line 13, ../sass/paragraphs/_frontpage-article.scss */
+/* line 19, ../sass/paragraphs/_frontpage-article.scss */
 .paragraph--type-frontpage-artikel .title-wrapper h2 {
   display: inline;
   text-transform: uppercase;
 }
-/* line 18, ../sass/paragraphs/_frontpage-article.scss */
+/* line 24, ../sass/paragraphs/_frontpage-article.scss */
 .paragraph--type-frontpage-artikel .title-wrapper .field--name-field-schooltype {
   display: inline-block;
 }
-/* line 21, ../sass/paragraphs/_frontpage-article.scss */
+/* line 27, ../sass/paragraphs/_frontpage-article.scss */
 .paragraph--type-frontpage-artikel .title-wrapper .field--name-field-schooltype a {
   color: #931058;
   font-size: 1.48438rem;
   font-weight: bold;
 }
-/* line 26, ../sass/paragraphs/_frontpage-article.scss */
+/* line 32, ../sass/paragraphs/_frontpage-article.scss */
 .paragraph--type-frontpage-artikel .title-wrapper .field--name-field-schooltype a::after {
   content: ':';
   margin-right: 0.25rem;
 }
-/* line 34, ../sass/paragraphs/_frontpage-article.scss */
+/* line 40, ../sass/paragraphs/_frontpage-article.scss */
 .paragraph--type-frontpage-artikel .field--name-bundle-fieldparagraph {
   display: none;
 }
-/* line 38, ../sass/paragraphs/_frontpage-article.scss */
+/* line 44, ../sass/paragraphs/_frontpage-article.scss */
 .paragraph--type-frontpage-artikel .background-image {
   background-position: center;
   background-size: cover;
 }
 @media (min-width: 768px) {
-  /* line 43, ../sass/paragraphs/_frontpage-article.scss */
+  /* line 49, ../sass/paragraphs/_frontpage-article.scss */
   .paragraph--type-frontpage-artikel .article-wrapper {
     width: 100vw;
     margin-left: 50%;
     transform: translateX(-50%);
     display: flex;
   }
-  /* line 48, ../sass/paragraphs/_frontpage-article.scss */
+  /* line 54, ../sass/paragraphs/_frontpage-article.scss */
   .paragraph--type-frontpage-artikel .article-wrapper .content-wrapper {
     order: 1;
     margin-top: 5rem;
     width: 40%;
   }
-  /* line 54, ../sass/paragraphs/_frontpage-article.scss */
+  /* line 60, ../sass/paragraphs/_frontpage-article.scss */
   .paragraph--type-frontpage-artikel .article-wrapper .background-image {
     align-items: center;
     display: flex;
@@ -1586,46 +1591,41 @@ div.fivestar-rating-wrapper > div > label::before {
     width: 60%;
   }
 }
-/* line 63, ../sass/paragraphs/_frontpage-article.scss */
+/* line 69, ../sass/paragraphs/_frontpage-article.scss */
 .paragraph--type-frontpage-artikel .article-wrapper .content-wrapper {
   background: #fff;
-  padding: 1rem;
+  padding: 1rem 1rem 3rem;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 63, ../sass/paragraphs/_frontpage-article.scss */
+  /* line 69, ../sass/paragraphs/_frontpage-article.scss */
   .paragraph--type-frontpage-artikel .article-wrapper .content-wrapper {
     padding: 3rem;
   }
 }
-/* line 72, ../sass/paragraphs/_frontpage-article.scss */
+/* line 78, ../sass/paragraphs/_frontpage-article.scss */
 .paragraph--type-frontpage-artikel .article-wrapper .content-wrapper .field--name-field-intro {
   color: #2A6797;
   font-size: 1.24688rem;
   padding-bottom: 1rem;
 }
-/* line 78, ../sass/paragraphs/_frontpage-article.scss */
+/* line 84, ../sass/paragraphs/_frontpage-article.scss */
 .paragraph--type-frontpage-artikel .article-wrapper .content-wrapper .field--name-field-link {
   padding: 1rem 0 2rem;
   text-align: right;
-}
-@media (min-width: 768px) {
-  /* line 78, ../sass/paragraphs/_frontpage-article.scss */
-  .paragraph--type-frontpage-artikel .article-wrapper .content-wrapper .field--name-field-link {
-    bottom: 0;
-    position: absolute;
-    padding: 0 0 0 3rem;
-    right: 3rem;
-    transform: translateY(50%);
-  }
+  bottom: 0;
+  position: absolute;
+  padding: 0 0 0 3rem;
+  right: 3rem;
+  transform: translateY(50%);
 }
 @media (min-width: 1024px) {
-  /* line 78, ../sass/paragraphs/_frontpage-article.scss */
+  /* line 84, ../sass/paragraphs/_frontpage-article.scss */
   .paragraph--type-frontpage-artikel .article-wrapper .content-wrapper .field--name-field-link {
     right: 4rem;
   }
 }
-/* line 94, ../sass/paragraphs/_frontpage-article.scss */
+/* line 99, ../sass/paragraphs/_frontpage-article.scss */
 .paragraph--type-frontpage-artikel .article-wrapper .content-wrapper .field--name-field-link a {
   background-color: #fff;
   border: 2px solid #931058;
@@ -1637,7 +1637,7 @@ div.fivestar-rating-wrapper > div > label::before {
   padding: 0.25rem 1.5rem 0.5rem;
   text-align: right;
 }
-/* line 105, ../sass/paragraphs/_frontpage-article.scss */
+/* line 110, ../sass/paragraphs/_frontpage-article.scss */
 .paragraph--type-frontpage-artikel .article-wrapper .content-wrapper .field--name-field-link a::after {
   content: '►►';
   display: inline-block;
@@ -1645,11 +1645,11 @@ div.fivestar-rating-wrapper > div > label::before {
   font-size: 0.75rem;
   padding-left: 0.5rem;
 }
-/* line 117, ../sass/paragraphs/_frontpage-article.scss */
+/* line 122, ../sass/paragraphs/_frontpage-article.scss */
 .paragraph--type-frontpage-artikel .background-image {
   padding: 2rem;
 }
-/* line 121, ../sass/paragraphs/_frontpage-article.scss */
+/* line 126, ../sass/paragraphs/_frontpage-article.scss */
 .paragraph--type-frontpage-artikel .inset-wrapper {
   background-color: rgba(129, 173, 194, 0.95);
   display: inline-block;
@@ -1657,19 +1657,19 @@ div.fivestar-rating-wrapper > div > label::before {
   padding: 1rem;
 }
 @media (min-width: 768px) {
-  /* line 121, ../sass/paragraphs/_frontpage-article.scss */
+  /* line 126, ../sass/paragraphs/_frontpage-article.scss */
   .paragraph--type-frontpage-artikel .inset-wrapper {
     padding: 2rem;
   }
 }
 @media (min-width: 1500px) {
-  /* line 121, ../sass/paragraphs/_frontpage-article.scss */
+  /* line 126, ../sass/paragraphs/_frontpage-article.scss */
   .paragraph--type-frontpage-artikel .inset-wrapper {
     padding: 2rem;
     max-width: 50%;
   }
 }
-/* line 136, ../sass/paragraphs/_frontpage-article.scss */
+/* line 141, ../sass/paragraphs/_frontpage-article.scss */
 .paragraph--type-frontpage-artikel .inset-wrapper .field--name-field-inzet-subtitle {
   color: #FFD200;
   font-family: 'Bariol Bold Italic';
