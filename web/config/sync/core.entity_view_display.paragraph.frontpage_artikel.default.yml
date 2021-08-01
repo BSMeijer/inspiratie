@@ -1,0 +1,220 @@
+uuid: 062d83ba-ecde-4d83-8ea2-12d414be77d5
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.frontpage_artikel.field_content
+    - field.field.paragraph.frontpage_artikel.field_image
+    - field.field.paragraph.frontpage_artikel.field_inset_title
+    - field.field.paragraph.frontpage_artikel.field_intro
+    - field.field.paragraph.frontpage_artikel.field_inzet_subtitle
+    - field.field.paragraph.frontpage_artikel.field_link
+    - field.field.paragraph.frontpage_artikel.field_schooltype
+    - field.field.paragraph.frontpage_artikel.field_title
+    - paragraphs.paragraphs_type.frontpage_artikel
+  module:
+    - ds
+    - field_group
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_content_wrapper:
+      children:
+        - field_intro
+        - field_content
+        - field_link
+      parent_name: group_article_wrapper
+      weight: 3
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: content-wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Content wrapper'
+    group_inset_wrapper:
+      children:
+        - field_inzet_subtitle
+        - field_inset_title
+      parent_name: group_background_image
+      weight: 1
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: inset-wrapper
+        description: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        effect: none
+        speed: fast
+        attributes: ''
+      label: 'Inset wrapper'
+    group_title_wrapper:
+      children:
+        - field_schooltype
+        - field_title
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: title-wrapper
+        description: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        effect: none
+        speed: fast
+        attributes: ''
+      label: 'Title wrapper'
+    group_background_image:
+      children:
+        - 'bundle_field:paragraph'
+        - group_inset_wrapper
+        - field_image
+      parent_name: group_article_wrapper
+      weight: 2
+      format_type: background_image
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: background-image
+        image: field_image
+        image_style: square
+        hide_if_missing: false
+      label: 'Background image'
+    group_article_wrapper:
+      children:
+        - group_background_image
+        - group_content_wrapper
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: article-wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Article wrapper'
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - group_title_wrapper
+        - 'bundle_field:paragraph'
+        - field_intro
+        - field_schooltype
+        - group_article_wrapper
+        - group_inset_wrapper
+        - field_title
+        - group_background_image
+        - group_content_wrapper
+        - field_inzet_subtitle
+        - field_inset_title
+        - field_content
+        - field_link
+    fields:
+      'bundle_field:paragraph':
+        plugin_id: 'bundle_field:paragraph'
+        weight: 0
+        label: hidden
+        formatter: default
+id: paragraph.frontpage_artikel.default
+targetEntityType: paragraph
+bundle: frontpage_artikel
+mode: default
+content:
+  field_content:
+    weight: 22
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_inset_title:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  field_intro:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_inzet_subtitle:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  field_link:
+    weight: 23
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: ds_content
+  field_schooltype:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: ds_content
+  field_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+hidden:
+  field_image: true
+  search_api_excerpt: true

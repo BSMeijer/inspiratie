@@ -1,0 +1,7 @@
+uuid: 92ceff60-c08a-4dca-b755-bdd8f22092bb
+langcode: nl
+status: true
+dependencies: {  }
+id: geel_midden
+label: 'Geel & Midden'
+classes: "frame-align-middle\r\nbg-gold\r\n"

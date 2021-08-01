@@ -1,0 +1,7 @@
+uuid: 91c8defa-24b6-452c-b6b2-99b2881e3cb4
+langcode: nl
+status: true
+dependencies: {  }
+id: geel_links
+label: 'Geel & Links'
+classes: "frame-align-left\r\nbg-gold\r\n"

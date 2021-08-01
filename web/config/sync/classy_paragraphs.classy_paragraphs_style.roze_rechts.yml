@@ -1,0 +1,7 @@
+uuid: e9824938-62ff-4d99-a130-f3ca21419ff2
+langcode: nl
+status: true
+dependencies: {  }
+id: roze_rechts
+label: 'Roze & Rechts'
+classes: "frame-align-right\r\nbg-pink\r\n"

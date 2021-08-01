@@ -1,0 +1,20 @@
+uuid: cf05a519-5810-4dcf-88d8-a38416012cd3
+langcode: nl
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_schooltype
+field_name: field_schooltype
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

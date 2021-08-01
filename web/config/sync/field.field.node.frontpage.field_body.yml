@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_body
     - node.type.frontpage
     - paragraphs.paragraphs_type.experience
+    - paragraphs.paragraphs_type.frontpage_artikel
   module:
     - entity_reference_revisions
 id: node.frontpage.field_body
@@ -23,6 +24,7 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
+      frontpage_artikel: frontpage_artikel
       experience: experience
     target_bundles_drag_drop:
       call_to_action_bar:
@@ -43,6 +45,9 @@ settings:
       from_library:
         weight: 16
         enabled: false
+      frontpage_artikel:
+        enabled: true
+        weight: 12
       image:
         weight: 17
         enabled: false

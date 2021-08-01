@@ -1,0 +1,32 @@
+uuid: 48c87b36-44fc-454a-9f6a-269a4ec1797c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.frontpage_artikel
+  module:
+    - better_formats
+    - text
+third_party_settings:
+  better_formats:
+    allowed_formats_toggle: 0
+    allowed_formats:
+      html: html
+    default_order_toggle: 0
+    default_order_wrapper:
+      formats:
+        html:
+          weight: '0'
+id: paragraph.frontpage_artikel.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: frontpage_artikel
+label: Inhoud
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

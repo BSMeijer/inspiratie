@@ -1,0 +1,19 @@
+uuid: 2a018220-7757-492a-a406-7c3f434a7524
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_inset_title
+    - paragraphs.paragraphs_type.frontpage_artikel
+id: paragraph.frontpage_artikel.field_inset_title
+field_name: field_inset_title
+entity_type: paragraph
+bundle: frontpage_artikel
+label: 'Inzet titel'
+description: 'Dit is de witte tekst in het blauwe vlak'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,7 +1,0 @@
-uuid: 3e9cea2a-deb1-4f07-b13c-34c696465826
-langcode: nl
-status: true
-dependencies: {  }
-id: links_goud
-label: 'Links & Goud'
-classes: "frame-align-left\r\nbg-gold"

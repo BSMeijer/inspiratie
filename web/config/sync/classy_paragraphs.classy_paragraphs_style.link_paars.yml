@@ -1,7 +1,0 @@
-uuid: 98d60b97-6503-4e52-ab4b-dcc9c8a0f669
-langcode: nl
-status: true
-dependencies: {  }
-id: link_paars
-label: 'Link & Paars'
-classes: "frame-align-left\r\nbg-primary"

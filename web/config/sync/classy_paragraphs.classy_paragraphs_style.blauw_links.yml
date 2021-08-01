@@ -1,0 +1,7 @@
+uuid: f942bf15-44a7-4d5e-b469-b455ec74a190
+langcode: nl
+status: true
+dependencies: {  }
+id: blauw_links
+label: 'Blauw & Links'
+classes: "frame-align-left\r\nbg-seagull\r\n"

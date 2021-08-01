@@ -1,7 +1,0 @@
-uuid: cc9faf9a-0d5b-40c9-b9ac-2569ff160b3b
-langcode: nl
-status: true
-dependencies: {  }
-id: rechts_goud
-label: 'Rechts & Goud'
-classes: "frame-align-right\r\nbg-gold"

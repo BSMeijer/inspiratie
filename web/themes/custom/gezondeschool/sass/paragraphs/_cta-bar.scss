@@ -1,17 +1,21 @@
 .paragraph--type--call-to-action-bar {
-  @include break-out;
-  background-color: $iceberg;
+
   display: none;
+
 
   @media (min-width: $bp-tablet) {
     display: block;
   }
 
+  @media (min-width: $bp-jumbo) {
+    @include break-out;
+    display: block;
+    background-color: $iceberg;
+  }
+
   .wrapper {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 0 $spacing;
-
 
     .field--name-field-links {
       .field__item {
@@ -52,10 +56,6 @@
           width: 33.33333%;
         }
       }
-    }
-
-    @media (min-width: $bp-desktop) {
-      padding: 0 $spacing * 2;
     }
   }
 }

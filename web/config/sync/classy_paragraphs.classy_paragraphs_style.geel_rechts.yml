@@ -1,0 +1,7 @@
+uuid: acb51795-c11f-4fed-88f5-6b7fa450fc89
+langcode: nl
+status: true
+dependencies: {  }
+id: geel_rechts
+label: 'Geel & Rechts'
+classes: "frame-align-right\r\nbg-gold\r\n"

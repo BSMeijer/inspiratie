@@ -1,0 +1,7 @@
+uuid: bfa89c87-7e40-4394-ad13-039701468e01
+langcode: nl
+status: true
+dependencies: {  }
+id: roze_links
+label: 'Roze & Links'
+classes: "frame-align-left\r\nbg-pink\r\n"

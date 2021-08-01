@@ -1,0 +1,135 @@
+.paragraph--type-frontpage-artikel {
+  .title-wrapper {
+    background-color: $goldenrod;
+    display: inline-block;
+    padding: $spacing * .25 $spacing;
+
+    h2 {
+      display: inline;
+      text-transform: uppercase;
+    }
+
+    .field--name-field-schooltype {
+      display: inline-block;
+
+      a {
+        color: $color-primary;
+        font-size: 1.48438rem;
+        font-weight: bold;
+
+        &::after {
+          content: ':';
+          margin-right: $spacing * .25;
+        }
+      }
+    }
+  }
+
+  .field--name-bundle-fieldparagraph {
+    display: none;
+  }
+
+  .article-wrapper {
+    @media (min-width: $bp-tablet) {
+      @include break-out;
+      display: flex;
+
+      .content-wrapper {
+        order: 1;
+        margin-top: $spacing * 5;
+        width: 40%;
+      }
+
+      .background-image {
+        align-items: center;
+        display: flex;
+        order: 2;
+        margin-bottom: $spacing * 5;
+        width: 60%;
+      }
+    }
+
+    .content-wrapper {
+      background: $white;
+      padding: $spacing;
+      position: relative;
+
+      @media (min-width: $bp-tablet) {
+        padding: $spacing * 3;
+      }
+
+      .field--name-field-intro {
+        color: $matisse;
+        font-size: $base-font-size * 1.05;
+        padding-bottom: $spacing;
+      }
+
+      .field--name-field-link {
+        padding: $spacing 0 $spacing * 2;
+        text-align: right;
+
+        @media (min-width: $bp-tablet) {
+          bottom: 0;
+          position: absolute;
+          padding: 0 0 0 $spacing * 3;
+          right: $spacing * 3;
+          transform: translateY(50%);
+        }
+
+        @media (min-width: $bp-desktop) {
+          right: $spacing * 4;
+        }
+
+        a {
+          background-color: $white;
+          border: 2px solid $color-primary;
+          border-radius: 4rem;
+          color: $color-primary;
+          display: inline-block;
+          font-family: 'Bariol Regular Italic';
+          font-size: $base-font-size * 1.05;
+          padding: $spacing * .25 $spacing * 1.5 $spacing * .5;
+          text-align: right;
+
+          &::after {
+            content: '►►';
+            display: inline-block;
+            font-family: 'Bariol Regular';
+            font-size: $tiny;
+            padding-left: $spacing * .5;
+          }
+        }
+      }
+    }
+  }
+
+  .background-image {
+    padding: $spacing * 2;
+  }
+
+  .inset-wrapper {
+    background-color: $glacier-transparent;
+    display: inline-block;
+    font-family: 'Bariol Regular Italic';
+    padding: $spacing;
+
+    @media (min-width: $bp-tablet) {
+      padding: $spacing * 2;
+    }
+
+    @media (min-width: $bp-jumbo) {
+      padding: $spacing * 2;
+      max-width: 50%;
+    }
+
+    .field--name-field-inzet-subtitle {
+      color: $goldenrod;
+      font-family: 'Bariol Bold Italic';
+      font-size: $base-font-size * 1.05;
+    }
+
+    .field--name-field-inset-title {
+      @extend .h1;
+    }
+  }
+}

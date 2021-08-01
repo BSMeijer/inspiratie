@@ -14,17 +14,26 @@ html {
 }
 
 body {
-  background-color: $black-squeeze;
+  background-color: $white;
   color: $base-color;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+.page-container {
+  background-color: $black-squeeze;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
   color: $color-primary;
   font-family: $header-font-family;
   font-weight: $header-font-weight;
@@ -32,7 +41,9 @@ h5 {
   margin: 0 0 $spacing * .25;
 }
 
-h1 {
+h1,
+.h1 {
+  color: $white;
   font-family: 'Bariol Regular Italic';
   font-size: $base-font-size * 2;
 

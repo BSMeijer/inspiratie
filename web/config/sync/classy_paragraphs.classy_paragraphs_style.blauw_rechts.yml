@@ -1,0 +1,7 @@
+uuid: 3bd83fb7-ad27-4aa8-91c3-42ea0f42e216
+langcode: nl
+status: true
+dependencies: {  }
+id: blauw_rechts
+label: 'Blauw & Rechts'
+classes: "frame-align-right\r\nbg-seagull\r\n"

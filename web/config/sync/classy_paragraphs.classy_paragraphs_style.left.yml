@@ -1,7 +1,0 @@
-uuid: 19b18c78-3073-4b7c-81ce-246b8c6bc5e9
-langcode: nl
-status: true
-dependencies: {  }
-id: left
-label: 'Links & Blauw'
-classes: "frame-align-left\r\nbg-blue"

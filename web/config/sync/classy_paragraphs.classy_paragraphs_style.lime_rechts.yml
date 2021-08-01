@@ -1,0 +1,7 @@
+uuid: 58e2771e-13f6-4159-ae2c-31d5f5cf8956
+langcode: nl
+status: true
+dependencies: {  }
+id: lime_rechts
+label: 'Lime & Rechts'
+classes: "frame-align-right\r\nbg-lime"

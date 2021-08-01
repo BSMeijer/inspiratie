@@ -1,8 +1,15 @@
 .paragraph--type--frame {
+  color: $base-color;
   width: 100%;
 
   .field--name-field-alignment {
     display: none;
+  }
+
+  h2 {
+    color: $color-primary;
+    font-family: 'Bariol Bold Italic';
+    margin-bottom: $spacing;
   }
 
   @media (min-width: $bp-tablet) {
@@ -11,53 +18,21 @@
     width: 50%;
   }
 
-  &.bg-blue {
-    background-color: $matisse;
-    color: $white;
-
-    a {
-      color: $goldenrod;
-    }
-
-    h2 {
-      color: $goldenrod;
-      font-family: 'Bariol Regular Italic';
-      margin-bottom: $spacing;
+  &.bg-lime {
+    .frame-content {
+      background-color: $conifer;
     }
   }
 
   &.bg-gold {
-    background-color: $goldenrod;
-    color: $matisse;
-
-    a {
-      color: $matisse;
-      text-decoration: underline;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-
-    h2 {
-      color: $matisse;
-      font-family: 'Bariol Regular Italic';
-      margin-bottom: $spacing;
+    .frame-content {
+      background-color: $goldenrod;
     }
   }
 
-  &.bg-primary {
-    background-color: $color-primary;
-    color: $white;
-
-    a {
-      color: $goldenrod;
-    }
-
-    h2 {
-      color: $goldenrod;
-      font-family: 'Bariol Regular Italic';
-      margin-bottom: $spacing;
+  &.bg-seagull {
+    .frame-content {
+      background-color: $seagull;
     }
   }
 
@@ -91,6 +66,19 @@
 
     .field-group-background-image {
       order: 2;
+    }
+  }
+
+  &.frame-align-middle {
+    margin: 0 auto;
+    width: 100%;
+
+    .field-group-background-image {
+      width: 33.333%;
+    }
+
+    .frame-content {
+      width: 66.666%;
     }
   }
 

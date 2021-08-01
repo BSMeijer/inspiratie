@@ -1,0 +1,10 @@
+uuid: 698227dc-c72c-48a4-8155-8e9e3b1f8d36
+langcode: nl
+status: true
+dependencies: {  }
+id: frontpage_artikel
+label: 'Frontpage artikel'
+icon_uuid: null
+icon_default: null
+description: 'Een frontpage artikel zijn de rijke referentie arikelen op de frontpage.'
+behavior_plugins: {  }

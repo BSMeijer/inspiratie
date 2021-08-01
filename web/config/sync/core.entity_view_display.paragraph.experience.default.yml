@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.experience.field_image
     - field.field.paragraph.experience.field_intro
     - field.field.paragraph.experience.field_link
+    - field.field.paragraph.experience.field_schooltype
     - field.field.paragraph.experience.field_title
     - paragraphs.paragraphs_type.experience
   module:
@@ -35,15 +36,17 @@ third_party_settings:
     regions:
       ds_content:
         - field_image
-        - field_title
-        - field_intro
+        - group_title_wrapper
         - group_wrapper
+        - field_intro
         - field_content
+        - field_schooltype
         - field_link
+        - field_title
   field_group:
     group_wrapper:
       children:
-        - field_title
+        - group_title_wrapper
         - field_intro
         - field_content
         - field_link
@@ -62,13 +65,32 @@ third_party_settings:
         effect: none
         speed: fast
       label: Wrapper
+    group_title_wrapper:
+      children:
+        - field_schooltype
+        - field_title
+      parent_name: group_wrapper
+      weight: 1
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: title-wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Title wrapper'
 id: paragraph.experience.default
 targetEntityType: paragraph
 bundle: experience
 mode: default
 content:
   field_content:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -84,14 +106,14 @@ content:
     type: entity_reference_entity_view
     region: ds_content
   field_intro:
-    weight: 1
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: ds_content
   field_link:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       trim_length: 80
@@ -102,8 +124,16 @@ content:
     third_party_settings: {  }
     type: link
     region: ds_content
+  field_schooltype:
+    weight: 4
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: ds_content
   field_title:
-    weight: 0
+    weight: 5
     label: hidden
     settings:
       link_to_entity: false

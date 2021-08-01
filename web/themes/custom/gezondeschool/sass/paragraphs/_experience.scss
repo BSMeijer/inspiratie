@@ -1,22 +1,42 @@
 .paragraph--type-experience {
-  h2 {
+  .title-wrapper {
     background-color: $goldenrod;
-    color: $color-primary;
-    padding: $spacing * .25 $spacing;
-    text-transform: uppercase;
+    display: inline-block;
     margin: 0 (-$spacing) $spacing;
+    padding: $spacing * .25 $spacing;
 
     @media (min-width: $bp-tablet) {
-      display: inline-block;
       padding: $spacing;
       margin-left: -2* $spacing;
       transform: translate(-4*$spacing, -50%);
     }
+
+    .field--name-field-schooltype {
+      display: inline-block;
+
+      a {
+        color: $color-primary;
+        font-size: 1.48438rem;
+        font-weight: bold;
+
+        &::after {
+          content: ':';
+          margin-right: $spacing * .25;
+        }
+      }
+    }
+  }
+
+  h2 {
+    color: $color-primary;
+    display: inline;
+    text-transform: uppercase;
   }
 
   .experience-wrapper {
     background: $white;
     padding: 0 $spacing $spacing;
+    position: relative;
 
 
     @media (min-width: $bp-tablet) {
@@ -31,16 +51,38 @@
   }
 
   .field--name-field-link {
-    padding-top: $spacing;
+    padding: $spacing 0 $spacing * 2;
     text-align: right;
 
-    a {
-      border-bottom: 1px solid $matisse;
-      color: $matisse;
-      font-size: $base-font-size * 1.05;
+    @media (min-width: $bp-tablet) {
+      bottom: 0;
+      position: absolute;
+      padding: 0 0 0 $spacing * 3;
+      right: $spacing * 3;
+      transform: translateY(50%);
+    }
 
-      &:hover {
-        border-bottom-color: transparent;
+    @media (min-width: $bp-desktop) {
+      right: $spacing * 4;
+    }
+
+    a {
+      background-color: $white;
+      border: 2px solid $color-primary;
+      border-radius: 4rem;
+      color: $color-primary;
+      display: inline-block;
+      font-family: 'Bariol Regular Italic';
+      font-size: $base-font-size * 1.05;
+      padding: $spacing * .25 $spacing * 1.5 $spacing * .5;
+      text-align: right;
+
+      &::after {
+        content: '►►';
+        display: inline-block;
+        font-family: 'Bariol Regular';
+        font-size: $tiny;
+        padding-left: $spacing * .5;
       }
     }
   }

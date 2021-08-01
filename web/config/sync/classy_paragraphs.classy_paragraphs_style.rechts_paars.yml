@@ -1,7 +1,0 @@
-uuid: 75cbc71a-1c32-48c8-a8b2-c15728408c3e
-langcode: nl
-status: true
-dependencies: {  }
-id: rechts_paars
-label: 'Rechts & Paars'
-classes: "frame-align-right\r\nbg-primary"

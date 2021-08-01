@@ -1,7 +1,0 @@
-uuid: e856a105-6488-4963-b815-8c1264918c6f
-langcode: nl
-status: true
-dependencies: {  }
-id: right
-label: 'Rechts & Blauw'
-classes: "frame-align-right\r\nbg-blue"
