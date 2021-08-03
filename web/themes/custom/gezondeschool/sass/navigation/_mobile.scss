@@ -12,6 +12,7 @@
   span {
     border-bottom: 1px solid $white;
     color: $white;
+    font-family: 'Bariol Bold';
     padding: $spacing / 2 0 $spacing / 2 $spacing /2;
     display: block;
   }
@@ -36,6 +37,7 @@
 
       a {
         border: 0;
+        font-family: 'Bariol Regular';
       }
     }
   }

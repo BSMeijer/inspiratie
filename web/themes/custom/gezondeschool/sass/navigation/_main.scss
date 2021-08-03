@@ -26,6 +26,7 @@
     >li {
       background-color: transparent;
       color: #fff;
+      font-family: 'Bariol Bold';
       list-style: none;
       position: relative;
 
@@ -81,6 +82,7 @@
 
         a {
           color: $base-color;
+          font-family: 'Bariol Regular';
 
           &:hover {
             border-color: $base-color;

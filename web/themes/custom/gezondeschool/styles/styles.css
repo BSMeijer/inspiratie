@@ -512,10 +512,11 @@ body.path-zoeken .region-content {
 .menu--main > .menu > li {
   background-color: transparent;
   color: #fff;
+  font-family: 'Bariol Bold';
   list-style: none;
   position: relative;
 }
-/* line 32, ../sass/navigation/_main.scss */
+/* line 33, ../sass/navigation/_main.scss */
 .menu--main > .menu > li > a,
 .menu--main > .menu > li > span {
   border: 0;
@@ -525,13 +526,13 @@ body.path-zoeken .region-content {
   padding: 0.66667rem 1rem;
   transition: all .3s ease-in-out;
 }
-/* line 43, ../sass/navigation/_main.scss */
+/* line 44, ../sass/navigation/_main.scss */
 .menu--main > .menu > li.menu-item--active-trail a {
   background-color: #f7eff2;
   color: #212529;
   cursor: pointer;
 }
-/* line 53, ../sass/navigation/_main.scss */
+/* line 54, ../sass/navigation/_main.scss */
 .menu--main > .menu > li:hover a,
 .menu--main > .menu > li:hover span, .menu--main > .menu > li:focus a,
 .menu--main > .menu > li:focus span {
@@ -539,11 +540,11 @@ body.path-zoeken .region-content {
   color: #212529;
   cursor: pointer;
 }
-/* line 60, ../sass/navigation/_main.scss */
+/* line 61, ../sass/navigation/_main.scss */
 .menu--main > .menu > li:hover ul, .menu--main > .menu > li:focus ul {
   display: block;
 }
-/* line 67, ../sass/navigation/_main.scss */
+/* line 68, ../sass/navigation/_main.scss */
 .menu--main > .menu ul {
   background: #f7eff2;
   display: none;
@@ -556,19 +557,20 @@ body.path-zoeken .region-content {
   left: 0;
   top: 53px;
 }
-/* line 79, ../sass/navigation/_main.scss */
+/* line 80, ../sass/navigation/_main.scss */
 .menu--main > .menu ul li {
   padding: 0.25rem 0;
 }
-/* line 82, ../sass/navigation/_main.scss */
+/* line 83, ../sass/navigation/_main.scss */
 .menu--main > .menu ul li a {
   color: #212529;
+  font-family: 'Bariol Regular';
 }
-/* line 85, ../sass/navigation/_main.scss */
+/* line 87, ../sass/navigation/_main.scss */
 .menu--main > .menu ul li a:hover {
   border-color: #212529;
 }
-/* line 93, ../sass/navigation/_main.scss */
+/* line 95, ../sass/navigation/_main.scss */
 .menu--main .menu-item {
   padding: 0;
 }
@@ -588,32 +590,34 @@ body.path-zoeken .region-content {
 .mobile-menu-target-wrapper span {
   border-bottom: 1px solid #fff;
   color: #fff;
+  font-family: 'Bariol Bold';
   padding: 0.5rem 0 0.5rem 0.5rem;
   display: block;
 }
-/* line 19, ../sass/navigation/_mobile.scss */
+/* line 20, ../sass/navigation/_mobile.scss */
 .mobile-menu-target-wrapper ul {
   border-top: 1px solid #fff;
   list-style: none;
   margin: 0;
 }
-/* line 24, ../sass/navigation/_mobile.scss */
+/* line 25, ../sass/navigation/_mobile.scss */
 .mobile-menu-target-wrapper ul li {
   list-style: none;
 }
-/* line 27, ../sass/navigation/_mobile.scss */
+/* line 28, ../sass/navigation/_mobile.scss */
 .mobile-menu-target-wrapper ul li + li {
   border-top: none;
 }
-/* line 32, ../sass/navigation/_mobile.scss */
+/* line 33, ../sass/navigation/_mobile.scss */
 .mobile-menu-target-wrapper ul ul {
   border-top: none;
   border-bottom: 1px solid #fff;
   padding-left: 1rem;
 }
-/* line 37, ../sass/navigation/_mobile.scss */
+/* line 38, ../sass/navigation/_mobile.scss */
 .mobile-menu-target-wrapper ul ul a {
   border: 0;
+  font-family: 'Bariol Regular';
 }
 @media (min-width: 768px) {
   /* line 1, ../sass/navigation/_mobile.scss */
@@ -622,7 +626,7 @@ body.path-zoeken .region-content {
   }
 }
 
-/* line 49, ../sass/navigation/_mobile.scss */
+/* line 51, ../sass/navigation/_mobile.scss */
 body.menu-open .mobile-menu-target-wrapper {
   display: block;
   height: unset;
