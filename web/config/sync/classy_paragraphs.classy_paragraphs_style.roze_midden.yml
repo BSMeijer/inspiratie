@@ -1,0 +1,7 @@
+uuid: 9da7b488-ab73-4089-9688-7bc5d1dc2114
+langcode: nl
+status: true
+dependencies: {  }
+id: roze_midden
+label: 'Roze & Midden'
+classes: "frame-align-middle\r\nbg-pink\r\n"

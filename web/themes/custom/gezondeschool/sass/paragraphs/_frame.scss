@@ -24,6 +24,12 @@
     }
   }
 
+  &.bg-pink {
+    .frame-content {
+      background-color: $viola;
+    }
+  }
+
   &.bg-gold {
     .frame-content {
       background-color: $goldenrod;

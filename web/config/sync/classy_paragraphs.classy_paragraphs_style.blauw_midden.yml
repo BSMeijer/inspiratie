@@ -1,0 +1,7 @@
+uuid: 51ba2262-850d-4dd2-9f83-e3932427353c
+langcode: nl
+status: true
+dependencies: {  }
+id: blauw_midden
+label: 'Blauw & Midden'
+classes: "frame-align-middle\r\nbg-blue\r\n"

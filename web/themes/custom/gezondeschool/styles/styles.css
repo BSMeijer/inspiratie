@@ -1436,80 +1436,84 @@ div.fivestar-rating-wrapper > div > label::before {
   background-color: #D2D800;
 }
 /* line 28, ../sass/paragraphs/_frame.scss */
+.paragraph--type--frame.bg-pink .frame-content {
+  background-color: #F1B3D2;
+}
+/* line 34, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame.bg-gold .frame-content {
   background-color: #FFD200;
 }
-/* line 34, ../sass/paragraphs/_frame.scss */
+/* line 40, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame.bg-seagull .frame-content {
   background-color: #A2D9F5;
 }
 @media (min-width: 768px) {
-  /* line 39, ../sass/paragraphs/_frame.scss */
+  /* line 45, ../sass/paragraphs/_frame.scss */
   .paragraph--type--frame.frame-align-left {
     float: left;
     margin-right: 2rem;
   }
 }
 @media (min-width: 1500px) {
-  /* line 39, ../sass/paragraphs/_frame.scss */
+  /* line 45, ../sass/paragraphs/_frame.scss */
   .paragraph--type--frame.frame-align-left {
     width: 66.666%;
     margin-left: -16.666%;
   }
 }
 @media (min-width: 768px) {
-  /* line 52, ../sass/paragraphs/_frame.scss */
+  /* line 58, ../sass/paragraphs/_frame.scss */
   .paragraph--type--frame.frame-align-right {
     float: right;
     margin-left: 2rem;
   }
 }
 @media (min-width: 1500px) {
-  /* line 52, ../sass/paragraphs/_frame.scss */
+  /* line 58, ../sass/paragraphs/_frame.scss */
   .paragraph--type--frame.frame-align-right {
     width: 66.666%;
     margin-right: -16.666%;
   }
 }
-/* line 63, ../sass/paragraphs/_frame.scss */
+/* line 69, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame.frame-align-right .frame-content {
   order: 1;
 }
-/* line 67, ../sass/paragraphs/_frame.scss */
+/* line 73, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame.frame-align-right .field-group-background-image {
   order: 2;
 }
-/* line 72, ../sass/paragraphs/_frame.scss */
+/* line 78, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame.frame-align-middle {
   margin: 0 auto;
   width: 100%;
 }
-/* line 76, ../sass/paragraphs/_frame.scss */
+/* line 82, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame.frame-align-middle .field-group-background-image {
   width: 33.333%;
 }
-/* line 80, ../sass/paragraphs/_frame.scss */
+/* line 86, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame.frame-align-middle .frame-content {
   width: 66.666%;
 }
-/* line 85, ../sass/paragraphs/_frame.scss */
+/* line 91, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame .frame-content {
   padding: 1rem;
 }
 @media (min-width: 768px) {
-  /* line 85, ../sass/paragraphs/_frame.scss */
+  /* line 91, ../sass/paragraphs/_frame.scss */
   .paragraph--type--frame .frame-content {
     padding: 2rem;
     width: 75%;
   }
 }
-/* line 94, ../sass/paragraphs/_frame.scss */
+/* line 100, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame .field-group-background-image {
   background-position: center;
   background-size: cover;
 }
 @media (min-width: 768px) {
-  /* line 94, ../sass/paragraphs/_frame.scss */
+  /* line 100, ../sass/paragraphs/_frame.scss */
   .paragraph--type--frame .field-group-background-image {
     width: 25%;
   }

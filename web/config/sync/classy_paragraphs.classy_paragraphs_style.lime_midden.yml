@@ -1,0 +1,7 @@
+uuid: d265490b-9943-40eb-9ac5-a0b5564a8f04
+langcode: nl
+status: true
+dependencies: {  }
+id: lime_midden
+label: 'Lime & Midden'
+classes: "frame-align-middle\r\nbg-lime\r\n"
