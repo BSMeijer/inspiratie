@@ -42,8 +42,8 @@ settings:
           items:
             - BulletedList
             - NumberedList
-            - Indent
             - Outdent
+            - Indent
         -
           name: Tabel
           items:
