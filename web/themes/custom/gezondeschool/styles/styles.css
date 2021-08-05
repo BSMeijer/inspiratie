@@ -1094,18 +1094,16 @@ div.fivestar-rating-wrapper > div > label::before {
 .paragraph--type--video,
 .paragraph--type--soundcloud {
   background-color: #2A6797;
-  font-family: 'Bariol Regular Italic';
-  font-size: 1.24688rem;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
   /* line 1, ../sass/paragraphs/_video.scss */
   .paragraph--type--video,
   .paragraph--type--soundcloud {
-    padding: 0 0 1rem;
+    padding: 1rem 0;
   }
 }
-/* line 12, ../sass/paragraphs/_video.scss */
+/* line 10, ../sass/paragraphs/_video.scss */
 .paragraph--type--video h2,
 .paragraph--type--video h3,
 .paragraph--type--soundcloud h2,
@@ -1130,14 +1128,14 @@ div.fivestar-rating-wrapper > div > label::before {
     width: 66.666%;
   }
 }
-/* line 29, ../sass/paragraphs/_video.scss */
+/* line 27, ../sass/paragraphs/_video.scss */
 .paragraph--type--video .field--name-field-media-oembed-video,
 .paragraph--type--soundcloud .field--name-field-media-oembed-video {
   margin-bottom: 1rem;
   padding-top: 56.25%;
   position: relative;
 }
-/* line 34, ../sass/paragraphs/_video.scss */
+/* line 32, ../sass/paragraphs/_video.scss */
 .paragraph--type--video .field--name-field-media-oembed-video iframe,
 .paragraph--type--soundcloud .field--name-field-media-oembed-video iframe {
   left: 0;
@@ -1146,7 +1144,7 @@ div.fivestar-rating-wrapper > div > label::before {
   top: 0;
   width: 100%;
 }
-/* line 43, ../sass/paragraphs/_video.scss */
+/* line 41, ../sass/paragraphs/_video.scss */
 .paragraph--type--video .field--name-field-content,
 .paragraph--type--soundcloud .field--name-field-content {
   color: #fff;
@@ -1154,7 +1152,7 @@ div.fivestar-rating-wrapper > div > label::before {
   padding: 0 1rem 1rem;
 }
 @media (min-width: 768px) {
-  /* line 43, ../sass/paragraphs/_video.scss */
+  /* line 41, ../sass/paragraphs/_video.scss */
   .paragraph--type--video .field--name-field-content,
   .paragraph--type--soundcloud .field--name-field-content {
     padding: 0 1rem;
