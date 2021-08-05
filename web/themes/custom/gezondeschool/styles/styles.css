@@ -698,40 +698,41 @@ body.menu-open .mobile-menu-target-wrapper {
 .node--type-interview.node--view-mode-full .interview-header .wrapper h1 {
   color: #fff;
   font-family: 'Bariol Regular Italic';
+  word-break: break-word;
 }
-/* line 52, ../sass/nodes/_interview--full.scss */
+/* line 53, ../sass/nodes/_interview--full.scss */
 .node--type-interview.node--view-mode-full .interview-header .wrapper .field--name-field-schooltype {
   color: #FFD200;
   display: flex;
   font-family: 'Bariol Bold Italic';
   font-size: 1.24688rem;
 }
-/* line 58, ../sass/nodes/_interview--full.scss */
+/* line 59, ../sass/nodes/_interview--full.scss */
 .node--type-interview.node--view-mode-full .interview-header .wrapper .field--name-field-schooltype a {
   color: #FFD200;
 }
-/* line 63, ../sass/nodes/_interview--full.scss */
+/* line 64, ../sass/nodes/_interview--full.scss */
 .node--type-interview.node--view-mode-full .interview-header .wrapper .field--name-field-schooltype .field__item:not(:first-child)::before {
   content: ' / ';
   display: inline-block;
   padding: 0 0.25rem;
 }
-/* line 73, ../sass/nodes/_interview--full.scss */
+/* line 74, ../sass/nodes/_interview--full.scss */
 .node--type-interview.node--view-mode-full .interview-content {
   background-color: #fff;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 73, ../sass/nodes/_interview--full.scss */
+  /* line 74, ../sass/nodes/_interview--full.scss */
   .node--type-interview.node--view-mode-full .interview-content {
     margin-top: -7rem;
   }
-  /* line 80, ../sass/nodes/_interview--full.scss */
+  /* line 81, ../sass/nodes/_interview--full.scss */
   .node--type-interview.node--view-mode-full .interview-content .field--name-field-intro {
     padding-top: 6rem;
   }
 }
-/* line 86, ../sass/nodes/_interview--full.scss */
+/* line 87, ../sass/nodes/_interview--full.scss */
 .node--type-interview.node--view-mode-full .interview-details {
   align-items: center;
   background-color: #FFD200;
@@ -743,7 +744,7 @@ body.menu-open .mobile-menu-target-wrapper {
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  /* line 86, ../sass/nodes/_interview--full.scss */
+  /* line 87, ../sass/nodes/_interview--full.scss */
   .node--type-interview.node--view-mode-full .interview-details {
     flex-direction: row;
     font-size: 1.33594rem;
@@ -755,7 +756,7 @@ body.menu-open .mobile-menu-target-wrapper {
   }
 }
 @media (min-width: 768px) {
-  /* line 109, ../sass/nodes/_interview--full.scss */
+  /* line 110, ../sass/nodes/_interview--full.scss */
   .node--type-interview.node--view-mode-full .interview-details .field__item:not(:last-child)::after {
     display: inline-block;
     content: ', ';
@@ -1270,26 +1271,27 @@ div.fivestar-rating-wrapper > div > label::before {
   color: #931058;
   display: inline;
   text-transform: uppercase;
+  word-break: break-word;
 }
-/* line 36, ../sass/paragraphs/_experience.scss */
+/* line 37, ../sass/paragraphs/_experience.scss */
 .paragraph--type-experience .experience-wrapper {
   background: #fff;
   padding: 0 1rem 3rem;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 36, ../sass/paragraphs/_experience.scss */
+  /* line 37, ../sass/paragraphs/_experience.scss */
   .paragraph--type-experience .experience-wrapper {
     padding: 0 3rem 3rem;
   }
 }
-/* line 47, ../sass/paragraphs/_experience.scss */
+/* line 48, ../sass/paragraphs/_experience.scss */
 .paragraph--type-experience .field--name-field-intro {
   color: #2A6797;
   font-size: 1.24688rem;
   padding-bottom: 1rem;
 }
-/* line 53, ../sass/paragraphs/_experience.scss */
+/* line 54, ../sass/paragraphs/_experience.scss */
 .paragraph--type-experience .field--name-field-link {
   padding: 1rem 0 2rem;
   text-align: right;
@@ -1300,12 +1302,12 @@ div.fivestar-rating-wrapper > div > label::before {
   transform: translateY(50%);
 }
 @media (min-width: 1024px) {
-  /* line 53, ../sass/paragraphs/_experience.scss */
+  /* line 54, ../sass/paragraphs/_experience.scss */
   .paragraph--type-experience .field--name-field-link {
     right: 4rem;
   }
 }
-/* line 66, ../sass/paragraphs/_experience.scss */
+/* line 67, ../sass/paragraphs/_experience.scss */
 .paragraph--type-experience .field--name-field-link a {
   background-color: #fff;
   border: 2px solid #931058;
@@ -1317,7 +1319,7 @@ div.fivestar-rating-wrapper > div > label::before {
   padding: 0.25rem 1.5rem 0.5rem;
   text-align: right;
 }
-/* line 77, ../sass/paragraphs/_experience.scss */
+/* line 78, ../sass/paragraphs/_experience.scss */
 .paragraph--type-experience .field--name-field-link a::after {
   content: '►►';
   display: inline-block;
@@ -1334,11 +1336,11 @@ div.fivestar-rating-wrapper > div > label::before {
     display: flex;
     flex-wrap: nowrap;
   }
-  /* line 93, ../sass/paragraphs/_experience.scss */
+  /* line 94, ../sass/paragraphs/_experience.scss */
   .paragraph--type-experience .field--name-field-image {
     width: 33.333%;
   }
-  /* line 97, ../sass/paragraphs/_experience.scss */
+  /* line 98, ../sass/paragraphs/_experience.scss */
   .paragraph--type-experience .experience-wrapper {
     margin: auto 0;
     width: 66.666%;
@@ -1680,6 +1682,10 @@ div.fivestar-rating-wrapper > div > label::before {
   color: #FFD200;
   font-family: 'Bariol Bold Italic';
   font-size: 1.24688rem;
+}
+/* line 147, ../sass/paragraphs/_frontpage-article.scss */
+.paragraph--type-frontpage-artikel .inset-wrapper .field--name-field-inset-title {
+  word-break: break-word;
 }
 
 /* line 1, ../sass/views/_related-stories.scss */

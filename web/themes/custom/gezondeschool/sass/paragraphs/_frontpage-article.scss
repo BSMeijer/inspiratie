@@ -146,6 +146,7 @@
 
     .field--name-field-inset-title {
       @extend .h1;
+      word-break: break-word;
     }
   }
 }
