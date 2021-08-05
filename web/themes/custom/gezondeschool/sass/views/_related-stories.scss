@@ -4,5 +4,22 @@
 
   @media (min-width: $bp-tablet) {
     padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.block-views-blockrelated-stories-block-2 {
+  @media (min-width: $bp-tablet) {
+    @include break-out();
+    background-color: $jagged-ice;
+    margin-bottom: -2 * $spacing;
+    padding: $spacing * 4 0;
+  }
+
+  h2 {
+    font-family: 'Baroil Regular Italic';
+    text-align: center;
+    padding: 0 $spacing $spacing * 2;
   }
 }
