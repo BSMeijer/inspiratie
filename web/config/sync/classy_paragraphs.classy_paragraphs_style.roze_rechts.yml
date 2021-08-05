@@ -3,5 +3,5 @@ langcode: nl
 status: true
 dependencies: {  }
 id: roze_rechts
-label: 'Roze & Rechts'
+label: 'Roze & Rechts (oa. Cijfers over)'
 classes: "frame-align-right\r\nbg-pink\r\n"

@@ -3,5 +3,5 @@ langcode: nl
 status: true
 dependencies: {  }
 id: blauw_rechts
-label: 'Blauw & Rechts'
+label: 'Blauw & Rechts (oa. Over de school)'
 classes: "frame-align-right\r\nbg-seagull\r\n"
