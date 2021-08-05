@@ -1090,6 +1090,38 @@ div.fivestar-rating-wrapper > div > label::before {
 .paragraph--type--text ol + ol {
   margin-top: 1rem;
 }
+/* line 27, ../sass/paragraphs/_text.scss */
+.paragraph--type--text blockquote {
+  border-right: 3px solid #2A6797;
+  color: #2A6797;
+  font-family: 'Bariol Regular Italic';
+  font-size: 1.78125rem;
+  margin: 1rem 0;
+  padding: 0 2rem 0 0;
+}
+/* line 36, ../sass/paragraphs/_text.scss */
+.paragraph--type--text blockquote p:nth-child(2) {
+  font-family: "ROSans";
+  color: #931058;
+  font-size: 1.1875rem;
+}
+@media (min-width: 768px) {
+  /* line 27, ../sass/paragraphs/_text.scss */
+  .paragraph--type--text blockquote {
+    float: left;
+    text-align: right;
+    width: 50%;
+    margin: 1rem 2rem 1rem 0;
+  }
+}
+@media (min-width: 1500px) {
+  /* line 27, ../sass/paragraphs/_text.scss */
+  .paragraph--type--text blockquote {
+    width: 55%;
+    margin-left: -213px;
+    padding-left: 1rem;
+  }
+}
 
 /* line 1, ../sass/paragraphs/_video.scss */
 .paragraph--type--video,
