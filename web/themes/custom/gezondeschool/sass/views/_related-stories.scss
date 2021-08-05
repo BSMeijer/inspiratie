@@ -9,6 +9,7 @@
   }
 }
 
+.block-views-blockrelated-stories-block-1,
 .block-views-blockrelated-stories-block-2 {
   @media (min-width: $bp-tablet) {
     @include break-out();

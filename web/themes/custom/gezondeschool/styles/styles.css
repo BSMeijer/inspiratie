@@ -1720,6 +1720,7 @@ div.fivestar-rating-wrapper > div > label::before {
 
 @media (min-width: 768px) {
   /* line 12, ../sass/views/_related-stories.scss */
+  .block-views-blockrelated-stories-block-1,
   .block-views-blockrelated-stories-block-2 {
     width: 100vw;
     margin-left: 50%;
@@ -1729,7 +1730,8 @@ div.fivestar-rating-wrapper > div > label::before {
     padding: 4rem 0;
   }
 }
-/* line 20, ../sass/views/_related-stories.scss */
+/* line 21, ../sass/views/_related-stories.scss */
+.block-views-blockrelated-stories-block-1 h2,
 .block-views-blockrelated-stories-block-2 h2 {
   font-family: 'Bariol Regular Italic';
   text-align: center;
