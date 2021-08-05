@@ -1691,7 +1691,27 @@ div.fivestar-rating-wrapper > div > label::before {
   /* line 1, ../sass/views/_related-stories.scss */
   .view-related-stories {
     padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
   }
+}
+
+@media (min-width: 768px) {
+  /* line 12, ../sass/views/_related-stories.scss */
+  .block-views-blockrelated-stories-block-2 {
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: #C5E5EC;
+    margin-bottom: -2rem;
+    padding: 4rem 0;
+  }
+}
+/* line 20, ../sass/views/_related-stories.scss */
+.block-views-blockrelated-stories-block-2 h2 {
+  font-family: 'Baroil Regular Italic';
+  text-align: center;
+  padding: 0 1rem 2rem;
 }
 
 /* line 1, ../sass/views/_taxonomy-term.scss */

@@ -3,5 +3,5 @@ langcode: nl
 status: true
 dependencies: {  }
 id: lime_links
-label: 'Lime & Links'
+label: 'Lime & Links (oa. Personalia)'
 classes: "frame-align-left\r\nbg-lime"
