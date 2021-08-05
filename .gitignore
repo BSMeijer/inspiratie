@@ -18,7 +18,7 @@
 /vendor
 
 # Ignore sass-cache files.
-.sass-cache/
+/web/themes/custom/*/.sass-cache
 
 # Ignore configuration files that may contain sensitive information.
 /web/sites/*/settings*.php
