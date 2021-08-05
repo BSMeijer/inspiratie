@@ -1216,12 +1216,13 @@ div.fivestar-rating-wrapper > div > label::before {
 /* line 51, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-content a {
   border-bottom: 1px solid #212529;
+  color: #212529;
 }
-/* line 54, ../sass/paragraphs/_cta.scss */
+/* line 55, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-content a:hover {
   border-bottom: 1px solid transparent;
 }
-/* line 61, ../sass/paragraphs/_cta.scss */
+/* line 62, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-link a {
   background-color: #FFD200;
   border: 1px solid #fff;
@@ -1240,7 +1241,7 @@ div.fivestar-rating-wrapper > div > label::before {
   transform: translate(-50%, 50%);
   width: 75%;
 }
-/* line 79, ../sass/paragraphs/_cta.scss */
+/* line 80, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-link a:hover {
   background-color: #cca800;
   box-shadow: 0 0 1rem rgba(33, 37, 41, 0.4);
