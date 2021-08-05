@@ -116,3 +116,7 @@ img {
     }
   }
 }
+
+abbr[title] {
+  text-decoration: 1px dotted $color-primary;
+}

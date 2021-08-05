@@ -231,6 +231,11 @@ img {
   margin-top: 1rem;
 }
 
+/* line 120, ../sass/base/_base.scss */
+abbr[title] {
+  text-decoration: 1px dotted #931058;
+}
+
 /* line 1, ../sass/base/_carousel.scss */
 .slick-track {
   display: flex !important;
