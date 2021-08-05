@@ -13,6 +13,11 @@
 
   >.field__item {
     background-color: $viola;
+    display: flex;
+
+    >div {
+      display: flex;
+    }
 
     &:nth-child(2n+0) {
       background: $conifer;
