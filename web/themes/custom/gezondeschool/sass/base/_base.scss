@@ -72,12 +72,12 @@ h4 {
 
 a {
   border-bottom: 1px solid transparent;
-  color: $blue;
+  color: $color-primary;
   text-decoration: none;
   transition: all .3s ease-in-out;
 
   &:hover {
-    border-bottom: 1px solid $blue;
+    border-bottom: 1px solid $color-primary;
   }
 }
 

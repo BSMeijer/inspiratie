@@ -17,6 +17,7 @@
 
     >div {
       display: flex;
+      flex-direction: column;
     }
 
     &:nth-child(2n+0) {

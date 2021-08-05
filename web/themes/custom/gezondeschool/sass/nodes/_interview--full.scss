@@ -58,6 +58,11 @@
 
         a {
           color: $goldenrod;
+          border-bottom-color: transparent;
+
+          &:hover {
+            border-bottom-color: $goldenrod;
+          }
         }
 
         .field__item:not(:first-child) {

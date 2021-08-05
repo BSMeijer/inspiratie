@@ -176,13 +176,13 @@ h4 {
 /* line 73, ../sass/base/_base.scss */
 a {
   border-bottom: 1px solid transparent;
-  color: #65bbe9;
+  color: #931058;
   text-decoration: none;
   transition: all .3s ease-in-out;
 }
 /* line 79, ../sass/base/_base.scss */
 a:hover {
-  border-bottom: 1px solid #65bbe9;
+  border-bottom: 1px solid #931058;
 }
 
 /* line 84, ../sass/base/_base.scss */
@@ -715,29 +715,34 @@ body.menu-open .mobile-menu-target-wrapper {
 /* line 59, ../sass/nodes/_interview--full.scss */
 .node--type-interview.node--view-mode-full .interview-header .wrapper .field--name-field-schooltype a {
   color: #FFD200;
+  border-bottom-color: transparent;
 }
-/* line 64, ../sass/nodes/_interview--full.scss */
+/* line 63, ../sass/nodes/_interview--full.scss */
+.node--type-interview.node--view-mode-full .interview-header .wrapper .field--name-field-schooltype a:hover {
+  border-bottom-color: #FFD200;
+}
+/* line 69, ../sass/nodes/_interview--full.scss */
 .node--type-interview.node--view-mode-full .interview-header .wrapper .field--name-field-schooltype .field__item:not(:first-child)::before {
   content: ' / ';
   display: inline-block;
   padding: 0 0.25rem;
 }
-/* line 74, ../sass/nodes/_interview--full.scss */
+/* line 79, ../sass/nodes/_interview--full.scss */
 .node--type-interview.node--view-mode-full .interview-content {
   background-color: #fff;
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 74, ../sass/nodes/_interview--full.scss */
+  /* line 79, ../sass/nodes/_interview--full.scss */
   .node--type-interview.node--view-mode-full .interview-content {
     margin-top: -7rem;
   }
-  /* line 81, ../sass/nodes/_interview--full.scss */
+  /* line 86, ../sass/nodes/_interview--full.scss */
   .node--type-interview.node--view-mode-full .interview-content .field--name-field-intro {
     padding-top: 6rem;
   }
 }
-/* line 87, ../sass/nodes/_interview--full.scss */
+/* line 92, ../sass/nodes/_interview--full.scss */
 .node--type-interview.node--view-mode-full .interview-details {
   align-items: center;
   background-color: #FFD200;
@@ -749,7 +754,7 @@ body.menu-open .mobile-menu-target-wrapper {
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  /* line 87, ../sass/nodes/_interview--full.scss */
+  /* line 92, ../sass/nodes/_interview--full.scss */
   .node--type-interview.node--view-mode-full .interview-details {
     flex-direction: row;
     font-size: 1.33594rem;
@@ -761,7 +766,7 @@ body.menu-open .mobile-menu-target-wrapper {
   }
 }
 @media (min-width: 768px) {
-  /* line 110, ../sass/nodes/_interview--full.scss */
+  /* line 115, ../sass/nodes/_interview--full.scss */
   .node--type-interview.node--view-mode-full .interview-details .field__item:not(:last-child)::after {
     display: inline-block;
     content: ', ';
@@ -1119,7 +1124,7 @@ div.fivestar-rating-wrapper > div > label::before {
     margin: 1rem 2rem 1rem 0;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
   /* line 27, ../sass/paragraphs/_text.scss */
   .paragraph--type--text blockquote {
     width: 55%;
@@ -1217,12 +1222,13 @@ div.fivestar-rating-wrapper > div > label::before {
 /* line 18, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action > .field__item > div {
   display: flex;
+  flex-direction: column;
 }
-/* line 22, ../sass/paragraphs/_cta.scss */
+/* line 23, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action > .field__item:nth-child(2n+0) {
   background: #D2D800;
 }
-/* line 26, ../sass/paragraphs/_cta.scss */
+/* line 27, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action > .field__item:nth-child(3n+0) {
   background: #A2D9F5;
 }
@@ -1232,39 +1238,39 @@ div.fivestar-rating-wrapper > div > label::before {
     display: flex;
     flex-wrap: wrap;
   }
-  /* line 35, ../sass/paragraphs/_cta.scss */
+  /* line 36, ../sass/paragraphs/_cta.scss */
   .field--name-field-call-to-action > .field__item {
     width: 33.333%;
   }
 }
-/* line 40, ../sass/paragraphs/_cta.scss */
+/* line 41, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item {
   height: 100%;
   padding-bottom: 3rem;
   position: relative;
 }
-/* line 45, ../sass/paragraphs/_cta.scss */
+/* line 46, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-media-svg {
   padding: 3rem 0 2rem;
   width: 33.333%;
   margin: 0 auto;
 }
-/* line 51, ../sass/paragraphs/_cta.scss */
+/* line 52, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-content {
   font-size: 1.21719rem;
   padding: 0 1rem 1rem;
   text-align: center;
 }
-/* line 56, ../sass/paragraphs/_cta.scss */
+/* line 57, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-content a {
   border-bottom: 1px solid #212529;
   color: #212529;
 }
-/* line 60, ../sass/paragraphs/_cta.scss */
+/* line 61, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-content a:hover {
   border-bottom: 1px solid transparent;
 }
-/* line 67, ../sass/paragraphs/_cta.scss */
+/* line 68, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-link a {
   background-color: #FFD200;
   border: 1px solid #fff;
@@ -1283,7 +1289,7 @@ div.fivestar-rating-wrapper > div > label::before {
   transform: translate(-50%, 50%);
   width: 75%;
 }
-/* line 85, ../sass/paragraphs/_cta.scss */
+/* line 86, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-link a:hover {
   background-color: #cca800;
   box-shadow: 0 0 1rem rgba(33, 37, 41, 0.4);
