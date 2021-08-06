@@ -1,0 +1,128 @@
+uuid: 6d2c3251-2ed6-4890-9388-7eca431d4d81
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.interview.field_body
+    - field.field.node.interview.field_call_to_action
+    - field.field.node.interview.field_editor_note
+    - field.field.node.interview.field_image
+    - field.field.node.interview.field_intro
+    - field.field.node.interview.field_location
+    - field.field.node.interview.field_name
+    - field.field.node.interview.field_school
+    - field.field.node.interview.field_schooltype
+    - field.field.node.interview.field_teaser
+    - field.field.node.interview.field_thema
+    - field.field.node.interview.field_topic
+    - node.type.interview
+  module:
+    - ds
+    - field_group
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_image
+        - group_content
+        - field_schooltype
+        - node_title
+        - search_api_excerpt
+        - node_link
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 6
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 4
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          'link class': ''
+          wrapper: h2
+          class: ''
+  field_group:
+    group_content:
+      children:
+        - field_schooltype
+        - node_title
+        - search_api_excerpt
+        - node_link
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: search-content
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Content
+id: node.interview.search_result
+targetEntityType: node
+bundle: interview
+mode: search_result
+content:
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: ds_content
+  field_schooltype:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: ds_content
+  search_api_excerpt:
+    weight: 5
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_body: true
+  field_call_to_action: true
+  field_editor_note: true
+  field_intro: true
+  field_location: true
+  field_name: true
+  field_school: true
+  field_teaser: true
+  field_thema: true
+  field_topic: true
+  langcode: true
+  links: true
+  rate_helpfull: true

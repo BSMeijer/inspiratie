@@ -1,0 +1,9 @@
+uuid: 152fc872-01ef-488f-b1f0-d549c4e7f302
+langcode: nl
+status: true
+dependencies: {  }
+id: search_api__views_page__search__page_1
+name: 'search_api:views_page__search__page_1'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

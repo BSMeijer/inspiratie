@@ -1,0 +1,70 @@
+.node {
+  &.node--view-mode-search-result {
+    background-color: $white;
+    margin-bottom: $spacing;
+
+    @media (min-width:$bp-tablet) {
+      display: flex;
+      margin-bottom: $spacing * 2;
+
+      .field--name-field-image {
+        width: 40%;
+      }
+
+      .search-content {
+        flex-grow: 1;
+        width: 60%;
+      }
+    }
+
+    .search-content {
+      padding: $spacing $spacing $spacing * 2;
+    }
+
+    h2 {
+      a {
+        color: $matisse;
+      }
+    }
+
+    .field--name-node-link {
+      position: absolute;
+      right: $spacing;
+      bottom: $spacing;
+
+      a {
+        height: 0px;
+        width: 0px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+
+        &::before {
+          color: $color-primary;
+          content: '►►';
+          font-size: $tiny;
+          display: inline-block;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
+
+    .field--name-field-schooltype {
+      display: flex;
+      flex-wrap: wrap;
+
+      .field__item {
+        a {
+          color: $color-primary;
+        }
+
+        &:not(:last-child) {
+          a {
+            margin-right: $spacing * .25;
+          }
+        }
+      }
+    }
+  }
+}

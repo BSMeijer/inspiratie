@@ -1,0 +1,29 @@
+uuid: 09dc6d1d-f68b-42f9-9624-cc1b22c4e904
+langcode: nl
+status: true
+dependencies:
+  config:
+    - facets.facet.topic
+  module:
+    - facets
+    - system
+  theme:
+    - gezondeschool
+id: topic
+theme: gezondeschool
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:topic'
+settings:
+  id: 'facet_block:topic'
+  label: Topic
+  provider: facets
+  label_display: visible
+  block_id: topic
+visibility:
+  request_path:
+    id: request_path
+    pages: /zoeken
+    negate: false
+    context_mapping: {  }

@@ -9,7 +9,7 @@ _core:
 id: gezondeschool_local_actions
 theme: gezondeschool
 region: content
-weight: -2
+weight: -4
 provider: null
 plugin: local_actions_block
 settings:

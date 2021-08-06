@@ -1,0 +1,26 @@
+.block-facets {
+  margin-bottom: $spacing * 2;
+
+  h2 {
+    text-transform: uppercase;
+    margin: 0 0 $spacing * .25;
+    font-family: 'Bariol Bold';
+    font-size: $base-font-size * 1.25;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: $spacing * .25;
+
+      label {
+        color: $color-primary;
+        font-family: 'Bariol Regular';
+        padding-left: $spacing * .25;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+uuid: 421a7e22-5f60-419c-97bd-8d039cea3eb9
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - system
+    - views
+  theme:
+    - gezondeschool
+id: search_block
+theme: gezondeschool
+region: above
+weight: -7
+provider: null
+plugin: 'views_exposed_filter_block:search-page_1'
+settings:
+  id: 'views_exposed_filter_block:search-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: 'Wat zoek je?'
+visibility:
+  request_path:
+    id: request_path
+    pages: /zoeken
+    negate: false
+    context_mapping: {  }

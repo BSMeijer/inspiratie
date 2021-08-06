@@ -9,10 +9,6 @@ body.page-node-type-story .region-content {
   padding-top: 0;
 }
 
-body.path-zoeken .region-content {
-  max-width: $bp-tablet;
-}
-
 .block-system-main-block {
   margin-bottom: $spacing * 4;
 }
@@ -25,4 +21,41 @@ body.path-zoeken .region-content {
 .disclaimer {
   text-align: center;
   padding: $spacing $spacing * 2;
+}
+
+body.path-zoeken .page-container {
+  background: transparent;
+}
+
+body.has-aside .page-content {
+  background-color: $jagged-ice;
+
+  .page-container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    .main-content {
+      order: 2;
+      padding: 0 $spacing;
+
+      @media (min-width: $bp-tablet) {
+        padding: 0;
+      }
+    }
+
+    .aside {
+      order: 1;
+      display: none;
+
+      @media (min-width: $bp-tablet) {
+        display: block;
+        min-width: 200px;
+      }
+
+      @media (min-width: $bp-desktop) {
+        min-width: 300px;
+      }
+    }
+  }
 }

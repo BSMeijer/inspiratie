@@ -1,0 +1,31 @@
+.region-above {
+  .block-views-exposed-filter-blocksearch-page-1 {
+    background: $white;
+    max-width: 1200px;
+    margin: 0 auto $spacing * 3;
+  }
+
+  h2 {
+    background-color: $goldenrod;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: $spacing $spacing * 2;
+  }
+
+  label {
+    display: none;
+  }
+
+  input.form-text {
+    appearance: none;
+    background-color: $white;
+    border: none;
+    border-bottom: 1px solid $color-primary;
+    color: $color-primary;
+    font-size: $base-font-size * 1.75;
+
+    &::placeholder {
+      color: rgba($color-primary, .33);
+    }
+  }
+}

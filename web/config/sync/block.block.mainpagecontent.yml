@@ -9,7 +9,7 @@ dependencies:
 id: mainpagecontent
 theme: gezondeschool
 region: content
-weight: -1
+weight: -3
 provider: null
 plugin: system_main_block
 settings:

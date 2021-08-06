@@ -23,6 +23,7 @@
     "drupal/ckeditor_abbreviation": "^2.0",
     "drupal/ckeditor_entity_link": "^1.2",
     "drupal/classy_paragraphs": "^1.0@beta",
+    "drupal/cookieconsent": "^1.6",
     "drupal/core-composer-scaffold": "^8.8",
     "drupal/core-project-message": "^8.8",
     "drupal/core-recommended": "^8.8",
@@ -46,6 +47,7 @@
     "drupal/search_api_autocomplete": "^1.4",
     "drupal/svg_image_field": "^2.0",
     "drupal/twig_tweak": "^2.9",
+    "drupal/webform": "^6.0",
     "drupal/youtube": "^1.2",
     "drush/drush": "^10.5"
   },

@@ -1,7 +1,7 @@
 <?php
 
 function gezondeschool_preprocess_html(&$vars) {
-  if (isset($vars['page']['aside'])) {
+  if (isset($vars['page']['sidebar'])) {
     $vars['has_aside'] = TRUE;
   }
   else {

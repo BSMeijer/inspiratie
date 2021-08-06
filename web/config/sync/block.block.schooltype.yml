@@ -1,0 +1,29 @@
+uuid: 9b1af12a-5638-4923-9769-2fc18bd0df19
+langcode: nl
+status: true
+dependencies:
+  config:
+    - facets.facet.schooltype
+  module:
+    - facets
+    - system
+  theme:
+    - gezondeschool
+id: schooltype
+theme: gezondeschool
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:schooltype'
+settings:
+  id: 'facet_block:schooltype'
+  label: Schooltype
+  provider: facets
+  label_display: visible
+  block_id: schooltype
+visibility:
+  request_path:
+    id: request_path
+    pages: /zoeken
+    negate: false
+    context_mapping: {  }

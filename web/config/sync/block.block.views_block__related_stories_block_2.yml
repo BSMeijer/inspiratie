@@ -12,7 +12,7 @@ dependencies:
 id: views_block__related_stories_block_2
 theme: gezondeschool
 region: content
-weight: 0
+weight: -2
 provider: null
 plugin: 'views_block:related_stories-block_2'
 settings:

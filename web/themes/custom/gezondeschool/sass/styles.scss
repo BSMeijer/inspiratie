@@ -19,6 +19,8 @@
 @import "block/branding";
 @import "block/breadcrumbs";
 @import 'block/title';
+@import 'block/facets';
+@import 'block/search';
 
 @import "navigation/main";
 @import "navigation/mobile";
@@ -26,6 +28,7 @@
 @import 'nodes/interview--full';
 @import 'nodes/interview--teaser';
 @import 'nodes/frontpage--full';
+@import 'nodes/node--search';
 
 @import 'fields/intro';
 @import 'fields/read-more';
@@ -33,8 +36,6 @@
 @import 'fields/cta';
 @import 'fields/rate';
 @import 'fields/links';
-
-@import 'facets/facets';
 
 @import 'paragraphs/clearfix';
 @import 'paragraphs/text';

@@ -1,0 +1,29 @@
+uuid: 8f326b61-a5e8-4e91-b4cc-230a277ad852
+langcode: nl
+status: true
+dependencies:
+  config:
+    - facets.facet.thema
+  module:
+    - facets
+    - system
+  theme:
+    - gezondeschool
+id: thema
+theme: gezondeschool
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:thema'
+settings:
+  id: 'facet_block:thema'
+  label: Thema
+  provider: facets
+  label_display: visible
+  block_id: thema
+visibility:
+  request_path:
+    id: request_path
+    pages: /zoeken
+    negate: false
+    context_mapping: {  }

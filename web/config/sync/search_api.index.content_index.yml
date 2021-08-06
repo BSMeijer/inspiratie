@@ -1,0 +1,108 @@
+uuid: b9f8575d-be4a-4ff3-819f-54afd86c0928
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_schooltype
+    - field.storage.node.field_thema
+    - field.storage.node.field_topic
+    - search_api.server.content
+    - core.entity_view_mode.node.full
+  module:
+    - taxonomy
+    - node
+    - search_api
+id: content_index
+name: 'Content index'
+description: ''
+read_only: false
+field_settings:
+  name:
+    label: 'Schooltype » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_schooltype:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_schooltype
+      module:
+        - taxonomy
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          frontpage: full
+          interview: full
+          page: full
+  thema:
+    label: 'Thema » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_thema:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_thema
+      module:
+        - taxonomy
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+  topic:
+    label: 'Topic » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_topic:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_topic
+      module:
+        - taxonomy
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected:
+        - frontpage
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 100
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  ignorecase:
+    all_fields: false
+    fields:
+      - rendered_item
+      - title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: content

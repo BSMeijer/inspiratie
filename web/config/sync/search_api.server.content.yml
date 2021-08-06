@@ -1,0 +1,17 @@
+uuid: 020d7cf0-fc8e-496d-9a69-524be2fd9033
+langcode: nl
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: content
+name: Content
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 3
+  matching: partial
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true
