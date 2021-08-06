@@ -5,15 +5,33 @@
     margin: 0 auto $spacing * 3;
   }
 
+  .artwork {
+    @include break-out();
+    height: 500px;
+    background: red;
+  }
+
   h2 {
     background-color: $goldenrod;
     display: inline-block;
     text-transform: uppercase;
     padding: $spacing $spacing * 2;
+    transform: translateY(-50%);
   }
 
   label {
     display: none;
+  }
+
+  form {
+    @media (min-width: $bp-tablet) {
+      width: 75%;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $bp-desktop) {
+      width: 66%;
+    }
   }
 
   input.form-text {

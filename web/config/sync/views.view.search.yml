@@ -24,7 +24,7 @@ display:
         type: none
         options: {  }
       cache:
-        type: tag
+        type: none
         options: {  }
       query:
         type: views_query
@@ -127,7 +127,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: 'Fulltext search'
+            label: 'Ik ben op zoek naar...'
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
@@ -142,7 +142,7 @@ display:
               anonymous: '0'
               editor: '0'
               administrator: '0'
-            placeholder: ''
+            placeholder: 'Ik ben ook zoek naar...'
             expose_fields: false
             searched_fields_id: search_api_fulltext_searched_fields
           is_grouped: false
@@ -172,7 +172,7 @@ display:
       filter_groups:
         operator: AND
         groups: {  }
-      use_ajax: true
+      use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:

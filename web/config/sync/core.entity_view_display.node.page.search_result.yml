@@ -1,8 +1,9 @@
-uuid: c8097a3c-1752-43f0-ab59-6c3c557ae14e
+uuid: 5ad46080-85b6-4cbe-b958-3699330e3fa6
 langcode: nl
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_result
     - field.field.node.page.field_body
     - field.field.node.page.field_image
     - field.field.node.page.field_intro
@@ -13,8 +14,7 @@ dependencies:
     - node.type.page
   module:
     - ds
-    - entity_reference_revisions
-    - text
+    - field_group
     - user
 third_party_settings:
   ds:
@@ -36,92 +36,83 @@ third_party_settings:
           ds_content: {  }
     regions:
       ds_content:
-        - node_title
-        - field_intro
-        - field_body
-        - field_schooltype
-        - field_thema
-        - field_topic
-        - field_teaser
         - field_image
-        - rate_helpfull
+        - group_content
+        - field_schooltype
+        - node_title
+        - search_api_excerpt
+        - node_link
     fields:
+      node_link:
+        plugin_id: node_link
+        weight: 6
+        label: hidden
+        formatter: default
       node_title:
         plugin_id: node_title
-        weight: 0
+        weight: 4
         label: hidden
         formatter: default
         settings:
+          link: true
           'link class': ''
-          wrapper: h1
+          wrapper: h2
           class: ''
-          link: false
-id: node.page.default
+  field_group:
+    group_content:
+      children:
+        - field_schooltype
+        - node_title
+        - search_api_excerpt
+        - node_link
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: search-content
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Content
+id: node.page.search_result
 targetEntityType: node
 bundle: page
-mode: default
+mode: search_result
 content:
-  field_body:
-    type: entity_reference_revisions_entity_view
-    weight: 2
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: ds_content
   field_image:
-    weight: 7
-    label: above
+    weight: 0
+    label: hidden
     settings:
       link: true
+      view_mode: default
     third_party_settings: {  }
-    type: entity_reference_label
-    region: ds_content
-  field_intro:
-    weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
+    type: entity_reference_entity_view
     region: ds_content
   field_schooltype:
     weight: 3
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: ds_content
-  field_teaser:
-    weight: 6
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: ds_content
-  field_thema:
-    weight: 4
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: ds_content
-  field_topic:
-    type: entity_reference_label
+  search_api_excerpt:
     weight: 5
-    region: ds_content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  rate_helpfull:
-    weight: 100
     region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_body: true
+  field_intro: true
+  field_teaser: true
+  field_thema: true
+  field_topic: true
   langcode: true
   links: true
-  search_api_excerpt: true
+  rate_helpfull: true

@@ -46,7 +46,6 @@
     @media (min-width: $bp-tablet) {
       float: left;
       margin-right: $spacing * 2;
-
     }
 
     @media (min-width: $bp-jumbo) {
@@ -104,5 +103,26 @@
     @media (min-width: $bp-tablet) {
       width: 25%;
     }
+  }
+
+  ul.astable {
+    display: table;
+    padding-left: 0;
+  }
+
+  ul.astable li {
+    display: table-row;
+    font-weight: bold;
+  }
+
+  ul.astable ul {
+    display: table-cell;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+  }
+
+  .ul.astable ul li {
+    display: table-row;
+    font-weight: normal
   }
 }
