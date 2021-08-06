@@ -87,7 +87,6 @@ module:
   better_formats: 100
   minimal: 1000
 theme:
-  stark: 0
   stable: 0
   classy: 0
   gezondeschool: 0

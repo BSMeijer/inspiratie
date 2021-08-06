@@ -1,0 +1,75 @@
+.node--type-page.node--view-mode-full {
+  background: $white;
+
+  .page-header {
+    background-position: center;
+    background-size: cover;
+    padding: $spacing;
+    position: relative;
+
+    @media (min-width: $bp-tablet) {
+      @include break-out;
+      min-height: 400px;
+    }
+  }
+
+  .wrapper {
+    padding: $spacing * 3 0;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: $bp-tablet) {
+      left: 50%;
+      max-width: 1200px;
+      padding: 0 $spacing;
+      position: absolute;
+      top: 40%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+
+    @media (min-width: $bp-tablet) {
+      padding: 0 $spacing * 2;
+    }
+
+    .inner-wrapper {
+      background-color: $glacier-transparent;
+      padding: $spacing;
+
+      @media (min-width: $bp-tablet) {
+        width: 66%;
+      }
+
+      @media (min-width: $bp-desktop) {
+        width: 40%;
+      }
+    }
+
+    h1 {
+      color: $white;
+      font-family: 'Bariol Regular Italic';
+      word-break: break-word;
+    }
+  }
+
+  .page-content {
+    background-color: $white;
+    position: relative;
+
+    @media (min-width: $bp-tablet) {
+      margin-top: -7 * $spacing;
+
+      .field--name-field-intro {
+        padding-top: $spacing * 6
+      }
+    }
+  }
+
+  .field--name-field-content {
+    padding-top: $spacing;
+
+    @media (min-width: $bp-tablet) {
+      padding-top: $spacing * 3;
+    }
+  }
+}

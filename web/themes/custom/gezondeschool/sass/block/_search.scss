@@ -6,9 +6,15 @@
   }
 
   .artwork {
-    @include break-out();
-    height: 500px;
-    background: red;
+    height: 200px;
+    background: url('../img/searchbackground.jpg');
+    background-size: cover;
+    background-position: center;
+
+    @media (min-width: $bp-tablet) {
+      @include break-out();
+      height: 400px;
+    }
   }
 
   h2 {

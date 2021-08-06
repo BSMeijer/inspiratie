@@ -14,6 +14,7 @@ dependencies:
   module:
     - ds
     - entity_reference_revisions
+    - field_group
     - text
     - user
 third_party_settings:
@@ -56,6 +57,20 @@ third_party_settings:
           wrapper: h1
           class: ''
           link: false
+  field_group:
+    group_header:
+      children: {  }
+      parent_name: ''
+      weight: 20
+      format_type: background_image
+      region: hidden
+      format_settings:
+        id: ''
+        classes: page-header
+        image: field_image
+        image_style: header
+        hide_if_missing: false
+      label: Header
 id: node.page.default
 targetEntityType: node
 bundle: page
