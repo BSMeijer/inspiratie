@@ -55,6 +55,11 @@ body.has-aside .page-content {
 
       @media (min-width: $bp-desktop) {
         min-width: 300px;
+
+        .region-sidebar {
+          position: sticky;
+          top: 100px;
+        }
       }
     }
   }

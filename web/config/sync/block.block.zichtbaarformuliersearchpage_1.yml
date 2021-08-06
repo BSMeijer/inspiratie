@@ -1,0 +1,29 @@
+uuid: 7c919303-0557-4ccb-95e4-460bef095abf
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - system
+    - views
+  theme:
+    - gezondeschool
+id: zichtbaarformuliersearchpage_1
+theme: gezondeschool
+region: header
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:search-page_1'
+settings:
+  id: 'views_exposed_filter_block:search-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /zoeken
+    negate: true
+    context_mapping: {  }

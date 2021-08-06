@@ -30,7 +30,10 @@
   }
 
   form {
+    padding: 0 $spacing;
+
     @media (min-width: $bp-tablet) {
+      padding: 0;
       width: 75%;
       margin: 0 auto;
     }
@@ -47,6 +50,7 @@
     border-bottom: 1px solid $color-primary;
     color: $color-primary;
     font-size: $base-font-size * 1.75;
+    width: 100%;
 
     &::placeholder {
       color: rgba($color-primary, .33);

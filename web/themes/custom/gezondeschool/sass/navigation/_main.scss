@@ -1,5 +1,7 @@
 .navigation-wrapper {
   background-color: $color-primary;
+  position: relative;
+  z-index: 9;
 }
 
 .menu--main {
@@ -9,7 +11,7 @@
   padding: 0 $spacing;
   position: relative;
   max-width: $wrap-width;
-  z-index: 2;
+  z-index: 4;
 
   @media (min-width: $bp-tablet) {
     display: flex;
