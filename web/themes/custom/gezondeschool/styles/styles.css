@@ -345,6 +345,7 @@ body.has-aside .page-content .page-container .main-content {
 body.has-aside .page-content .page-container .aside {
   order: 1;
   display: none;
+  padding-bottom: 2rem;
 }
 @media (min-width: 768px) {
   /* line 47, ../sass/layout/_layout.scss */
@@ -358,7 +359,7 @@ body.has-aside .page-content .page-container .aside {
   body.has-aside .page-content .page-container .aside {
     min-width: 300px;
   }
-  /* line 59, ../sass/layout/_layout.scss */
+  /* line 60, ../sass/layout/_layout.scss */
   body.has-aside .page-content .page-container .aside .region-sidebar {
     position: sticky;
     top: 100px;
