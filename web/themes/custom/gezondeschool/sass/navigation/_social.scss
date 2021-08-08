@@ -6,9 +6,22 @@
       margin-right: $spacing * .5;
     }
 
+    a {
+      border: 0;
+
+      &:hover {
+        border: 0;
+      }
+    }
+
     .svg-inline--fa {
       color: $goldenrod;
       font-size: 2rem;
+      transition: color .3s ease-in-out;
+
+      &:hover {
+        color: lighten($goldenrod, 30%);
+      }
     }
   }
 }

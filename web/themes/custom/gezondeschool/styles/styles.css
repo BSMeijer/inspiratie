@@ -875,9 +875,22 @@ body.menu-open .mobile-menu-target-wrapper {
   margin-right: 0.5rem;
 }
 /* line 9, ../sass/navigation/_social.scss */
+.menu--social-media .menu a {
+  border: 0;
+}
+/* line 12, ../sass/navigation/_social.scss */
+.menu--social-media .menu a:hover {
+  border: 0;
+}
+/* line 17, ../sass/navigation/_social.scss */
 .menu--social-media .menu .svg-inline--fa {
   color: #FFD200;
   font-size: 2rem;
+  transition: color .3s ease-in-out;
+}
+/* line 22, ../sass/navigation/_social.scss */
+.menu--social-media .menu .svg-inline--fa:hover {
+  color: #ffed99;
 }
 
 /* line 1, ../sass/nodes/_interview--full.scss */
