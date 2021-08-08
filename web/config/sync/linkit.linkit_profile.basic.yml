@@ -7,7 +7,21 @@ dependencies:
 id: basic
 label: Basic
 description: ''
-attributes: {  }
+attributes:
+  target:
+    id: target
+    weight: 0
+    settings:
+      widget_type: select_list
+  relationship:
+    id: relationship
+    weight: 0
+    settings: {  }
+  title:
+    id: title
+    weight: 0
+    settings:
+      automatic_title: true
 matchers:
   7020a674-c79b-4302-9adb-3ba135f06737:
     uuid: 7020a674-c79b-4302-9adb-3ba135f06737

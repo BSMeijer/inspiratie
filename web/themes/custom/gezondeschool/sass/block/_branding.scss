@@ -12,10 +12,11 @@
 
     img {
       margin: 0 auto;
-      width: $spacing * 3;
+      width: $spacing * 15;
 
       @media (min-width: $bp-tablet) {
-        width: $spacing * 5;
+        padding: $spacing 0;
+        width: $spacing * 25;
       }
     }
   }

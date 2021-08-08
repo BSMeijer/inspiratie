@@ -54,7 +54,7 @@ settings:
             - DrupalMediaLibrary
   plugins:
     stylescombo:
-      styles: 'ul.astable | Tabel van Lijst'
+      styles: "ul.astable | Tabel van Lijst\r\nblockquote.right | Quote, rechts uitgelijnd"
     language:
       language_list: un
     linkit:

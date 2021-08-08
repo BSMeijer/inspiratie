@@ -3043,6 +3043,117 @@
         }
     },
     {
+        "name": "drupal/fontawesome",
+        "version": "2.19.0",
+        "version_normalized": "2.19.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/fontawesome.git",
+            "reference": "8.x-2.19"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/fontawesome-8.x-2.19.zip",
+            "reference": "8.x-2.19",
+            "shasum": "7b921a80f0811d8dcfb0c390157506cd5724a037"
+        },
+        "require": {
+            "drupal/core": "^8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-2.19",
+                "datestamp": "1623794225",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            },
+            "drush": {
+                "services": {
+                    "drush.services.yml": "^9"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Daniel.Moberly",
+                "homepage": "https://www.drupal.org/user/1160788"
+            },
+            {
+                "name": "RobLoach",
+                "homepage": "https://www.drupal.org/user/61114"
+            },
+            {
+                "name": "inders",
+                "homepage": "https://www.drupal.org/user/127640"
+            },
+            {
+                "name": "truls1502",
+                "homepage": "https://www.drupal.org/user/325866"
+            }
+        ],
+        "description": "The web's most popular icon set and toolkit.",
+        "homepage": "https://www.drupal.org/project/fontawesome",
+        "support": {
+            "source": "https://git.drupalcode.org/project/fontawesome",
+            "issues": "https://drupal.org/project/issues/fontawesome"
+        }
+    },
+    {
+        "name": "drupal/fontawesome_menu_icons",
+        "version": "1.9.0",
+        "version_normalized": "1.9.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/fontawesome_menu_icons.git",
+            "reference": "8.x-1.9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/fontawesome_menu_icons-8.x-1.9.zip",
+            "reference": "8.x-1.9",
+            "shasum": "53972471ed75dc907dac327daf80af5339f7085c"
+        },
+        "require": {
+            "drupal/core": "^8 || ^9",
+            "drupal/fontawesome": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-1.9",
+                "datestamp": "1601802966",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "lonalore",
+                "homepage": "https://www.drupal.org/user/1539304"
+            }
+        ],
+        "description": "FontAwesome Menu Icons.",
+        "homepage": "https://www.drupal.org/project/fontawesome_menu_icons",
+        "support": {
+            "source": "https://git.drupalcode.org/project/fontawesome_menu_icons"
+        }
+    },
+    {
         "name": "drupal/hotjar",
         "version": "2.2.0",
         "version_normalized": "2.2.0.0",
@@ -3985,6 +4096,60 @@
         "support": {
             "source": "https://git.drupalcode.org/project/rate",
             "issues": "https://www.drupal.org/project/issues/rate"
+        }
+    },
+    {
+        "name": "drupal/redirect",
+        "version": "1.6.0",
+        "version_normalized": "1.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/redirect.git",
+            "reference": "8.x-1.6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.6.zip",
+            "reference": "8.x-1.6",
+            "shasum": "f848e001deac8425ae57d4b9397087c491d37294"
+        },
+        "require": {
+            "drupal/core": "^8.8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "drupal": {
+                "version": "8.x-1.6",
+                "datestamp": "1589312204",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Berdir",
+                "homepage": "https://www.drupal.org/user/214652"
+            },
+            {
+                "name": "Dave Reid",
+                "homepage": "https://www.drupal.org/user/53892"
+            },
+            {
+                "name": "pifagor",
+                "homepage": "https://www.drupal.org/user/2375692"
+            }
+        ],
+        "description": "Allows users to redirect from old URLs to new URLs.",
+        "homepage": "https://www.drupal.org/project/redirect",
+        "support": {
+            "source": "https://git.drupalcode.org/project/redirect"
         }
     },
     {

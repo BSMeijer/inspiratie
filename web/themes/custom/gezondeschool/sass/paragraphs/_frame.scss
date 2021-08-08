@@ -78,12 +78,14 @@
     margin: 0 auto;
     width: 100%;
 
-    .field-group-background-image {
-      width: 33.333%;
-    }
+    @media (min-width: $bp-tablet) {
+      .field-group-background-image {
+        width: 33.333%;
+      }
 
-    .frame-content {
-      width: 66.666%;
+      .frame-content {
+        width: 66.666%;
+      }
     }
   }
 
@@ -99,8 +101,10 @@
   .field-group-background-image {
     background-position: center;
     background-size: cover;
+    padding-top: 66%;
 
     @media (min-width: $bp-tablet) {
+      padding-top: 0;
       width: 25%;
     }
   }

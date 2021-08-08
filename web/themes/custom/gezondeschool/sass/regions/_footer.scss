@@ -16,10 +16,26 @@
 
     @media (min-width: $bp-tablet) {
       width: 50%;
+
+      &:last-child {
+        margin-left: 50%;
+
+        ul {
+          li {
+            &:first-child {
+              margin-left: auto;
+            }
+          }
+        }
+      }
     }
 
     @media (min-width: $bp-desktop) {
       width: 25%;
+
+      &:last-child {
+        margin-left: 75%;
+      }
     }
   }
 

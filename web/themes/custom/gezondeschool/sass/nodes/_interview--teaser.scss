@@ -20,8 +20,10 @@
       }
 
       &:not(:last-child) {
-        a {
-          margin-right: $spacing * .25;
+        &:after {
+          color: $color-primary;
+          content: '/';
+          padding: $spacing * .25;
         }
       }
     }

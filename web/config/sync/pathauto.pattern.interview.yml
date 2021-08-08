@@ -7,16 +7,16 @@ dependencies:
 id: interview
 label: Interview
 type: 'canonical_entities:node'
-pattern: 'inspriratie/[node:title]'
+pattern: 'inspiratie/[node:title]'
 selection_criteria:
-  65d6d036-43e2-4616-9a0b-c38bb2307efa:
+  eb09c648-026d-4197-84d1-65eba422de05:
     id: node_type
     bundles:
       interview: interview
     negate: false
     context_mapping:
       node: node
-    uuid: 65d6d036-43e2-4616-9a0b-c38bb2307efa
+    uuid: eb09c648-026d-4197-84d1-65eba422de05
 selection_logic: and
 weight: -5
 relationships: {  }

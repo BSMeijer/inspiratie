@@ -1,0 +1,16 @@
+uuid: 28a01d0e-5e4b-4b43-b239-084ddb756a1b
+langcode: nl
+status: true
+dependencies:
+  enforced:
+    module:
+      - redirect
+  module:
+    - redirect
+_core:
+  default_config_hash: vcnRZRvBqTbK3nZ2M4_lKPlEGc8GjPzgaqapYUfyX8M
+id: redirect_delete_action
+label: 'Omleiding verwijderen'
+type: redirect
+plugin: redirect_delete_action
+configuration: {  }

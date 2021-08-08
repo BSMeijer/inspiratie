@@ -14,8 +14,12 @@ body.page-node-type-story .region-content {
 }
 
 .page-footer {
-  background-color: $matisse;
+  background-color: $color-primary;
   color: $white;
+
+  ul.menu a.is-active {
+    color: $white;
+  }
 }
 
 .disclaimer {

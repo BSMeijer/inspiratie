@@ -1,0 +1,14 @@
+.menu--social-media {
+  .menu {
+    display: flex;
+
+    li {
+      margin-right: $spacing * .5;
+    }
+
+    .svg-inline--fa {
+      color: $goldenrod;
+      font-size: 2rem;
+    }
+  }
+}
