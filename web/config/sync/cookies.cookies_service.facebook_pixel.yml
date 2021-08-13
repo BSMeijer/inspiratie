@@ -1,0 +1,17 @@
+uuid: d1cb84a9-9f11-4d27-94c6-4e9ff656c263
+langcode: nl
+status: true
+dependencies:
+  enforced:
+    module:
+      - cookies_facebook_pixel
+_core:
+  default_config_hash: sLtRy9ZVzCde8gsANCWvpUqxDsyvwtAmxSHb1iD-Gb4
+id: facebook_pixel
+label: 'Facebook Pixel'
+group: tracking
+info:
+  format: full_html
+  value: ''
+url: 'https://www.facebook.com/policies/cookies'
+consent: true

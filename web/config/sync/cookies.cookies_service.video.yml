@@ -1,0 +1,17 @@
+uuid: ad7fc1d6-344d-42b7-85bd-3527eb25505e
+langcode: nl
+status: true
+dependencies:
+  enforced:
+    module:
+      - cookies_video
+_core:
+  default_config_hash: GPtNd6ZPi4fG97dOAJdm_C7Siy9qarY7N93GidYZkRQ
+id: video
+label: 'Video provided by YouTube, Vimeo'
+group: video
+info:
+  format: full_html
+  value: ''
+url: 'https://policies.google.com/privacy'
+consent: true

@@ -1,0 +1,20 @@
+uuid: 6c148ed8-d700-4bdc-8b48-77a7b9a8d402
+langcode: nl
+status: true
+dependencies:
+  module:
+    - cookies
+  theme:
+    - gezondeschool
+id: cookiesui
+theme: gezondeschool
+region: footer
+weight: -5
+provider: null
+plugin: cookies_ui_block
+settings:
+  id: cookies_ui_block
+  label: 'Cookies UI'
+  provider: cookies
+  label_display: '0'
+visibility: {  }

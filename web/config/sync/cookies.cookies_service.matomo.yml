@@ -1,0 +1,17 @@
+uuid: bcf30bc8-59f9-4ae0-9f44-fc57d3d205e7
+langcode: nl
+status: true
+dependencies:
+  enforced:
+    module:
+      - cookies_matomo
+_core:
+  default_config_hash: MuR-RJ9O7-x8eNBQ4DQzKrOb4RKGHCB5_GPI12N7nS4
+id: matomo
+label: 'Matomo Analytics'
+group: tracking
+info:
+  format: full_html
+  value: ''
+url: 'https://matomo.org/privacy-policy/'
+consent: true

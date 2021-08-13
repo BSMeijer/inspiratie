@@ -1,0 +1,11 @@
+uuid: a0db29d7-83ad-45c8-a8f2-63843dfe5e67
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: w1WnCmP2Xfgx24xbx5u9T27XLF_ZFw5R0MlO-eDDPpQ
+id: video
+label: Videos
+weight: 40
+title: Video
+details: 'Video sharing-services helpen om verrijkte media aan de site toe te voegen en de zichtbaarheid ervan te vergroten.'

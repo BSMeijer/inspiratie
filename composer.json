@@ -24,6 +24,7 @@
     "drupal/ckeditor_entity_link": "^1.2",
     "drupal/classy_paragraphs": "^1.0@beta",
     "drupal/cookieconsent": "^1.6",
+    "drupal/cookies": "^1.0",
     "drupal/core-composer-scaffold": "^8.8",
     "drupal/core-project-message": "^8.8",
     "drupal/core-recommended": "^8.8",

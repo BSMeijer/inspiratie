@@ -9,8 +9,10 @@ module:
   ckeditor_entity_link: 0
   classy_paragraphs: 0
   config: 0
+  config_translation: 0
   content_moderation: 0
   contextual: 0
+  cookies: 0
   crop: 0
   ctools: 0
   datetime: 0
@@ -87,6 +89,9 @@ module:
   ds: 1
   pathauto: 1
   views: 10
+  cookies_facebook_pixel: 11
+  cookies_matomo: 11
+  cookies_video: 11
   paragraphs: 11
   better_formats: 100
   minimal: 1000
