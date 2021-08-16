@@ -1,4 +1,9 @@
 .menu--social-media {
+
+  @media (min-width: $bp-desktop) {
+    margin-left: auto;
+  }
+
   .menu {
     display: flex;
 

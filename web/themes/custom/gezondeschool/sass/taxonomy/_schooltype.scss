@@ -1,0 +1,67 @@
+.taxonomy-term.vocabulary-schooltype {
+  margin-bottom: $spacing * 2;
+
+  @media (min-width: $bp-tablet) {
+    margin-bottom: $spacing * 4;
+  }
+
+  .taxonomy-intro-wrapper {
+    @media (min-width: $bp-tablet) {
+      margin-top: $spacing * -4;
+    }
+
+    position: relative;
+  }
+
+  h1 {
+    background-color: $goldenrod;
+    color: $color-primary;
+    display: block;
+    font-family: 'Bariol Bold';
+    font-size: $base-font-size * 1.25;
+    font-style: normal;
+    margin: 0;
+    padding: $spacing;
+    text-transform: uppercase;
+
+    &::before {
+      content: 'ARTIKELEN';
+      display: inline-block;
+      margin-right: .5 * $spacing;
+      font-family: 'Bariol Regular';
+    }
+
+    @media (min-width: $bp-tablet) {
+      display: inline-block;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  .content {
+    .field--name-field-intro {
+      background-color: $white;
+      color: $matisse;
+      font-size: $base-font-size * 1.05;
+      padding: $spacing * 2 $spacing;
+
+      p+p {
+        margin-top: $spacing;
+      }
+
+      @media (min-width: $bp-tablet) {
+        columns: 2;
+        column-gap: $spacing * 2;
+        padding: $spacing * 4 $spacing * 2;
+      }
+    }
+
+    .field--name-field-media-image {
+      @media (min-width: $bp-tablet) {
+        @include break-out();
+      }
+    }
+  }
+}

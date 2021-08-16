@@ -7,6 +7,7 @@ dependencies:
     - node.type.frontpage
     - paragraphs.paragraphs_type.experience
     - paragraphs.paragraphs_type.frontpage_artikel
+    - paragraphs.paragraphs_type.highlighted_frontpage_stories
   module:
     - entity_reference_revisions
 id: node.frontpage.field_body
@@ -26,38 +27,42 @@ settings:
     target_bundles:
       frontpage_artikel: frontpage_artikel
       experience: experience
+      highlighted_frontpage_stories: highlighted_frontpage_stories
     target_bundles_drag_drop:
       call_to_action_bar:
-        weight: 12
+        weight: -25
         enabled: false
       clearfix:
-        weight: 13
+        weight: -23
         enabled: false
       cta_item:
-        weight: 14
+        weight: -22
         enabled: false
       experience:
         enabled: true
-        weight: 14
+        weight: -21
       frame:
-        weight: 15
+        weight: -19
         enabled: false
       from_library:
-        weight: 16
+        weight: -18
         enabled: false
       frontpage_artikel:
         enabled: true
-        weight: 12
+        weight: -24
+      highlighted_frontpage_stories:
+        enabled: true
+        weight: -20
       image:
-        weight: 17
+        weight: -17
         enabled: false
       soundcloud:
-        weight: 18
+        weight: -16
         enabled: false
       text:
-        weight: 19
+        weight: -15
         enabled: false
       video:
-        weight: 20
+        weight: -14
         enabled: false
 field_type: entity_reference_revisions

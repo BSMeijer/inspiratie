@@ -43,6 +43,7 @@ permissions:
   - 'cancel account'
   - 'clone interview content'
   - 'clone page content'
+  - 'configure cookies widget'
   - 'create image media'
   - 'create interview content'
   - 'create media'

@@ -3,6 +3,6 @@ langcode: nl
 status: true
 dependencies: {  }
 id: andere-links
-label: 'Andere links'
+label: 'Over deze site'
 description: ''
 locked: false

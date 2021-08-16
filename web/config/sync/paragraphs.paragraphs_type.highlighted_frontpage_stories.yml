@@ -1,0 +1,10 @@
+uuid: 38f0f96c-6a68-448b-8be1-d7dbfc430cde
+langcode: nl
+status: true
+dependencies: {  }
+id: highlighted_frontpage_stories
+label: 'Uitgelichte frontpage verhalen'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,12 @@
+uuid: bc781c68-dd02-46d6-924e-60b83ac9621c
+langcode: nl
+status: true
+dependencies: {  }
+id: '1_4'
+label: '4:1'
+description: 'Deze afbeeldingsstijl is specifiek voor de taxonomy pagina''s.'
+aspect_ratio: '4:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

@@ -9,7 +9,7 @@ dependencies:
 id: cookiesui
 theme: gezondeschool
 region: footer
-weight: -5
+weight: -4
 provider: null
 plugin: cookies_ui_block
 settings:

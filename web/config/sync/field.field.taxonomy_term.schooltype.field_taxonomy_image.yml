@@ -1,0 +1,28 @@
+uuid: 17337015-f641-45c4-8a6e-14c391e31339
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_taxonomy_image
+    - media.type.image
+    - taxonomy.vocabulary.schooltype
+id: taxonomy_term.schooltype.field_taxonomy_image
+field_name: field_taxonomy_image
+entity_type: taxonomy_term
+bundle: schooltype
+label: 'Taxonomy afbeelding'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -4,6 +4,7 @@ settings:
   crop_preview_image_style: crop_thumbnail
   crop_list:
     '1_1': '1_1'
+    '1_4': '1_4'
     '3_2': '3_2'
   crop_types_required:
     '3_2': '3_2'

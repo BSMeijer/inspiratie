@@ -1,0 +1,19 @@
+uuid: b621a0a8-2498-4dc4-8e75-4cc767dd59aa
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_title
+    - taxonomy.vocabulary.schooltype
+id: taxonomy_term.schooltype.field_title
+field_name: field_title
+entity_type: taxonomy_term
+bundle: schooltype
+label: Titel
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

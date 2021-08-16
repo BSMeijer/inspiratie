@@ -1,0 +1,36 @@
+{%
+  set classes = [
+    'field',
+    'field--name-' ~ field_name|clean_class,
+    'field--type-' ~ field_type|clean_class,
+    'field--label-' ~ label_display,
+    label_display == 'inline' ? 'clearfix',
+  ]
+%}
+{%
+  set title_classes = [
+    'field__label',
+    label_display == 'visually_hidden' ? 'visually-hidden',
+  ]
+%}
+
+<div{{ attributes.addClass(classes, 'field__items') }}>
+  {% for item in items %}
+    <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
+  {% endfor %}
+  <div class="field__item">
+    <div class="links">
+      <div class="header-wrapper">
+        <h3>BEKIJK DE ARTIKELEN PER <strong>SCHOOLTYPE</strong></h3>
+      </div>
+      <div class="link-items">
+        <ul>
+          <li><a href="/onderwijstype/so" />Speciaal onderwijs</a></li>
+          <li><a href="/onderwijstype/po" />Primair onderwijs</a></li>
+          <li><a href="/onderwijstype/vo" />Voortgezet onderwijs</a></li>
+          <li><a href="/onderwijstype/mbo" />MBO</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -22,6 +22,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/dummypagina\r\n/taxonomy/term/*"
+    pages: /dummypagina
     negate: false
     context_mapping: {  }

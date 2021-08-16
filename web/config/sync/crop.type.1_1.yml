@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: '1_1'
 label: '1:1'
-description: ''
+description: 'Vierkante afbeeldingen'
 aspect_ratio: '1:1'
 soft_limit_width: null
 soft_limit_height: null

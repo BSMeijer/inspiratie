@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: '3_2'
 label: '3:2'
-description: ''
+description: 'Landscape afbeeldingen 3:2'
 aspect_ratio: '3:2'
 soft_limit_width: null
 soft_limit_height: null

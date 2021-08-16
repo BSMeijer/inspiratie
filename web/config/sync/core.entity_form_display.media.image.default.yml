@@ -41,6 +41,7 @@ content:
       crop_preview_image_style: crop_thumbnail
       crop_list:
         - '1_1'
+        - '1_4'
         - '3_2'
       progress_indicator: throbber
       crop_types_required: {  }

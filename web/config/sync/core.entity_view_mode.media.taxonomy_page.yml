@@ -1,0 +1,10 @@
+uuid: efe78e87-79de-4efe-9201-21bcb79af5ad
+langcode: nl
+status: true
+dependencies:
+  module:
+    - media
+id: media.taxonomy_page
+label: 'Taxonomy pagina'
+targetEntityType: media
+cache: true

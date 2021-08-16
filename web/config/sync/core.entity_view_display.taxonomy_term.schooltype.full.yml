@@ -1,0 +1,68 @@
+uuid: eb26a0f1-e4c9-46c9-aa57-f9c902995295
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - field.field.taxonomy_term.schooltype.field_intro
+    - field.field.taxonomy_term.schooltype.field_taxonomy_image
+    - field.field.taxonomy_term.schooltype.field_title
+    - taxonomy.vocabulary.schooltype
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_wrapper:
+      children:
+        - field_title
+        - field_intro
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: taxonomy-intro-wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Wrapper
+id: taxonomy_term.schooltype.full
+targetEntityType: taxonomy_term
+bundle: schooltype
+mode: full
+content:
+  field_intro:
+    type: text_default
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_taxonomy_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: taxonomy_page
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  description: true
+  langcode: true
+  search_api_excerpt: true

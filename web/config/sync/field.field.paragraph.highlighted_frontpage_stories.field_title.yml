@@ -1,0 +1,19 @@
+uuid: 74b0f3d1-17d3-41b2-b561-86ee39fa150f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.highlighted_frontpage_stories
+id: paragraph.highlighted_frontpage_stories.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: highlighted_frontpage_stories
+label: Titel
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

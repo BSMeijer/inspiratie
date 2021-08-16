@@ -1,0 +1,111 @@
+.paragraph--type--highlighted-frontpage-stories {
+  padding: 0 $spacing;
+
+  @media (min-width: $bp-tablet) {
+    padding: 0 $spacing * 2;
+  }
+
+  @media (min-width: $bp-xl) {
+    @include break-out();
+    max-width: 1500px;
+
+    >div {
+      margin: 0 auto;
+    }
+  }
+
+  h2 {
+    background-color: $goldenrod;
+    display: inline-block;
+    margin-bottom: $spacing;
+    padding: .5 * $spacing $spacing;
+    text-transform: uppercase;
+
+    @media (min-width: $bp-tablet) {
+      margin-bottom: $spacing * 2;
+    }
+  }
+
+  .field--name-field-stories {
+    >div {
+      margin-bottom: $spacing;
+    }
+
+    @media (min-width: $bp-tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 (-$spacing * .5);
+
+      >div {
+        display: flex;
+        padding: 0 $spacing * .5;
+        width: 50%;
+      }
+    }
+
+    @media (min-width: $bp-desktop) {
+      >div {
+        width: 33.333%;
+      }
+    }
+
+    @media (min-width: $bp-jumbo) {
+      >div {
+        width: 20%;
+      }
+    }
+  }
+
+  .links {
+    background: $white;
+    width: 100%;
+
+    .header-wrapper {
+      background-color: $color-primary;
+      padding-top: 66%;
+      position: relative;
+
+      h3 {
+        color: $white;
+        left: $spacing;
+        padding-right: $spacing;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: $spacing;
+
+    li {
+      margin-bottom: .5 * $spacing;
+      padding-bottom: .5 * $spacing;
+      padding-right: $spacing * 1.5;
+      position: relative;
+
+      &::after {
+        color: $color-primary;
+        content: '►►';
+        display: inline-block;
+        font-size: $tiny;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $matisse;
+      }
+
+      a {
+        color: $matisse;
+        font-size: $base-font-size * 1.125;
+      }
+    }
+  }
+}

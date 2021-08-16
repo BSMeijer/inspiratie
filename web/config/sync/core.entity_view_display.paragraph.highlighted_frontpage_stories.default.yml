@@ -1,0 +1,36 @@
+uuid: a112dbc1-3eaf-4198-851a-99f4dac22b5c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.highlighted_frontpage_stories.field_stories
+    - field.field.paragraph.highlighted_frontpage_stories.field_title
+    - paragraphs.paragraphs_type.highlighted_frontpage_stories
+  module:
+    - ds
+id: paragraph.highlighted_frontpage_stories.default
+targetEntityType: paragraph
+bundle: highlighted_frontpage_stories
+mode: default
+content:
+  field_stories:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: entity_reference_entity_view
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

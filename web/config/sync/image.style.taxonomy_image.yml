@@ -1,0 +1,17 @@
+uuid: 5fcc72aa-0665-4efc-9027-0183d0bae8cf
+langcode: nl
+status: true
+dependencies:
+  config:
+    - crop.type.1_4
+  module:
+    - crop
+name: taxonomy_image
+label: 'Taxonomy afbeelding'
+effects:
+  106c8a92-4f2c-47e7-bf94-ea7567672967:
+    uuid: 106c8a92-4f2c-47e7-bf94-ea7567672967
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '1_4'

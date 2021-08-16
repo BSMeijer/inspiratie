@@ -1,0 +1,34 @@
+uuid: 327c82f0-45c4-4582-9ecb-eaedac58e6bb
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.highlighted_frontpage_stories.field_stories
+    - field.field.paragraph.highlighted_frontpage_stories.field_title
+    - paragraphs.paragraphs_type.highlighted_frontpage_stories
+id: paragraph.highlighted_frontpage_stories.default
+targetEntityType: paragraph
+bundle: highlighted_frontpage_stories
+mode: default
+content:
+  field_stories:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
