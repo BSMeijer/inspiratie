@@ -1,0 +1,10 @@
+uuid: b573d344-3ff5-46fa-a11c-f364e259a9e5
+langcode: nl
+status: true
+dependencies:
+  module:
+    - media
+id: media.header
+label: Header
+targetEntityType: media
+cache: true
