@@ -2243,6 +2243,7 @@ div.fivestar-rating-wrapper > div > label::before {
 /* line 1, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
 .paragraph--type--highlighted-frontpage-stories {
   padding: 0 1rem;
+  margin-bottom: 4rem;
 }
 @media (min-width: 768px) {
   /* line 1, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
@@ -2258,12 +2259,12 @@ div.fivestar-rating-wrapper > div > label::before {
     transform: translateX(-50%);
     max-width: 1500px;
   }
-  /* line 12, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
+  /* line 13, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
   .paragraph--type--highlighted-frontpage-stories > div {
     margin: 0 auto;
   }
 }
-/* line 17, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
+/* line 18, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
 .paragraph--type--highlighted-frontpage-stories h2 {
   background-color: #FFD200;
   display: inline-block;
@@ -2272,23 +2273,23 @@ div.fivestar-rating-wrapper > div > label::before {
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  /* line 17, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
+  /* line 18, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
   .paragraph--type--highlighted-frontpage-stories h2 {
     margin-bottom: 2rem;
   }
 }
-/* line 30, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
+/* line 31, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
 .paragraph--type--highlighted-frontpage-stories .field--name-field-stories > div {
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
-  /* line 29, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
+  /* line 30, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
   .paragraph--type--highlighted-frontpage-stories .field--name-field-stories {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -0.5rem;
   }
-  /* line 39, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
+  /* line 40, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
   .paragraph--type--highlighted-frontpage-stories .field--name-field-stories > div {
     display: flex;
     padding: 0 0.5rem;
@@ -2296,29 +2297,29 @@ div.fivestar-rating-wrapper > div > label::before {
   }
 }
 @media (min-width: 1024px) {
-  /* line 47, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
+  /* line 48, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
   .paragraph--type--highlighted-frontpage-stories .field--name-field-stories > div {
     width: 33.333%;
   }
 }
 @media (min-width: 1500px) {
-  /* line 53, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
+  /* line 54, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
   .paragraph--type--highlighted-frontpage-stories .field--name-field-stories > div {
     width: 20%;
   }
 }
-/* line 59, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
+/* line 60, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
 .paragraph--type--highlighted-frontpage-stories .links {
   background: #fff;
   width: 100%;
 }
-/* line 63, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
+/* line 64, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
 .paragraph--type--highlighted-frontpage-stories .links .header-wrapper {
   background-color: #931058;
   padding-top: 66%;
   position: relative;
 }
-/* line 68, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
+/* line 69, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
 .paragraph--type--highlighted-frontpage-stories .links .header-wrapper h3 {
   color: #fff;
   left: 1rem;
@@ -2327,20 +2328,20 @@ div.fivestar-rating-wrapper > div > label::before {
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 79, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
+/* line 80, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
 .paragraph--type--highlighted-frontpage-stories ul {
   list-style: none;
   margin: 0;
   padding: 1rem;
 }
-/* line 84, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
+/* line 85, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
 .paragraph--type--highlighted-frontpage-stories ul li {
   margin-bottom: 0.5rem;
   padding-bottom: 0.5rem;
   padding-right: 1.5rem;
   position: relative;
 }
-/* line 90, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
+/* line 91, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
 .paragraph--type--highlighted-frontpage-stories ul li::after {
   color: #931058;
   content: '►►';
@@ -2351,11 +2352,11 @@ div.fivestar-rating-wrapper > div > label::before {
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 101, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
+/* line 102, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
 .paragraph--type--highlighted-frontpage-stories ul li:not(:last-child) {
   border-bottom: 1px solid #2A6797;
 }
-/* line 105, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
+/* line 106, ../sass/paragraphs/_highlighted-frontpage-stores.scss */
 .paragraph--type--highlighted-frontpage-stories ul li a {
   color: #2A6797;
   font-size: 1.33594rem;

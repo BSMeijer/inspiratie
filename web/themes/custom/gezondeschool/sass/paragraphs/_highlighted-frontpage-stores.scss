@@ -1,5 +1,6 @@
 .paragraph--type--highlighted-frontpage-stories {
   padding: 0 $spacing;
+  margin-bottom: $spacing * 4;
 
   @media (min-width: $bp-tablet) {
     padding: 0 $spacing * 2;
