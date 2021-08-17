@@ -1775,7 +1775,7 @@ div.fivestar-rating-wrapper > div > label::before {
     padding: 1rem;
     margin-left: -2rem;
     transform: translate(-4rem, -50%);
-    margin-bottom: 4rem;
+    margin-bottom: 0;
   }
 }
 /* line 19, ../sass/paragraphs/_experience.scss */
