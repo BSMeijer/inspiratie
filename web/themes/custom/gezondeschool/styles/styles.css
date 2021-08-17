@@ -626,7 +626,7 @@ body.has-aside .page-content .page-container .aside {
   appearance: none;
   background-color: transparent;
   background-image: url("../img/search-big.svg");
-  background-size: cover;
+  background-size: contain;
   border: 0;
   height: 36px;
   text-indent: -9999px;
