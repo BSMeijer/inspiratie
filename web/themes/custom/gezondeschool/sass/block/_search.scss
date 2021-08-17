@@ -30,6 +30,22 @@
   }
 
   form {
+    .form--inline {
+      align-items: center;
+      display: flex;
+    }
+
+    .form-submit {
+      appearance: none;
+      background-color: transparent;
+      background-image: url('../img/search-big.svg');
+      background-size: cover;
+      border: 0;
+      height: 36px;
+      text-indent: -9999px;
+      width: 36px;
+    }
+
     padding: 0 $spacing;
 
     @media (min-width: $bp-tablet) {
