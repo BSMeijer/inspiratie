@@ -20,12 +20,12 @@
     }
 
     .svg-inline--fa {
-      color: $goldenrod;
+      color: $white;
       font-size: 2rem;
       transition: color .3s ease-in-out;
 
       &:hover {
-        color: lighten($goldenrod, 30%);
+        color: lighten($white, 30%);
       }
     }
   }

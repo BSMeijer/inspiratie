@@ -2,11 +2,11 @@ langcode: nl
 default_langcode: en
 bannerText: 'Deze site gebruikt cookies.'
 privacyPolicy: Privacy
-privacyUri: /node/25
+privacyUri: /node/33
 imprint: ''
 imprintUri: ''
 cookieDocs: 'Over cookies'
-cookieDocsUri: /node/24
+cookieDocsUri: /node/32
 denyAll: 'Alles weigeren'
 settings: Cookie-instellingen
 acceptAll: 'Accept all'

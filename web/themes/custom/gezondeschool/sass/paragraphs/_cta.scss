@@ -5,6 +5,7 @@
     font-size: $base-font-size * 1.5;
     text-align: center;
     margin-bottom: $spacing;
+    padding: 0 $spacing;
     width: 100%;
 
     a {
@@ -38,6 +39,10 @@
     }
   }
 
+  .big-link-wrapper {
+    color: $base-color;
+  }
+
   .paragraph--type--cta-item {
     height: 100%;
     padding-bottom: $spacing * 3;
@@ -47,6 +52,10 @@
       padding: $spacing * 3 0 $spacing * 2;
       width: 33.333%;
       margin: 0 auto;
+
+      img {
+        max-height: 133px;
+      }
     }
 
     .field--name-field-content {

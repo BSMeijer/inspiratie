@@ -1,10 +1,6 @@
 .taxonomy-term.vocabulary-schooltype {
   margin-bottom: $spacing * 2;
 
-  @media (min-width: $bp-tablet) {
-    margin-bottom: $spacing * 4;
-  }
-
   .taxonomy-intro-wrapper {
     @media (min-width: $bp-tablet) {
       margin-top: $spacing * -4;

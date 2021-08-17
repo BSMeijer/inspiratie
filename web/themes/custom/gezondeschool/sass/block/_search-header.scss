@@ -30,11 +30,14 @@
     }
 
     form {
+      align-content: center;
+      display: flex;
       width: 100%;
 
       .form--inline {
         align-items: center;
         display: flex;
+        margin: 0 auto;
       }
 
       .form-submit {

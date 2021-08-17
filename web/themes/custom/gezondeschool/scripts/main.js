@@ -9,6 +9,18 @@
     }
   };
 
+  Drupal.behaviors.ctaBigLink = {
+    attach: function (context) {
+      $('.paragraph--type--cta-item', context).each(function () {
+        const anchor = $(this).find('.field--name-field-link a')
+        if (anchor.attr('href') !== 'undefined') {
+          $(this).wrap('<a class="big-link-wrapper" href="' + anchor.attr('href') + '">')
+        }
+      })
+    }
+  };
+
+
   Drupal.behaviors.headerFixer = {
     attach: function (context, settings) {
       $(window).scroll(function () {

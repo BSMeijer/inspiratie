@@ -694,14 +694,17 @@ body.has-aside .page-content .page-container .aside {
 }
 /* line 32, ../sass/block/_search-header.scss */
 .region-header .block-views-exposed-filter-blocksearch-page-1 form {
+  align-content: center;
+  display: flex;
   width: 100%;
 }
-/* line 35, ../sass/block/_search-header.scss */
+/* line 37, ../sass/block/_search-header.scss */
 .region-header .block-views-exposed-filter-blocksearch-page-1 form .form--inline {
   align-items: center;
   display: flex;
+  margin: 0 auto;
 }
-/* line 40, ../sass/block/_search-header.scss */
+/* line 43, ../sass/block/_search-header.scss */
 .region-header .block-views-exposed-filter-blocksearch-page-1 form .form-submit {
   appearance: none;
   background-color: transparent;
@@ -726,18 +729,18 @@ body.has-aside .page-content .page-container .aside {
     max-width: 1200px;
   }
 }
-/* line 63, ../sass/block/_search-header.scss */
+/* line 66, ../sass/block/_search-header.scss */
 .region-header .search-toggler {
   border: 0;
   margin-left: auto;
 }
 
-/* line 71, ../sass/block/_search-header.scss */
+/* line 74, ../sass/block/_search-header.scss */
 body.search-open .region-header .block-views-exposed-filter-blocksearch-page-1 {
   transform: translateY(0);
 }
 
-/* line 78, ../sass/block/_search-header.scss */
+/* line 81, ../sass/block/_search-header.scss */
 body.path-zoeken .search-toggler {
   display: none;
 }
@@ -922,13 +925,13 @@ body.menu-open .mobile-menu-target-wrapper {
 }
 /* line 22, ../sass/navigation/_social.scss */
 .menu--social-media .menu .svg-inline--fa {
-  color: #FFD200;
+  color: #fff;
   font-size: 2rem;
   transition: color .3s ease-in-out;
 }
 /* line 27, ../sass/navigation/_social.scss */
 .menu--social-media .menu .svg-inline--fa:hover {
-  color: #ffed99;
+  color: white;
 }
 
 /* line 1, ../sass/nodes/_interview--full.scss */
@@ -1248,36 +1251,46 @@ body.menu-open .mobile-menu-target-wrapper {
   }
   /* line 10, ../sass/nodes/_node--search.scss */
   .node.node--view-mode-search-result .field--name-field-image {
+    display: flex;
     width: 40%;
   }
   /* line 14, ../sass/nodes/_node--search.scss */
+  .node.node--view-mode-search-result .field--name-field-image .field__item {
+    height: 100%;
+  }
+  /* line 18, ../sass/nodes/_node--search.scss */
+  .node.node--view-mode-search-result .field--name-field-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+  /* line 24, ../sass/nodes/_node--search.scss */
   .node.node--view-mode-search-result .search-content {
     flex-grow: 1;
     width: 60%;
   }
 }
-/* line 20, ../sass/nodes/_node--search.scss */
+/* line 30, ../sass/nodes/_node--search.scss */
 .node.node--view-mode-search-result .search-content {
   padding: 1rem 1rem 2rem;
 }
-/* line 25, ../sass/nodes/_node--search.scss */
+/* line 35, ../sass/nodes/_node--search.scss */
 .node.node--view-mode-search-result h2 a {
   color: #2A6797;
 }
-/* line 30, ../sass/nodes/_node--search.scss */
+/* line 40, ../sass/nodes/_node--search.scss */
 .node.node--view-mode-search-result .field--name-node-link {
   position: absolute;
   right: 1rem;
   bottom: 1rem;
 }
-/* line 35, ../sass/nodes/_node--search.scss */
+/* line 45, ../sass/nodes/_node--search.scss */
 .node.node--view-mode-search-result .field--name-node-link a {
   height: 0px;
   width: 0px;
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
-/* line 41, ../sass/nodes/_node--search.scss */
+/* line 51, ../sass/nodes/_node--search.scss */
 .node.node--view-mode-search-result .field--name-node-link a::before {
   color: #931058;
   content: '►►';
@@ -1287,16 +1300,16 @@ body.menu-open .mobile-menu-target-wrapper {
   right: 0;
   bottom: 0;
 }
-/* line 53, ../sass/nodes/_node--search.scss */
+/* line 63, ../sass/nodes/_node--search.scss */
 .node.node--view-mode-search-result .field--name-field-schooltype {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 58, ../sass/nodes/_node--search.scss */
+/* line 68, ../sass/nodes/_node--search.scss */
 .node.node--view-mode-search-result .field--name-field-schooltype .field__item a {
   color: #931058;
 }
-/* line 63, ../sass/nodes/_node--search.scss */
+/* line 73, ../sass/nodes/_node--search.scss */
 .node.node--view-mode-search-result .field--name-field-schooltype .field__item:not(:last-child) a {
   margin-right: 0.25rem;
 }
@@ -1648,26 +1661,27 @@ div.fivestar-rating-wrapper > div > label::before {
   font-size: 1.78125rem;
   text-align: center;
   margin-bottom: 1rem;
+  padding: 0 1rem;
   width: 100%;
 }
-/* line 10, ../sass/paragraphs/_cta.scss */
+/* line 11, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action h3 a {
   color: #fff;
 }
-/* line 15, ../sass/paragraphs/_cta.scss */
+/* line 16, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action > .field__item {
   background-color: #F1B3D2;
   display: flex;
 }
-/* line 19, ../sass/paragraphs/_cta.scss */
+/* line 20, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action > .field__item > div {
   display: flex;
 }
-/* line 23, ../sass/paragraphs/_cta.scss */
+/* line 24, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action > .field__item:nth-child(2n+0) {
   background: #D2D800;
 }
-/* line 27, ../sass/paragraphs/_cta.scss */
+/* line 28, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action > .field__item:nth-child(3n+0) {
   background: #A2D9F5;
 }
@@ -1677,39 +1691,47 @@ div.fivestar-rating-wrapper > div > label::before {
     display: flex;
     flex-wrap: wrap;
   }
-  /* line 36, ../sass/paragraphs/_cta.scss */
+  /* line 37, ../sass/paragraphs/_cta.scss */
   .field--name-field-call-to-action > .field__item {
     width: 33.333%;
   }
 }
-/* line 41, ../sass/paragraphs/_cta.scss */
+/* line 42, ../sass/paragraphs/_cta.scss */
+.field--name-field-call-to-action .big-link-wrapper {
+  color: #212529;
+}
+/* line 46, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item {
   height: 100%;
   padding-bottom: 3rem;
   position: relative;
 }
-/* line 46, ../sass/paragraphs/_cta.scss */
+/* line 51, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-media-svg {
   padding: 3rem 0 2rem;
   width: 33.333%;
   margin: 0 auto;
 }
-/* line 52, ../sass/paragraphs/_cta.scss */
+/* line 56, ../sass/paragraphs/_cta.scss */
+.field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-media-svg img {
+  max-height: 133px;
+}
+/* line 61, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-content {
   font-size: 1.21719rem;
   padding: 0 1rem 1rem;
   text-align: center;
 }
-/* line 57, ../sass/paragraphs/_cta.scss */
+/* line 66, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-content a {
   border-bottom: 1px solid #212529;
   color: #212529;
 }
-/* line 61, ../sass/paragraphs/_cta.scss */
+/* line 70, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-content a:hover {
   border-bottom: 1px solid transparent;
 }
-/* line 68, ../sass/paragraphs/_cta.scss */
+/* line 77, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-link a {
   background-color: #FFD200;
   border: 1px solid #fff;
@@ -1728,7 +1750,7 @@ div.fivestar-rating-wrapper > div > label::before {
   transform: translate(-50%, 50%);
   width: 75%;
 }
-/* line 86, ../sass/paragraphs/_cta.scss */
+/* line 95, ../sass/paragraphs/_cta.scss */
 .field--name-field-call-to-action .paragraph--type--cta-item .field--name-field-link a:hover {
   background-color: #cca800;
   box-shadow: 0 0 1rem rgba(33, 37, 41, 0.4);
@@ -2343,23 +2365,17 @@ div.fivestar-rating-wrapper > div > label::before {
 .taxonomy-term.vocabulary-schooltype {
   margin-bottom: 2rem;
 }
-@media (min-width: 768px) {
-  /* line 1, ../sass/taxonomy/_schooltype.scss */
-  .taxonomy-term.vocabulary-schooltype {
-    margin-bottom: 4rem;
-  }
-}
-/* line 8, ../sass/taxonomy/_schooltype.scss */
+/* line 4, ../sass/taxonomy/_schooltype.scss */
 .taxonomy-term.vocabulary-schooltype .taxonomy-intro-wrapper {
   position: relative;
 }
 @media (min-width: 768px) {
-  /* line 8, ../sass/taxonomy/_schooltype.scss */
+  /* line 4, ../sass/taxonomy/_schooltype.scss */
   .taxonomy-term.vocabulary-schooltype .taxonomy-intro-wrapper {
     margin-top: -4rem;
   }
 }
-/* line 16, ../sass/taxonomy/_schooltype.scss */
+/* line 12, ../sass/taxonomy/_schooltype.scss */
 .taxonomy-term.vocabulary-schooltype h1 {
   background-color: #FFD200;
   color: #931058;
@@ -2371,7 +2387,7 @@ div.fivestar-rating-wrapper > div > label::before {
   padding: 1rem;
   text-transform: uppercase;
 }
-/* line 27, ../sass/taxonomy/_schooltype.scss */
+/* line 23, ../sass/taxonomy/_schooltype.scss */
 .taxonomy-term.vocabulary-schooltype h1::before {
   content: 'ARTIKELEN';
   display: inline-block;
@@ -2379,7 +2395,7 @@ div.fivestar-rating-wrapper > div > label::before {
   font-family: 'Bariol Regular';
 }
 @media (min-width: 768px) {
-  /* line 16, ../sass/taxonomy/_schooltype.scss */
+  /* line 12, ../sass/taxonomy/_schooltype.scss */
   .taxonomy-term.vocabulary-schooltype h1 {
     display: inline-block;
     left: 0;
@@ -2388,25 +2404,25 @@ div.fivestar-rating-wrapper > div > label::before {
     transform: translateY(-50%);
   }
 }
-/* line 44, ../sass/taxonomy/_schooltype.scss */
+/* line 40, ../sass/taxonomy/_schooltype.scss */
 .taxonomy-term.vocabulary-schooltype .content .field--name-field-intro {
   background-color: #fff;
   color: #2A6797;
   font-size: 1.24688rem;
   padding: 2rem 1rem;
 }
-/* line 50, ../sass/taxonomy/_schooltype.scss */
+/* line 46, ../sass/taxonomy/_schooltype.scss */
 .taxonomy-term.vocabulary-schooltype .content .field--name-field-intro p + p {
   margin-top: 1rem;
 }
 @media (min-width: 768px) {
-  /* line 44, ../sass/taxonomy/_schooltype.scss */
+  /* line 40, ../sass/taxonomy/_schooltype.scss */
   .taxonomy-term.vocabulary-schooltype .content .field--name-field-intro {
     padding: 4rem 2rem;
   }
 }
 @media (min-width: 768px) {
-  /* line 59, ../sass/taxonomy/_schooltype.scss */
+  /* line 55, ../sass/taxonomy/_schooltype.scss */
   .taxonomy-term.vocabulary-schooltype .content .field--name-field-media-image {
     width: 100vw;
     margin-left: 50%;
@@ -2458,30 +2474,35 @@ div.fivestar-rating-wrapper > div > label::before {
   /* line 2, ../sass/views/_taxonomy-term.scss */
   .view-taxonomy-term .view-content {
     margin: 0 -0.5rem 2rem;
+  }
+}
+@media (min-width: 768px) {
+  /* line 2, ../sass/views/_taxonomy-term.scss */
+  .view-taxonomy-term .view-content {
     padding: 0;
   }
 }
-/* line 12, ../sass/views/_taxonomy-term.scss */
+/* line 16, ../sass/views/_taxonomy-term.scss */
 .view-taxonomy-term .view-content .views-row {
   padding: 0.5rem;
 }
 @media (min-width: 768px) {
-  /* line 12, ../sass/views/_taxonomy-term.scss */
+  /* line 16, ../sass/views/_taxonomy-term.scss */
   .view-taxonomy-term .view-content .views-row {
     width: 50%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 12, ../sass/views/_taxonomy-term.scss */
+  /* line 16, ../sass/views/_taxonomy-term.scss */
   .view-taxonomy-term .view-content .views-row {
     width: 33.333%;
   }
 }
-/* line 23, ../sass/views/_taxonomy-term.scss */
+/* line 27, ../sass/views/_taxonomy-term.scss */
 .view-taxonomy-term .view-content .views-row .node {
   height: 100%;
 }
-/* line 26, ../sass/views/_taxonomy-term.scss */
+/* line 30, ../sass/views/_taxonomy-term.scss */
 .view-taxonomy-term .view-content .views-row .node h2,
 .view-taxonomy-term .view-content .views-row .node h3 {
   text-align: left;

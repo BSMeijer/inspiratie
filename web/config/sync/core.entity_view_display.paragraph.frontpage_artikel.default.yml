@@ -89,10 +89,11 @@ third_party_settings:
       format_type: background_image
       region: ds_content
       format_settings:
+        image: field_image
+        image_style: header
         id: ''
         classes: background-image
-        image: field_image
-        image_style: square
+        show_empty_fields: false
         hide_if_missing: false
       label: 'Background image'
     group_article_wrapper:
