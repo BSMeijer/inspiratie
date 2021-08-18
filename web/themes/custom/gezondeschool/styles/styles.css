@@ -630,7 +630,7 @@ body.has-aside .page-content .page-container .aside {
   border: 0;
   height: 36px;
   text-indent: -9999px;
-  width: 36px;
+  width: 37px;
 }
 @media (min-width: 768px) {
   /* line 32, ../sass/block/_search.scss */
@@ -713,7 +713,7 @@ body.has-aside .page-content .page-container .aside {
   border: 0;
   height: 36px;
   text-indent: -9999px;
-  width: 36px;
+  width: 37px;
 }
 @media (min-width: 768px) {
   /* line 32, ../sass/block/_search-header.scss */
