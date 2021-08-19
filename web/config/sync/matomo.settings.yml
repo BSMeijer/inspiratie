@@ -1,6 +1,6 @@
 site_id: '1'
 url_http: 'http://gezondeschoolinspiratie.matomo.cloud/'
-url_https: 'http://gezondeschoolinspiratie.matomo.cloud/'
+url_https: 'https://gezondeschoolinspiratie.matomo.cloud/'
 domain_mode: 0
 visibility:
   request_path_mode: 0
