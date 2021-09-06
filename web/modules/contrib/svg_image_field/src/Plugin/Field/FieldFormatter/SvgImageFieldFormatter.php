@@ -10,6 +10,7 @@ use Drupal\Core\Logger\LoggerChannelFactoryInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Url;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use enshrined\svgSanitize\Sanitizer;
 
 /**
  * Plugin implementation of the 'svg_formatter' formatter.
@@ -44,6 +45,8 @@ class SvgImageFieldFormatter extends FormatterBase implements ContainerFactoryPl
       'enable_title' => TRUE,
       'link' => '',
       'force_fill' => FALSE,
+      'sanitize' => TRUE,
+      'sanitize_remote' => FALSE,
     ] + parent::defaultSettings();
   }
 
@@ -74,20 +77,81 @@ class SvgImageFieldFormatter extends FormatterBase implements ContainerFactoryPl
        Notice only trusted users should use fields with this option enabled because of
        <a href="@svg_security_link">inline svg security</a>', ['@svg_security_link' => 'https://www.w3.org/wiki/SVG_Security']),
     ];
+    $inline_name = '[settings_edit_form][settings][inline]';
     $form['apply_dimensions'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Apply dimensions.'),
       '#default_value' => $this->getSetting('apply_dimensions'),
+      '#states' => [
+        'visible' => [
+          ':input[name$="' . $inline_name . '"]' => ['checked' => TRUE],
+        ],
+      ],
     ];
+    $dimensions_name = '[settings_edit_form][settings][apply_dimensions]';
     $form['width'] = [
       '#type' => 'number',
       '#title' => $this->t('Image width.'),
       '#default_value' => $this->getSetting('width'),
+      '#states' => [
+        'visible' => [
+          ':input[name$="' . $inline_name . '"]' => ['checked' => TRUE],
+          ':input[name$="' . $dimensions_name . '"]' => ['checked' => TRUE],
+        ],
+      ],
     ];
     $form['height'] = [
       '#type' => 'number',
       '#title' => $this->t('Image height.'),
       '#default_value' => $this->getSetting('height'),
+      '#states' => [
+        'visible' => [
+          ':input[name$="' . $inline_name . '"]' => ['checked' => TRUE],
+          ':input[name$="' . $dimensions_name . '"]' => ['checked' => TRUE],
+        ],
+      ],
+    ];
+    $form['force_fill'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Force the fill to currentColor'),
+      '#description' => $this->t('This can allow the SVG to inherit coloring from the enclosing tag, such as a link tag.'),
+      '#default_value' => $this->getSetting('force_fill'),
+      '#states' => [
+        'visible' => [
+          ':input[name$="' . $inline_name . '"]' => ['checked' => TRUE],
+        ],
+      ],
+    ];
+    $form['sanitize'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Sanitize SVG code'),
+      '#description' => $this->t('Sanitize the SVG XML code and prevent XSS attacks.'),
+      '#default_value' => $this->getSetting('sanitize'),
+      '#states' => [
+        'visible' => [
+          ':input[name$="' . $inline_name . '"]' => ['checked' => TRUE],
+        ],
+      ],
+    ];
+    $sanitize_name = '[settings_edit_form][settings][sanitize]';
+    $form['sanitize_remote'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Sanitize: Remove remote references'),
+      '#description' => $this->t('Remove attributes that reference remote files, this will stop HTTP leaks but will add an overhead to the sanitizer.'),
+      '#default_value' => $this->getSetting('sanitize_remote'),
+      '#states' => [
+        'visible' => [
+          ':input[name$="' . $inline_name . '"]' => ['checked' => TRUE],
+          ':input[name$="' . $sanitize_name . '"]' => ['checked' => TRUE],
+        ],
+      ],
+    ];
+    $form['link'] = [
+      '#title' => $this->t('Link image to'),
+      '#type' => 'select',
+      '#default_value' => $this->getSetting('link'),
+      '#empty_option' => $this->t('Nothing'),
+      '#options' => $this->getLinkTypes(),
     ];
     $form['enable_alt'] = [
       '#type' => 'checkbox',
@@ -102,19 +166,6 @@ class SvgImageFieldFormatter extends FormatterBase implements ContainerFactoryPl
     $form['notice'] = [
       '#type' => 'markup',
       '#markup' => '<div><small>' . $this->t('Alt and title attributes will be created from an image filename by removing file extension and replacing eventual underscores and dashes with spaces.') . '</small></div>',
-    ];
-    $form['link'] = [
-      '#title' => $this->t('Link image to'),
-      '#type' => 'select',
-      '#default_value' => $this->getSetting('link'),
-      '#empty_option' => $this->t('Nothing'),
-      '#options' => $this->getLinkTypes(),
-    ];
-    $form['force_fill'] = [
-      '#type' => 'checkbox',
-      '#title' => $this->t('Force the fill to currentColor'),
-      '#description' => $this->t('This can allow the SVG to inherit coloring from the enclosing tag, such as a link tag.'),
-      '#default_value' => $this->getSetting('force_fill'),
     ];
 
     return $form;
@@ -211,6 +262,13 @@ class SvgImageFieldFormatter extends FormatterBase implements ContainerFactoryPl
         }
         else {
           $svg_data = $dom->saveXML();
+        }
+        if ($this->getSetting('sanitize')) {
+          $svgSanitizer = new Sanitizer();
+          if ($this->getSetting('sanitize_remote')) {
+            $svgSanitizer->removeRemoteReferences(TRUE);
+          }
+          $svg_data = $svgSanitizer->sanitize($svg_data);
         }
       }
 

@@ -44,6 +44,10 @@ Basic Field Configuration
 
 Media Entity Configuration (Requires Drupal >=8.7)
 
+To skip the steps below, you can install the SVG Image Field Media Bundle to
+import the configuration and have it set up for you, including the media bundle
+and Acquia Site Studio components (if the requirements are installed).
+
 1. Enable Media and Media Library modules from Drupal core.
 2. Go to /admin/structure/media and click the "Add Media Type" button.
 3. For the Media Type Name, specify "SVG".
@@ -66,34 +70,33 @@ Media Entity Configuration (Requires Drupal >=8.7)
 8. Go create a node, and click the "Add media" link. Notice that the Media
    Library loads with a vertical tab for each kind of media type bundle you
    enabled in step 7 on your node configuration screen.
+9. If using Acquia Site Studio, go to Site Studio > Sync packages > Import
+   packages in the admin menu, and import the svg-components.package.yml file
+   which can be found within the config/dx8 directory, inside the SVG Image
+   Field Media Bundle submodule.
 
-AUTHOR
-------
+MAINTAINERS
+-----------
 
-shmel210  
-Drupal: (https://www.drupal.org/user/2600028)  
-Email: shmel210@zina.com.ua
-
-Company: Zina Design Studio
-Website: (http://zina.com.ua)  
-Drupal: (https://www.drupal.org/user/361734/)  
-Email: info@zina.com.ua
+* Martin Anderson-Clutz (mandclu) - https://www.drupal.org/u/mandclu
+* James Wilson (jwilson3) - https://www.drupal.org/u/jwilson3
+* Anton (shmel210) - https://www.drupal.org/u/shmel210
 
 SIMILAR PROJECTS AND HOW THEY ARE DIFFERENT
 -------------------------------------------
 Limitations of module svg_formatter
 - There is no way to set custom alt on image because it uses file field.
  File field does not support alt on db level.
-- User must add svg extension at file field  settings and 
+- User must add svg extension at file field  settings and
 select field formatter its not intuitive for user.
 - If user uploads non svg file it will break output.
 - if user uploads png and selects inline output at formatter settings it will
  break output
 - It not have preview image on file upload.
-- There is less ways what we can do with this all without breaking 
+- There is less ways what we can do with this all without breaking
 existiing installations
 
-Module svg_image_field does not have this weaks.
-You simply click add field, set field type to "Svg Image" and its done. 
-As for me there is much less ways to shoot yourself in the leg 
+Module svg_image_field does not have this weakness.
+You simply click add field, set field type to "Svg Image" and its done.
+As for me there is much less ways to shoot yourself in the leg
 with svg_image_field:)

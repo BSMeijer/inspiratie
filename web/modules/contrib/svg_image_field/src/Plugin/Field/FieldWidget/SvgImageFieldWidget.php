@@ -191,9 +191,13 @@ class SvgImageFieldWidget extends FileWidget {
       ];
       if (!empty($element['#preview_image_max_width'])) {
         $attributes['style'] = "max-width: {$element['#preview_image_max_width']}px;";
+        $attributes['width'] = $element['#preview_image_max_width'];
       }
       if (!empty($element['#preview_image_max_height'])) {
         $attributes['style'] .= "max-height: {$element['#preview_image_max_height']}px;";
+        if (empty($attributes['width'])) {
+          $attributes['height'] = $element['#preview_image_max_height'];
+        }
       }
       if (!empty($item['alt'])) {
         $attributes['alt'] = $item['alt'];
@@ -216,9 +220,13 @@ class SvgImageFieldWidget extends FileWidget {
         ];
         if (!empty($element['#preview_image_max_width'])) {
           $attributes['style'] = "max-width={$element['#preview_image_max_width']}px;";
+          $attributes['width'] = $element['#preview_image_max_width'];
         }
         if (!empty($element['#preview_image_max_height'])) {
           $attributes['style'] .= "max-height={$element['#preview_image_max_height']}px;";
+          if (empty($attributes['width'])) {
+            $attributes['height'] = $element['#preview_image_max_height'];
+          }
         }
         $element['preview'] = [
           '#weight' => -10,

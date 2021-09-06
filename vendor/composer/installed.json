@@ -2845,18 +2845,18 @@
     },
     {
         "name": "drupal/entity_usage",
-        "version": "2.0.0-beta4",
-        "version_normalized": "2.0.0.0-beta4",
+        "version": "2.0.0-beta5",
+        "version_normalized": "2.0.0.0-beta5",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/entity_usage.git",
-            "reference": "8.x-2.0-beta4"
+            "reference": "8.x-2.0-beta5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/entity_usage-8.x-2.0-beta4.zip",
-            "reference": "8.x-2.0-beta4",
-            "shasum": "436584621b42fd752e715fb36fe964b263e17915"
+            "url": "https://ftp.drupal.org/files/projects/entity_usage-8.x-2.0-beta5.zip",
+            "reference": "8.x-2.0-beta5",
+            "shasum": "f4a57c41e23e92fc84053fb38dc94cc0d9fd9c43"
         },
         "require": {
             "drupal/core": "^8.8 || ^9"
@@ -2875,8 +2875,8 @@
         "type": "drupal-module",
         "extra": {
             "drupal": {
-                "version": "8.x-2.0-beta4",
-                "datestamp": "1628486017",
+                "version": "8.x-2.0-beta5",
+                "datestamp": "1630413072",
                 "security-coverage": {
                     "status": "not-covered",
                     "message": "Beta releases are not covered by Drupal security advisories."
@@ -4410,27 +4410,28 @@
     },
     {
         "name": "drupal/svg_image_field",
-        "version": "2.0.0",
-        "version_normalized": "2.0.0.0",
+        "version": "2.1.0",
+        "version_normalized": "2.1.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/svg_image_field.git",
-            "reference": "2.0.0"
+            "reference": "2.1.0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/svg_image_field-2.0.0.zip",
-            "reference": "2.0.0",
-            "shasum": "8ca4975ab54498aeb827ead49c3d21b8a2ec6328"
+            "url": "https://ftp.drupal.org/files/projects/svg_image_field-2.1.0.zip",
+            "reference": "2.1.0",
+            "shasum": "abd3b646795cd907aaab20fa516b1a878a35855b"
         },
         "require": {
-            "drupal/core": "^8 || ^9"
+            "drupal/core": "^8 || ^9",
+            "enshrined/svg-sanitize": "~0.13"
         },
         "type": "drupal-module",
         "extra": {
             "drupal": {
-                "version": "2.0.0",
-                "datestamp": "1620643328",
+                "version": "2.1.0",
+                "datestamp": "1628957692",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -4440,12 +4441,12 @@
         "installation-source": "dist",
         "notification-url": "https://packages.drupal.org/8/downloads",
         "license": [
-            "GPL-2.0-or-later"
+            "GPL-2.0+"
         ],
         "authors": [
             {
-                "name": "donne93",
-                "homepage": "https://www.drupal.org/user/3569136"
+                "name": "See contributors",
+                "homepage": "https://www.drupal.org/node/2863622/committers"
             },
             {
                 "name": "dunot",
@@ -4468,10 +4469,11 @@
                 "homepage": "https://www.drupal.org/user/2600028"
             }
         ],
-        "description": "Provides svg image field",
+        "description": "Provides SVG Image field.",
         "homepage": "https://www.drupal.org/project/svg_image_field",
         "support": {
-            "source": "https://git.drupalcode.org/project/svg_image_field"
+            "source": "https://git.drupalcode.org/project/svg_image_field",
+            "issues": "https://www.drupal.org/project/issues/svg_image_field"
         }
     },
     {
@@ -4671,18 +4673,18 @@
     },
     {
         "name": "drupal/webform",
-        "version": "6.0.4",
-        "version_normalized": "6.0.4.0",
+        "version": "6.0.5",
+        "version_normalized": "6.0.5.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/webform.git",
-            "reference": "6.0.4"
+            "reference": "6.0.5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/webform-6.0.4.zip",
-            "reference": "6.0.4",
-            "shasum": "8b87ffb19f980e9d77957dfb2d784a1a68619d57"
+            "url": "https://ftp.drupal.org/files/projects/webform-6.0.5.zip",
+            "reference": "6.0.5",
+            "shasum": "a925d604e3b4a29f5a688a8e84fdb3a93490f641"
         },
         "require": {
             "drupal/core": "^8.8 || ^9"
@@ -4730,8 +4732,8 @@
         "type": "drupal-module",
         "extra": {
             "drupal": {
-                "version": "6.0.4",
-                "datestamp": "1624461046",
+                "version": "6.0.5",
+                "datestamp": "1629909787",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -5216,6 +5218,50 @@
             "security advisories",
             "vulnerability scanner"
         ]
+    },
+    {
+        "name": "enshrined/svg-sanitize",
+        "version": "0.14.1",
+        "version_normalized": "0.14.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/darylldoyle/svg-sanitizer.git",
+            "reference": "307b42066fb0b76b5119f5e1f0826e18fefabe95"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/307b42066fb0b76b5119f5e1f0826e18fefabe95",
+            "reference": "307b42066fb0b76b5119f5e1f0826e18fefabe95",
+            "shasum": ""
+        },
+        "require": {
+            "ext-dom": "*",
+            "ext-libxml": "*",
+            "php": "^7.0 || ^8.0"
+        },
+        "require-dev": {
+            "codeclimate/php-test-reporter": "^0.1.2",
+            "phpunit/phpunit": "^6.5 || ^8.5"
+        },
+        "time": "2021-08-09T23:46:54+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "enshrined\\svgSanitize\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Daryll Doyle",
+                "email": "daryll@enshrined.co.uk"
+            }
+        ],
+        "description": "An SVG sanitizer for PHP"
     },
     {
         "name": "grasmash/expander",
@@ -7159,24 +7205,24 @@
     },
     {
         "name": "symfony/finder",
-        "version": "v5.3.4",
-        "version_normalized": "5.3.4.0",
+        "version": "v5.3.7",
+        "version_normalized": "5.3.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/finder.git",
-            "reference": "17f50e06018baec41551a71a15731287dbaab186"
+            "reference": "a10000ada1e600d109a6c7632e9ac42e8bf2fb93"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/finder/zipball/17f50e06018baec41551a71a15731287dbaab186",
-            "reference": "17f50e06018baec41551a71a15731287dbaab186",
+            "url": "https://api.github.com/repos/symfony/finder/zipball/a10000ada1e600d109a6c7632e9ac42e8bf2fb93",
+            "reference": "a10000ada1e600d109a6c7632e9ac42e8bf2fb93",
             "shasum": ""
         },
         "require": {
             "php": ">=7.2.5",
             "symfony/polyfill-php80": "^1.16"
         },
-        "time": "2021-07-23T15:54:19+00:00",
+        "time": "2021-08-04T21:20:46+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -8571,17 +8617,17 @@
     },
     {
         "name": "symfony/var-dumper",
-        "version": "v4.4.27",
-        "version_normalized": "4.4.27.0",
+        "version": "v4.4.30",
+        "version_normalized": "4.4.30.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/var-dumper.git",
-            "reference": "391d6d0e7a06ab54eb7c38fab29b8d174471b3ba"
+            "reference": "7f65c44c2ce80d3a0fcdb6385ee0ad535e45660c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/391d6d0e7a06ab54eb7c38fab29b8d174471b3ba",
-            "reference": "391d6d0e7a06ab54eb7c38fab29b8d174471b3ba",
+            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/7f65c44c2ce80d3a0fcdb6385ee0ad535e45660c",
+            "reference": "7f65c44c2ce80d3a0fcdb6385ee0ad535e45660c",
             "shasum": ""
         },
         "require": {
@@ -8605,7 +8651,7 @@
             "ext-intl": "To show region name in time zone dump",
             "symfony/console": "To use the ServerDumpCommand and/or the bin/var-dump-server script"
         },
-        "time": "2021-07-23T15:41:52+00:00",
+        "time": "2021-08-04T20:31:23+00:00",
         "bin": [
             "Resources/bin/var-dump-server"
         ],
