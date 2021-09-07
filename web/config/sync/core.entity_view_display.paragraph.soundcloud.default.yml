@@ -5,17 +5,19 @@ dependencies:
   config:
     - field.field.paragraph.soundcloud.field_content
     - field.field.paragraph.soundcloud.field_soundcloud
+    - field.field.paragraph.soundcloud.field_spotify
     - field.field.paragraph.soundcloud.field_title
     - paragraphs.paragraphs_type.soundcloud
   module:
     - text
+    - video_embed_field
 id: paragraph.soundcloud.default
 targetEntityType: paragraph
 bundle: soundcloud
 mode: default
 content:
   field_content:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -23,15 +25,26 @@ content:
     region: content
   field_soundcloud:
     type: entity_reference_entity_view
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       view_mode: full
       link: false
     third_party_settings: {  }
     region: content
+  field_spotify:
+    weight: 0
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
   field_title:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       link_to_entity: false

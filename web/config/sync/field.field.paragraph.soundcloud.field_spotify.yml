@@ -1,0 +1,26 @@
+uuid: bbdb4c6c-8b14-4c5d-ac97-f098b530c70c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_spotify
+    - paragraphs.paragraphs_type.soundcloud
+  module:
+    - video_embed_field
+id: paragraph.soundcloud.field_spotify
+field_name: field_spotify
+entity_type: paragraph
+bundle: soundcloud
+label: Spotify
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    spotify: spotify
+    vimeo: '0'
+    youtube: '0'
+    youtube_playlist: '0'
+field_type: video_embed_field
