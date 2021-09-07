@@ -1,0 +1,19 @@
+{
+  "name": "video_embed_spotify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-phpcs": "^3.0.0",
+    "plugin-error": "^1.0.1"
+  }
+}
