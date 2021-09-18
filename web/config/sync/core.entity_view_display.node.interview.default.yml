@@ -52,7 +52,6 @@ third_party_settings:
         - field_name
         - field_school
         - field_location
-        - rate_helpfull
         - field_call_to_action
     fields:
       node_title:
@@ -81,7 +80,7 @@ content:
     region: ds_content
   field_call_to_action:
     type: entity_reference_revisions_entity_view
-    weight: 12
+    weight: 11
     label: above
     settings:
       view_mode: default
@@ -159,13 +158,9 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: ds_content
-  rate_helpfull:
-    weight: 11
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_editor_note: true
   langcode: true
   links: true
+  rate_helpfull: true
   search_api_excerpt: true

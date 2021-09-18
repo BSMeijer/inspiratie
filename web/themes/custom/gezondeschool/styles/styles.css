@@ -1465,39 +1465,64 @@ body.menu-open .mobile-menu-target-wrapper {
 }
 
 /* line 6, ../sass/fields/_rate.scss */
-.rate-display {
+.webform-submission-rating-form {
   border-top: 1px solid #931058;
   padding: 2rem 0;
   margin: 0 auto;
   max-width: 850px;
 }
 /* line 12, ../sass/fields/_rate.scss */
-.rate-display h2 {
+.webform-submission-rating-form h2 {
   font-size: 1.27656rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
-
-/* line 18, ../sass/fields/_rate.scss */
-div.fivestar-rating-wrapper > div > div.rating-option-result {
+/* line 19, ../sass/fields/_rate.scss */
+.webform-submission-rating-form textarea {
+  border: 1px solid #aaa;
+  padding: 1rem;
+}
+/* line 23, ../sass/fields/_rate.scss */
+.webform-submission-rating-form textarea:focus {
+  border: 1px solid #931058;
+}
+/* line 28, ../sass/fields/_rate.scss */
+.webform-submission-rating-form .form-actions {
+  display: flex;
+}
+/* line 32, ../sass/fields/_rate.scss */
+.webform-submission-rating-form .form-submit {
+  appearance: none;
+  background-color: #931058;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  margin: 0 auto;
+  transition: background-color .3s ease-in-out;
+}
+/* line 42, ../sass/fields/_rate.scss */
+.webform-submission-rating-form .form-submit:hover {
+  background-color: #650b3c;
+}
+/* line 47, ../sass/fields/_rate.scss */
+.webform-submission-rating-form .webform-button--draft {
   display: none;
 }
 
-/* line 22, ../sass/fields/_rate.scss */
-div.fivestar-rating-wrapper > div > label {
-  font-size: 0.75rem;
-  transition: color .3s ease-in-out;
+/* line 52, ../sass/fields/_rate.scss */
+div.svg div.rateit-range {
+  background: url("../img/heart.svg");
 }
-/* line 26, ../sass/fields/_rate.scss */
-div.fivestar-rating-wrapper > div > label.full {
-  color: #931058;
+
+/* line 56, ../sass/fields/_rate.scss */
+div.svg div.rateit-hover {
+  background: url("../img/heart-hover.svg");
 }
-/* line 30, ../sass/fields/_rate.scss */
-div.fivestar-rating-wrapper > div > label.hover {
-  color: #F1B3D2 !important;
-}
-/* line 34, ../sass/fields/_rate.scss */
-div.fivestar-rating-wrapper > div > label::before {
-  content: "♥";
+
+/* line 60, ../sass/fields/_rate.scss */
+div.svg div.rateit-selected {
+  background: url("../img/heart-selected.svg");
 }
 
 /* line 1, ../sass/paragraphs/_clearfix.scss */

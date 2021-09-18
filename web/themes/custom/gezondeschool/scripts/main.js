@@ -95,6 +95,14 @@
     }
   }
 
+  Drupal.behaviors.saveDraft = {
+    attach: function(context) {
+      $('.rateit-hover', context).click(function () {
+        console.log('hi');
+      })
+    }
+  }
+
   Drupal.behaviors.mobile_menu = {
     attach: function (context, settings) {
       $('.mobile-menu-target-wrapper', context).append($('.menu--main > ul.menu').clone());

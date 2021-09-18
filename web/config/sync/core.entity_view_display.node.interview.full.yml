@@ -45,14 +45,13 @@ third_party_settings:
       ds_content:
         - group_header
         - group_inner_wrapper
-        - field_schooltype
         - group_content
+        - field_schooltype
         - node_title
         - group_interview_details
         - field_intro
         - group_wrapper
         - field_body
-        - rate_helpfull
         - field_call_to_action
         - field_name
         - field_school
@@ -106,10 +105,9 @@ third_party_settings:
         - group_interview_details
         - field_intro
         - field_body
-        - rate_helpfull
         - field_call_to_action
       parent_name: ''
-      weight: 2
+      weight: 1
       format_type: html_element
       region: ds_content
       format_settings:
@@ -224,11 +222,6 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-  rate_helpfull:
-    weight: 9
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_editor_note: true
   field_image: true
@@ -237,4 +230,5 @@ hidden:
   field_topic: true
   langcode: true
   links: true
+  rate_helpfull: true
   search_api_excerpt: true
