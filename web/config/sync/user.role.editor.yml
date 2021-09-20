@@ -81,6 +81,7 @@ permissions:
   - 'view all media revisions'
   - 'view all revisions'
   - 'view any unpublished content'
+  - 'view any webform submission'
   - 'view interview revisions'
   - 'view latest version'
   - 'view own unpublished content'
