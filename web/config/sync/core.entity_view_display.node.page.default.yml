@@ -6,15 +6,18 @@ dependencies:
     - field.field.node.page.field_body
     - field.field.node.page.field_image
     - field.field.node.page.field_intro
+    - field.field.node.page.field_meta_tags
     - field.field.node.page.field_schooltype
     - field.field.node.page.field_teaser
     - field.field.node.page.field_thema
     - field.field.node.page.field_topic
+    - field.field.node.page.field_yoast_seo
     - node.type.page
   module:
     - ds
     - entity_reference_revisions
     - field_group
+    - metatag
     - text
     - user
 third_party_settings:
@@ -100,6 +103,13 @@ content:
     third_party_settings: {  }
     type: text_default
     region: ds_content
+  field_meta_tags:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
   field_schooltype:
     weight: 3
     label: above
@@ -131,6 +141,14 @@ content:
     settings:
       link: true
     third_party_settings: {  }
+  field_yoast_seo:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   rate_helpfull:
     weight: 100
     region: ds_content

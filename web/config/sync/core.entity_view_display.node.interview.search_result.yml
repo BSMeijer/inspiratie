@@ -10,12 +10,14 @@ dependencies:
     - field.field.node.interview.field_image
     - field.field.node.interview.field_intro
     - field.field.node.interview.field_location
+    - field.field.node.interview.field_meta_tags
     - field.field.node.interview.field_name
     - field.field.node.interview.field_school
     - field.field.node.interview.field_schooltype
     - field.field.node.interview.field_teaser
     - field.field.node.interview.field_thema
     - field.field.node.interview.field_topic
+    - field.field.node.interview.field_yoast_seo
     - node.type.interview
   module:
     - ds
@@ -118,11 +120,13 @@ hidden:
   field_editor_note: true
   field_intro: true
   field_location: true
+  field_meta_tags: true
   field_name: true
   field_school: true
   field_teaser: true
   field_thema: true
   field_topic: true
+  field_yoast_seo: true
   langcode: true
   links: true
   rate_helpfull: true
