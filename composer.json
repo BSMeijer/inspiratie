@@ -55,6 +55,7 @@
     "drupal/video_embed_spotify": "^1.5",
     "drupal/webform": "^6.0",
     "drupal/webform_config_ignore": "^1.2",
+    "drupal/yoast_seo": "^1.7",
     "drupal/youtube": "^1.2",
     "drush/drush": "^10.5"
   },

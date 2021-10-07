@@ -7,10 +7,12 @@ dependencies:
     - field.field.node.page.field_body
     - field.field.node.page.field_image
     - field.field.node.page.field_intro
+    - field.field.node.page.field_meta_tags
     - field.field.node.page.field_schooltype
     - field.field.node.page.field_teaser
     - field.field.node.page.field_thema
     - field.field.node.page.field_topic
+    - field.field.node.page.field_yoast_seo
     - node.type.page
   module:
     - ds
@@ -149,10 +151,12 @@ content:
     region: ds_content
 hidden:
   field_image: true
+  field_meta_tags: true
   field_schooltype: true
   field_teaser: true
   field_thema: true
   field_topic: true
+  field_yoast_seo: true
   langcode: true
   links: true
   rate_helpfull: true

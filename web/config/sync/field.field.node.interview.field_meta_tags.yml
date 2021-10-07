@@ -1,0 +1,21 @@
+uuid: 214353b8-b5c4-4c68-82cc-fbe0893c27a7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.interview
+  module:
+    - metatag
+id: node.interview.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: interview
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

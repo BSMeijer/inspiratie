@@ -22,7 +22,7 @@ id: node.frontpage.field_intro
 field_name: field_intro
 entity_type: node
 bundle: frontpage
-label: Introductie
+label: Intro
 description: ''
 required: false
 translatable: true
