@@ -9,7 +9,7 @@ cookieDocs: 'Over cookies'
 cookieDocsUri: /node/32
 denyAll: 'Alles weigeren'
 settings: Cookie-instellingen
-acceptAll: 'Accept all'
+acceptAll: 'Alles accepteren'
 allowAll: 'Accept all'
 cookieSettings: Cookie-instellingen
 close: Sluiten

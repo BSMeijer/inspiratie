@@ -1,0 +1,24 @@
+uuid: 5248d8f5-f5df-465c-8695-ee17ce996819
+langcode: nl
+status: true
+dependencies: {  }
+id: node__interview
+label: 'Content: Interview / Story'
+tags:
+  canonical_url: '[node:url]'
+  image_src: '[node:field_image:entity:thumbnail]'
+  description: '[node:field_teaser]'
+  title: '[current-page:title] | [site:name]'
+  abstract: '[node:field_intro]'
+  og_description: '[node:field_teaser]'
+  og_site_name: 'Gezonde School Inspiratie'
+  og_url: '[node:url]'
+  og_title: '[node:title]'
+  og_image: '[node:field_image:entity:thumbnail]'
+  og_type: artikel
+  twitter_cards_page_url: '[node:url]'
+  twitter_cards_site: '@GezondeSchoolNL'
+  twitter_cards_type: summary_large_image
+  twitter_cards_description: '[node:field_teaser]'
+  twitter_cards_image: '[node:field_image:entity:thumbnail]'
+  twitter_cards_title: '[node:title]'
