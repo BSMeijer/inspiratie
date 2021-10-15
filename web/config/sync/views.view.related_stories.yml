@@ -312,7 +312,7 @@ display:
             limit: true
             vids:
               thema: thema
-            anyall: ','
+            anyall: +
             term_page: '0'
           default_argument_skip_url: false
           summary_options:
