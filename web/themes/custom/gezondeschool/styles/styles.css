@@ -2077,7 +2077,7 @@ div.svg div.rateit-selected {
 }
 /* line 101, ../sass/paragraphs/_frame.scss */
 .paragraph--type--frame .field-group-background-image {
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   padding-top: 66%;
 }
