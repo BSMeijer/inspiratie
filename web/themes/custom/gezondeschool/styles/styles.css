@@ -2079,7 +2079,7 @@ div.svg div.rateit-selected {
 .paragraph--type--frame .field-group-background-image {
   background-position: top center;
   background-size: cover;
-  padding-top: 66%;
+  padding-top: 100%;
 }
 @media (min-width: 768px) {
   /* line 101, ../sass/paragraphs/_frame.scss */
