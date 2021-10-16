@@ -6,6 +6,7 @@ id: node__interview
 label: 'Content: Interview / Story'
 tags:
   canonical_url: '[node:url]'
+  keywords: '[node:field_yoast_seo:focus_keyword]'
   image_src: '[node:field_image:entity:thumbnail]'
   description: '[node:field_teaser]'
   title: '[current-page:title] | [site:name]'
@@ -21,4 +22,5 @@ tags:
   twitter_cards_type: summary_large_image
   twitter_cards_description: '[node:field_teaser]'
   twitter_cards_image: '[node:field_image:entity:thumbnail]'
+  twitter_cards_image_alt: '[node:field_image:entity:name]'
   twitter_cards_title: '[node:title]'
