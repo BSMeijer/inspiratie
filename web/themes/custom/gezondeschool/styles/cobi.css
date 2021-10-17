@@ -1,1 +1,29 @@
 /* @cobi: your changes kunnen in dit bestand, niet de styles.css aanpassen, die wordt automatisch vervangen */
+
+/* WEBFORM KOLOMMETJES IETSJE EERDER NAAR 100% LATEN SPRINGEN */
+.webform-options-display-two-columns {
+  display: block;
+  max-width: 900px;
+  margin-top: .4rem;
+  column-count: 1;
+}
+
+@media (min-width:800px) {
+  .webform-options-display-two-columns {
+    display: block;
+    max-width: 900px;
+    margin-top: .4rem;
+    column-count: 2;
+  }
+}
+
+.webform-options-display-two-columns label.option {
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+.webform-options-display-two-columns input[type="checkbox"],
+.webform-options-display-two-columns input[type="radio"] {
+  height: 1rem;
+  width: 1rem;
+}

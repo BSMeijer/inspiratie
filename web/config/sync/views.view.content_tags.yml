@@ -54,7 +54,48 @@ display:
           items_per_page: 1000
           offset: 0
       style:
-        type: default
+        type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            title: title
+            term_node_tid: term_node_tid
+            field_schooltype: field_schooltype
+            totalcount: totalcount
+          info:
+            title:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            term_node_tid:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_schooltype:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            totalcount:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: '-1'
+          empty_table: false
       row:
         type: fields
       fields:
