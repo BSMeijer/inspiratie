@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Drupal\matomo\Plugin\migrate\process;
 
 use Drupal\Core\Extension\ModuleHandlerInterface;
@@ -18,9 +20,6 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * @MigrateProcessPlugin(
  *   id = "matomo_visibility_pages"
  * )
- *
- * TODO update with new migrate process:
- *   @see https://www.drupal.org/node/3047268
  */
 class MatomoVisibilityPages extends ProcessPluginBase implements ContainerFactoryPluginInterface {
 

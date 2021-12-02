@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Drupal\matomo\Plugin\migrate\process;
 
 use Drupal\migrate\MigrateExecutableInterface;

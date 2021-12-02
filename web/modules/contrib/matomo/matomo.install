@@ -5,6 +5,8 @@
  * Installation file for Matomo Analytics module.
  */
 
+declare(strict_types = 1);
+
 use Drupal\Core\Url;
 use Drupal\user\Entity\Role;
 
@@ -18,7 +20,10 @@ function matomo_install() {
   $success = $role->save();
   if ($success) {
     $messenger = \Drupal::messenger();
-    $messenger->addMessage(t('Module %module granted %permission permission to authenticated users.', ['%module' => 'Matomo Analytics', '%permission' => t('Opt-in or out of tracking')]), 'status');
+    $messenger->addMessage(t('Module %module granted %permission permission to authenticated users.', [
+      '%module' => 'Matomo Analytics',
+      '%permission' => t('Opt-in or out of tracking'),
+    ]), 'status');
   }
 }
 
@@ -62,7 +67,7 @@ function matomo_requirements($phase) {
     $config = \Drupal::config('matomo.settings');
 
     // Raise warning if Matomo user account has not been set yet.
-    if (!preg_match('/^\d{1,}$/', $config->get('site_id'))) {
+    if (!preg_match('/^\d{1,}$/', $config->get('site_id') ?? '')) {
       $requirements['matomo_site_id'] = [
         'title' => t('Matomo module'),
         'description' => t('Matomo module has not been configured yet. Please configure its settings from the <a href=":url">Matomo settings page</a>.', [':url' => Url::fromRoute('matomo.admin_settings_form')->toString()]),

@@ -1,4 +1,3 @@
-
 cookies.config:
   type: config_object
   label: 'COOKiES config'
@@ -51,3 +50,6 @@ cookies.config:
     callback_url:
       type: path
       label: 'Callback URL'
+    store_auth_user_consent:
+      type: boolean
+      label: 'Store user content'

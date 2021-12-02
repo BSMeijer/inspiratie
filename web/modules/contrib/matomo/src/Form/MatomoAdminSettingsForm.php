@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Drupal\matomo\Form;
 
 use Drupal\Component\Utility\UrlHelper;
@@ -41,13 +43,22 @@ class MatomoAdminSettingsForm extends ConfigFormBase {
   protected $httpClient;
 
   /**
+   * The session storage options declared in services.yml.
+   *
+   * @var array
+   */
+  protected $sessionStorageOptions;
+
+  /**
    * {@inheritdoc}
    */
-  public function __construct(ConfigFactoryInterface $config_factory, AccountInterface $currentUser, ModuleHandlerInterface $moduleHandler, Client $httpClient) {
-    parent::__construct($config_factory);
-    $this->currentUser = $currentUser;
-    $this->moduleHandler = $moduleHandler;
-    $this->httpClient = $httpClient;
+  public static function create(ContainerInterface $container) {
+    $instance = parent::create($container);
+    $instance->currentUser = $container->get('current_user');
+    $instance->moduleHandler = $container->get('module_handler');
+    $instance->httpClient = $container->get('http_client');
+    $instance->sessionStorageOptions = $container->getParameter('session.storage.options');
+    return $instance;
   }
 
   /**
@@ -125,7 +136,7 @@ class MatomoAdminSettingsForm extends ConfigFormBase {
       '#group' => 'tracking_scope',
     ];
 
-    global $cookie_domain;
+    $cookie_domain = $this->sessionStorageOptions['cookie_domain'] ?? '';
     $multiple_sub_domains = [];
     foreach (['www', 'app', 'shop'] as $subdomain) {
       if (count(explode('.', $cookie_domain)) > 2 && !is_numeric(str_replace('.', '', $cookie_domain))) {
@@ -145,7 +156,7 @@ class MatomoAdminSettingsForm extends ConfigFormBase {
         1 => $this->t('One domain with multiple subdomains'),
       ],
       0 => [
-        '#description' => $this->t('Domain: @domain', ['@domain' => $_SERVER['HTTP_HOST']]),
+        '#description' => $this->t('Domain: @domain', ['@domain' => \Drupal::request()->getHost()]),
       ],
       1 => [
         '#description' => $this->t('Examples: @domains', ['@domains' => implode(', ', $multiple_sub_domains)]),
@@ -167,8 +178,14 @@ class MatomoAdminSettingsForm extends ConfigFormBase {
     if ($config->get('visibility.request_path_mode') == 2 && !$php_access) {
       // No permission to change PHP snippets, but keep existing settings.
       $form['tracking']['page_visibility_settings'] = [];
-      $form['tracking']['page_visibility_settings']['matomo_visibility_request_path_mode'] = ['#type' => 'value', '#value' => 2];
-      $form['tracking']['page_visibility_settings']['matomo_visibility_request_path_pages'] = ['#type' => 'value', '#value' => $visibility_request_path_pages];
+      $form['tracking']['page_visibility_settings']['matomo_visibility_request_path_mode'] = [
+        '#type' => 'value',
+        '#value' => 2,
+      ];
+      $form['tracking']['page_visibility_settings']['matomo_visibility_request_path_pages'] = [
+        '#type' => 'value',
+        '#value' => $visibility_request_path_pages,
+      ];
     }
     else {
       $options = [
@@ -551,7 +568,10 @@ class MatomoAdminSettingsForm extends ConfigFormBase {
         $form_state->setErrorByName("matomo_custom_var][slots][" . $custom_var['slot'] . "][value", $this->t('The custom variable @slot-number requires a <em>Value</em> if a <em>Name</em> has been provided.', ['@slot-number' => $custom_var['slot']]));
       }
     }
-    $form_state->setValue('matomo_custom_var', $form_state->getValue(['matomo_custom_var', 'slots']));
+    $form_state->setValue('matomo_custom_var', $form_state->getValue([
+      'matomo_custom_var',
+      'slots',
+    ]));
 
     // Trim some text area values.
     $form_state->setValue('matomo_site_id', trim($form_state->getValue('matomo_site_id')));
@@ -573,7 +593,7 @@ class MatomoAdminSettingsForm extends ConfigFormBase {
     $url = $url . 'matomo.php';
     $skip_error_check = $form_state->getValue('matomo_url_skiperror');
     try {
-      $result = $this->httpClient->get($url);
+      $result = $this->httpClient->request('GET', $url);
       if (!$skip_error_check && $result->getStatusCode() != 200) {
         $form_state->setErrorByName('matomo_url_http', $this->t('The validation of "@url" failed with error "@error" (HTTP code @code).', [
           '@url' => UrlHelper::filterBadProtocol($url),
@@ -595,13 +615,13 @@ class MatomoAdminSettingsForm extends ConfigFormBase {
     $matomo_url_https = $form_state->getValue('matomo_url_https');
     if (!empty($matomo_url_https)) {
       $url = $matomo_url_https;
-      if ($url && substr($url, -strlen('/')) !== '/') {
+      if (substr($url, -strlen('/')) !== '/') {
         $url .= '/';
         $form_state->setValueForElement($form['general']['matomo_url_https'], $url);
       }
       $url = $url . 'matomo.php';
       try {
-        $result = $this->httpClient->get($url);
+        $result = $this->httpClient->request('GET', $url);
         if (!$skip_error_check && $result->getStatusCode() != 200) {
           $form_state->setErrorByName('matomo_url_https', $this->t('The validation of "@url" failed with error "@error" (HTTP code @code).', [
             '@url' => UrlHelper::filterBadProtocol($url),
@@ -733,15 +753,14 @@ class MatomoAdminSettingsForm extends ConfigFormBase {
    */
   protected static function getForbiddenTokens(array $value) {
     $invalid_tokens = [];
-    $value_tokens = is_string($value) ? \Drupal::token()->scan($value) : $value;
 
-    foreach ($value_tokens as $tokens) {
+    foreach ($value as $tokens) {
       if (array_filter($tokens, 'static::containsForbiddenToken')) {
         $invalid_tokens = array_merge($invalid_tokens, array_values($tokens));
       }
     }
 
-    array_unique($invalid_tokens);
+    $invalid_tokens = array_unique($invalid_tokens);
     return $invalid_tokens;
   }
 
@@ -766,7 +785,7 @@ class MatomoAdminSettingsForm extends ConfigFormBase {
     // User tokens are not prefixed with colon to catch 'current-user' and
     // 'user'.
     //
-    // TODO: If someone has better ideas, share them, please!
+    // @todo If someone has better ideas, share them, please!
     $token_blocklist = [
       ':account-name]',
       ':author]',
@@ -807,19 +826,6 @@ class MatomoAdminSettingsForm extends ConfigFormBase {
     ];
 
     return preg_match('/' . implode('|', array_map('preg_quote', $token_blocklist)) . '/i', $token_string);
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public static function create(ContainerInterface $container) {
-    return new static(
-      // Load the service required to construct this class.
-      $container->get('config.factory'),
-      $container->get('current_user'),
-      $container->get('module_handler'),
-      $container->get('http_client')
-    );
   }
 
 }

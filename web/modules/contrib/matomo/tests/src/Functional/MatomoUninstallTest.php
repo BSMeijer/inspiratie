@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace Drupal\Tests\matomo\Functional;
 
 use Drupal\Core\File\FileSystemInterface;
@@ -27,9 +29,16 @@ class MatomoUninstallTest extends BrowserTestBase {
   protected $defaultTheme = 'stark';
 
   /**
+   * Admin user.
+   *
+   * @var \Drupal\user\UserInterface
+   */
+  protected $adminUser;
+
+  /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
 
     $permissions = [
@@ -39,8 +48,8 @@ class MatomoUninstallTest extends BrowserTestBase {
     ];
 
     // User to set up matomo.
-    $this->admin_user = $this->drupalCreateUser($permissions);
-    $this->drupalLogin($this->admin_user);
+    $this->adminUser = $this->drupalCreateUser($permissions);
+    $this->drupalLogin($this->adminUser);
   }
 
   /**
@@ -73,10 +82,11 @@ class MatomoUninstallTest extends BrowserTestBase {
     // Uninstall the module.
     $edit = [];
     $edit['uninstall[matomo]'] = TRUE;
-    $this->drupalPostForm('admin/modules/uninstall', $edit, 'Uninstall');
-    $this->assertNoText(\Drupal::translation()->translate('Configuration deletions'), 'No configuration deletions listed on the module install confirmation page.');
-    $this->drupalPostForm(NULL, NULL, 'Uninstall');
-    $this->assertText('The selected modules have been uninstalled.', 'Modules status has been updated.');
+    $this->drupalGet('admin/modules/uninstall');
+    $this->submitForm($edit, 'Uninstall');
+    $this->assertSession()->pageTextNotContains(\Drupal::translation()->translate('Configuration deletions'));
+    $this->submitForm([], 'Uninstall');
+    $this->assertSession()->pageTextContains('The selected modules have been uninstalled.');
 
     // Test if the directory and all files have been removed.
     $this->assertFalse(\Drupal::service('file_system')->prepareDirectory($cache_path), 'Cache directory "public://matomo" has been removed.');
