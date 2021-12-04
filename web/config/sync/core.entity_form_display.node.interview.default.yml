@@ -31,8 +31,8 @@ third_party_settings:
     group_extra:
       children:
         - field_schooltype
-        - field_topic
         - field_thema
+        - field_topic
         - field_editor_note
       parent_name: ''
       weight: 7
@@ -179,13 +179,13 @@ content:
     type: text_textarea
     region: content
   field_thema:
-    weight: 15
+    weight: 14
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_topic:
-    weight: 14
+    weight: 15
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -237,9 +237,9 @@ content:
     third_party_settings: {  }
   url_redirects:
     weight: 50
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   promote: true
   sticky: true
