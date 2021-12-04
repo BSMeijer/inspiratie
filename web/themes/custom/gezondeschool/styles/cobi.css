@@ -60,3 +60,15 @@ td {
   vertical-align: top;
   padding: 0.3em;
 }
+
+/* Styling teaser-overzicht */
+.views-field-nothing img
+{
+   float:left; 
+   margin: 0 0.8rem 0.8rem 0;
+}
+.views-field-nothing-1 hr
+{
+  margin:1em 0;
+  clear:both;
+}
