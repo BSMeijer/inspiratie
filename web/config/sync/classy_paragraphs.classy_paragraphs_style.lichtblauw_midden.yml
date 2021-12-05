@@ -1,0 +1,7 @@
+uuid: 43dd9a7d-ef81-4a0d-be84-50bcc21e0ed6
+langcode: nl
+status: true
+dependencies: {  }
+id: lichtblauw_midden
+label: 'Blauw & Midden'
+classes: "frame-align-middle\r\nbg-seagull"
