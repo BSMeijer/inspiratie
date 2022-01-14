@@ -72,3 +72,7 @@ td {
   margin:1em 0;
   clear:both;
 }
+
+/* Titel taxonomy-pages */
+
+.view-id-taxonomy_term .view-header h2 {padding:1.8rem 0 1rem}

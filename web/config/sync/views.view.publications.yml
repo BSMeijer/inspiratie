@@ -3,20 +3,26 @@ langcode: nl
 status: true
 dependencies:
   config:
+    - field.storage.media.field_media_image
     - field.storage.node.field_image
     - field.storage.node.field_intro
     - field.storage.node.field_location
     - field.storage.node.field_name
     - field.storage.node.field_school
     - field.storage.node.field_schooltype
+    - field.storage.node.field_teaser
     - field.storage.node.field_thema
     - field.storage.node.field_topic
+    - image.style.header
     - node.type.interview
+    - taxonomy.vocabulary.schooltype
     - taxonomy.vocabulary.thema
     - taxonomy.vocabulary.topic
   module:
     - better_exposed_filters
     - entity_usage
+    - image
+    - media
     - node
     - taxonomy
     - text
@@ -93,12 +99,24 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 50
+          items_per_page: 0
+          offset: 0
+          id: 0
+          total_pages: null
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
             first: '« First'
             last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
       style:
         type: table
         options:
@@ -685,6 +703,130 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: field
+        field_teaser:
+          id: field_teaser
+          table: node__field_teaser
+          field: field_teaser
+          relationship: none
+          group_type: group
+          admin_label: 'Teaser tbv zoeken via exposed filter'
+          label: Teaser
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_intro:
+          id: field_intro
+          table: node__field_intro
+          field: field_intro
+          relationship: none
+          group_type: group
+          admin_label: 'Intro tbv zoeken via exposed filter'
+          label: Intro
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
       filters:
         type:
           id: type
@@ -748,7 +890,7 @@ display:
           field: combine
           relationship: none
           group_type: group
-          admin_label: 'Zoek in Title Naam School Locatie'
+          admin_label: 'Zoek in Title Naam School Locatie Teaser Intro'
           operator: contains
           value: ''
           group: 1
@@ -784,11 +926,61 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           fields:
+            title: title
             field_name: field_name
             field_school: field_school
             field_location: field_location
-            title: title
+            field_teaser: field_teaser
+            field_intro: field_intro
           plugin_id: combine
+        field_schooltype_target_id:
+          id: field_schooltype_target_id
+          table: node__field_schooltype
+          field: field_schooltype_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_schooltype_target_id_op
+            label: ''
+            description: ''
+            use_operator: false
+            operator: field_schooltype_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: onderwijstype
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              editor: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: schooltype
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
         field_thema_target_id:
           id: field_thema_target_id
           table: node__field_thema
@@ -893,7 +1085,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
+          order: DESC
           exposed: false
           expose:
             label: Publicatiedatum
@@ -944,36 +1136,25 @@ display:
         - 'user.node_grants:view'
       max-age: -1
       tags:
+        - 'config:field.storage.node.field_intro'
         - 'config:field.storage.node.field_location'
         - 'config:field.storage.node.field_name'
         - 'config:field.storage.node.field_school'
         - 'config:field.storage.node.field_schooltype'
+        - 'config:field.storage.node.field_teaser'
         - 'config:field.storage.node.field_thema'
         - 'config:field.storage.node.field_topic'
-  publicaties:
+  blok_publicaties:
+    display_plugin: block
+    id: blok_publicaties
+    display_title: 'Block Publicaties'
+    position: 1
     display_options:
-      path: publicaties
-      menu:
-        type: 'default tab'
-        title: Content
-        description: ''
-        menu_name: admin
-        weight: -10
-        context: ''
-      tab_options:
-        type: normal
-        title: Content
-        description: 'Find and manage content'
-        menu_name: admin
-        weight: -10
       display_extenders: {  }
       title: Publicatieoverzicht
       defaults:
         title: false
-    display_plugin: page
-    display_title: Page
-    id: publicaties
-    position: 1
+      display_description: ''
     cache_metadata:
       contexts:
         - 'languages:language_content'
@@ -984,28 +1165,20 @@ display:
         - 'user.node_grants:view'
       max-age: -1
       tags:
+        - 'config:field.storage.node.field_intro'
         - 'config:field.storage.node.field_location'
         - 'config:field.storage.node.field_name'
         - 'config:field.storage.node.field_school'
         - 'config:field.storage.node.field_schooltype'
+        - 'config:field.storage.node.field_teaser'
         - 'config:field.storage.node.field_thema'
         - 'config:field.storage.node.field_topic'
-  teasers_overzicht:
+  blok_teasers:
+    display_plugin: block
+    id: blok_teasers
+    display_title: 'Block Teasers'
+    position: 1
     display_options:
-      path: teasers
-      menu:
-        type: 'default tab'
-        title: Content
-        description: ''
-        menu_name: admin
-        weight: -10
-        context: ''
-      tab_options:
-        type: normal
-        title: Content
-        description: 'Find and manage content'
-        menu_name: admin
-        weight: -10
       display_extenders: {  }
       display_description: ''
       fields:
@@ -1625,13 +1798,76 @@ display:
           absolute: false
           entity_type: node
           plugin_id: entity_link
+        field_media_image:
+          id: field_media_image
+          table: media__field_media_image
+          field: field_media_image
+          relationship: field_image
+          group_type: group
+          admin_label: 'Full url vd afbeelding '
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: 'https://gezondeschool-inspiratie.nl{{ field_media_image }}'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image_url
+          settings:
+            image_style: header
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_image_1:
           id: field_image_1
           table: node__field_image
           field: field_image
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: '[obsolete] Afbeelding als bestandsnaam'
           label: ''
           exclude: true
           alter:
@@ -1699,7 +1935,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: "<a href=\"{{ view_node_1 }}\" title=\"{{ title }}\">\r\n<img src=\"https://gezondeschool-inspiratie.nl/sites/default/files/styles/crop_thumbnail/public/{{ created_1 }}/{{ field_image_1 }}\" alt=\"{{ title }}\">\r\n</a>"
+            text: "<a href=\"{{ view_node_1 }}\" title=\"{{ title }}\">\r\n<img src=\"{{ field_media_image }}\"  alt=\"{{ title }}\" width=\"300\" height=\"200\">\r\n</a>"
             make_link: false
             path: ''
             absolute: false
@@ -1754,6 +1990,68 @@ display:
           field_api_classes: false
           entity_type: node
           entity_field: created
+          plugin_id: field
+        field_teaser:
+          id: field_teaser
+          table: node__field_teaser
+          field: field_teaser
+          relationship: none
+          group_type: group
+          admin_label: 'Teaser tbv zoeken via exposed filter'
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
           plugin_id: field
         field_intro:
           id: field_intro
@@ -1964,11 +2262,16 @@ display:
           required: false
           entity_type: node
           plugin_id: standard
+        field_image:
+          id: field_image
+          table: node__field_image
+          field: field_image
+          relationship: none
+          group_type: group
+          admin_label: 'field_image: Media'
+          required: false
+          plugin_id: standard
       title: Teasers
-    display_plugin: page
-    display_title: Teasers
-    id: teasers_overzicht
-    position: 1
     cache_metadata:
       contexts:
         - 'languages:language_content'
@@ -1979,11 +2282,13 @@ display:
         - 'user.node_grants:view'
       max-age: -1
       tags:
+        - 'config:field.storage.media.field_media_image'
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_intro'
         - 'config:field.storage.node.field_location'
         - 'config:field.storage.node.field_name'
         - 'config:field.storage.node.field_school'
         - 'config:field.storage.node.field_schooltype'
+        - 'config:field.storage.node.field_teaser'
         - 'config:field.storage.node.field_thema'
         - 'config:field.storage.node.field_topic'

@@ -1,0 +1,38 @@
+uuid: e39e59b5-4961-4e07-9bf0-ef9ef69555b7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.publications
+  module:
+    - ctools
+    - system
+    - views
+  theme:
+    - gezondeschool
+id: views_block__publications_blok_teasers
+theme: gezondeschool
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:publications-blok_teasers'
+settings:
+  id: 'views_block:publications-blok_teasers'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: /teasers
+    negate: false
+    context_mapping: {  }
